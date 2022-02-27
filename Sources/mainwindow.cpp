@@ -1,8 +1,8 @@
-#include "mainwindow.h"
+#include "Headers\mainwindow.h"
 #include "ui_mainwindow.h"
 #include<QPixmap>
-#include"login.h"
-#include"signup.h"
+#include"Headers\login.h"
+#include"Headers\signup.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

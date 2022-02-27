@@ -9,20 +9,26 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Source\login.cpp \
-    Source\main.cpp \
-    Source\mainwindow.cpp \
-    Source\signup.cpp
+    Sources\login.cpp \
+    Sources\main.cpp \
+    Sources\mainwindow.cpp \
+    Sources\signup.cpp \
+    Sources\dashboard.cpp \
+    Sources\choosehospitals.cpp \
 
 HEADERS += \
-    Header\login.h \
-    Header\mainwindow.h \
-    Header\signup.h
+    Headers\login.h \
+    Headers\mainwindow.h \
+    Headers\signup.h \
+    Headers\dashboard.h \
+    Headers\choosehospitals.h \
 
 FORMS += \
-    UI\login.ui \
-    UI\mainwindow.ui \
-    UI\signup.ui
+    Forms\login.ui \
+    Forms\mainwindow.ui \
+    Forms\signup.ui \
+    Forms\dashboard.ui \
+    Forms\choosehospitals.ui \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
