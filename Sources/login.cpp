@@ -1,4 +1,4 @@
-#include "login.h"
+#include "Headers\login.h"
 #include "ui_login.h"
 #include <QMessageBox>
 #include <QPixmap>
@@ -31,9 +31,10 @@ void Login::on_pushButton_login_clicked()
     QString email=ui->lineEdit_email->text();
     QString password=ui->lineEdit_password->text();
 
-    if(email=="prabesh@email.com" && password=="prabesh")
+    if(email=="ayush@gmail.com" && password=="ayush")
     {
-        QMessageBox::information(this, "Login", "Username and password is correct.\nThis will take you to a different page");
+        dashboard = new Dashboard(this);
+        dashboard -> show();
     }
     else{
          QMessageBox::warning(this,"Login", "Username or password is not correct");
