@@ -3,10 +3,6 @@
 
 <!-- Written by QtCreator 6.0.2, 2022-03-03T01:52:52. -->
 
-
-<!-- Written by QtCreator 6.0.2, 2022-03-03T01:52:52. -->
-
-
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -246,17 +242,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
-
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">CoviCURE2</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Documents/PROJECTS/CoviCURE/CoviCURE.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Documents/PROJECTS/CoviCURE/CoviCURE.pro</value>
 
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
-
 
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
@@ -432,7 +423,6 @@
  </data>
  <data>
 
-
   <variable>ProjectExplorer.Project.Target.2</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
@@ -598,7 +588,6 @@
  <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
   <value type="qlonglong">3</value>
-
   <variable>ProjectExplorer.Project.TargetCount</variable>
   <value type="qlonglong">2</value>
  </data>

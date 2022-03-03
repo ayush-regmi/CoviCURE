@@ -42,17 +42,11 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_Login_3_clicked()
 {
     hide();
-
-    Login LoginBox;
-    LoginBox.setModal(true);
-    LoginBox.exec();
-  
 //    Login LoginBox;
 //    LoginBox.setModal(true);
 //    LoginBox.exec();
     login = new Login(this);
     login->show();
-
 }
 
 
@@ -65,16 +59,10 @@ void MainWindow::on_pushButton_Exit_3_clicked()
 void MainWindow::on_pushButton_Signup_3_clicked()
 {
     hide();
-
-    Signup signup;
-    signup.setModal(true);
-    signup.exec();
-
 //    Signup signup;
 //    signup.setModal(true);
 //    signup.exec();
     signup = new Signup(this);
     signup->show();
-
 }
 
