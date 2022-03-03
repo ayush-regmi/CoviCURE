@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2022-02-27T21:29:58. -->
+
+<!-- Written by QtCreator 6.0.2, 2022-03-03T01:52:52. -->
+
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -243,6 +245,10 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">CoviCURE2</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Documents/PROJECTS/CoviCURE/CoviCURE.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Documents/PROJECTS/CoviCURE/CoviCURE.pro</value>
+
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Desktop/CoviCURE/CoviCURE.pro</value>
+
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
@@ -416,6 +422,7 @@
   </valuemap>
  </data>
  <data>
+
   <variable>ProjectExplorer.Project.Target.2</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
@@ -581,6 +588,8 @@
  <data>
   <variable>ProjectExplorer.Project.TargetCount</variable>
   <value type="qlonglong">3</value>
+  <variable>ProjectExplorer.Project.TargetCount</variable>
+  <value type="qlonglong">2</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Updater.FileVersion</variable>

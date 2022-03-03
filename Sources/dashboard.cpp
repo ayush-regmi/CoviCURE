@@ -8,10 +8,10 @@ Dashboard::Dashboard(QWidget *parent)
     , ui(new Ui::Dashboard)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/Hp/Documents/PROJECTS/CoviCURE/img/dashboard.png");
-    //int w = ui->label_dashboard->width();
-    //int h = ui->label_dashboard->height();
-    ui -> label_dashboard -> setPixmap(pix.scaled(1400, 417, Qt::KeepAspectRatio));
+   QPixmap pix(":/resources/img/dashboard.png");
+  // int w = ui->label_dashboard->width();
+  // int h = ui->label_dashboard->height();
+   ui -> label_dashboard -> setPixmap(pix.scaled(1100, 400, Qt::KeepAspectRatio));
 }
 
 Dashboard::~Dashboard()
@@ -23,6 +23,7 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_pushButton_Hospital_clicked()
 {
+    hide();
     choosehospitals = new ChooseHospitals();
     choosehospitals->show();
 }
