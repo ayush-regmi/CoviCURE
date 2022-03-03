@@ -7,7 +7,7 @@ Vaccine_Login::Vaccine_Login(QWidget *parent) :
     ui(new Ui::Vaccine_Login)
 {
     ui->setupUi(this);
-    QPixmap pix("D:/Sushankhya/CoviCURE/img/vaccine1");
+    QPixmap pix(":/resources/img/vaccine1.png");
     //int w = ui->label_dashboard->width();
     //int h = ui->label_dashboard->height();
     ui -> picvax -> setPixmap(pix.scaled(321, 511, Qt::KeepAspectRatio));

@@ -6,7 +6,7 @@ Loginview::Loginview(QWidget *parent) :
     ui(new Ui::Loginview)
 {
     ui->setupUi(this);
-    QPixmap pix2("D:/Sushankhya/CoviCURE/img/login_vaccine");
+    QPixmap pix2(":/resources/img/login_vaccine.png");
     ui -> Loginbanner -> setPixmap(pix2.scaled(181, 91, Qt::KeepAspectRatio));
 
 }

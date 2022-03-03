@@ -5,6 +5,7 @@
         <file>img/safe.png</file>
         <file>img/mask.png</file>
         <file>img/doctor.png</file>
-
+        <file>img/login_vaccine.png</file>
+        <file>img/vaccine1.png</file>
     </qresource>
 </RCC>
