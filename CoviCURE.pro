@@ -15,8 +15,10 @@ SOURCES += \
     Sources\signup.cpp \
     Sources\dashboard.cpp \
     Sources\choosehospitals.cpp \
+    Sources\rapidcovid.cpp \
     Sources\vaccine_login.cpp \
     Sources\loginview.cpp \
+
 
 HEADERS += \
     Headers\login.h \
@@ -24,8 +26,10 @@ HEADERS += \
     Headers\signup.h \
     Headers\dashboard.h \
     Headers\choosehospitals.h \
+    Headers\rapidcovid.h \
     Headers\vaccine_login.h \
     Headers\loginview.h \
+
 
 FORMS += \
     Forms\login.ui \
@@ -33,8 +37,12 @@ FORMS += \
     Forms\signup.ui \
     Forms\dashboard.ui \
     Forms\choosehospitals.ui \
+
+    Forms\rapidcovid.ui \
+
     Forms\vaccine_login.ui \
     Forms\loginview.ui \
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
