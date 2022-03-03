@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/resources">
         <file>img/dashboard.png</file>
+        <file>img/login.jpg</file>
+        <file>img/safe.png</file>
+        <file>img/mask.png</file>
+        <file>img/doctor.png</file>
     </qresource>
 </RCC>
