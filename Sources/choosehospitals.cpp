@@ -8,14 +8,14 @@ ChooseHospitals::ChooseHospitals(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pixSafe(":/resources/img/safe.png");
-    int wSafe = ui->label_safe->width();
-    int hSafe = ui->label_safe->height();
-    ui -> label_safe -> setPixmap(pixSafe.scaled(wSafe, hSafe, Qt::KeepAspectRatio));
+   // int wSafe = ui->label_safe->width();
+   // int hSafe = ui->label_safe->height();
+    ui -> label_safe -> setPixmap(pixSafe.scaled(300, 200, Qt::KeepAspectRatio));
 
     QPixmap pixDoctor(":/resources/img/doctor.png");
-    int wDoctor = ui->label_doctor->width();
-    int hDoctor = ui->label_doctor->height();
-    ui -> label_doctor -> setPixmap(pixDoctor.scaled(wDoctor, hDoctor, Qt::KeepAspectRatio));
+   // int wDoctor = ui->label_doctor->width();
+   // int hDoctor = ui->label_doctor->height();
+    ui -> label_doctor -> setPixmap(pixDoctor.scaled(300, 350, Qt::KeepAspectRatio));
 }
 
 ChooseHospitals::~ChooseHospitals()
@@ -28,5 +28,11 @@ void ChooseHospitals::on_pushButton_ok_clicked()
     //hide();
     //availablehospitals = new AvailableHospitals();
    // availablehospitals->show();
+}
+
+
+void ChooseHospitals::on_pushButton_cancel_clicked()
+{
+    close();
 }
 

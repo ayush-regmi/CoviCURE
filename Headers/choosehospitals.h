@@ -3,6 +3,7 @@
 
 #include <QDialog>
 //#include "availablehospitals.h"
+//   #include "Headers/dashboard.h"
 
 namespace Ui {
 class ChooseHospitals;
@@ -18,6 +19,8 @@ public:
 
 private slots:
     void on_pushButton_ok_clicked();
+
+    void on_pushButton_cancel_clicked();
 
 private:
     Ui::ChooseHospitals *ui;
