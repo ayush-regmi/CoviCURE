@@ -1,6 +1,7 @@
 #include "Headers\dashboard.h"
 #include "ui_dashboard.h"
 #include <QPixmap>
+//#include<Headers/vaccine_login.h>
 
 Dashboard::Dashboard(QWidget *parent)
     : QMainWindow(parent)
@@ -24,5 +25,13 @@ void Dashboard::on_pushButton_Hospital_clicked()
 {
     choosehospitals = new ChooseHospitals();
     choosehospitals->show();
+}
+
+
+void Dashboard::on_pushButton_vaccine_clicked()
+{
+   hide();
+   vaccine_login = new Vaccine_Login(this);
+   vaccine_login->show();
 }
 
