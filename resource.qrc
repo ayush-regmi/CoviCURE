@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/resources">
         <file>img/dashboard.png</file>
+        <file>img/rct_img.jpg</file>
     </qresource>
 </RCC>

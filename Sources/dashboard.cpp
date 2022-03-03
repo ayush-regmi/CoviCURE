@@ -22,7 +22,16 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_pushButton_Hospital_clicked()
 {
+    hide();
     choosehospitals = new ChooseHospitals();
     choosehospitals->show();
+}
+
+
+void Dashboard::on_pushButton_rct_3_clicked()
+{
+    hide();
+    rapidcovid = new Rapidcovid();
+    rapidcovid->show();
 }
 
