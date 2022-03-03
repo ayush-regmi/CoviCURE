@@ -33,7 +33,6 @@ void Login::on_pushButton_login_clicked()
 
     if(email=="ayush@gmail.com" && password=="ayush")
     {
-
         dashboard = new Dashboard(this);
         dashboard -> show();
     }

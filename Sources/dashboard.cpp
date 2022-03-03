@@ -29,18 +29,10 @@ void Dashboard::on_pushButton_Hospital_clicked()
 }
 
 
-
-void Dashboard::on_pushButton_rct_3_clicked()
-{
-    hide();
-    rapidcovid = new Rapidcovid();
-    rapidcovid->show();
-
 void Dashboard::on_pushButton_vaccine_clicked()
 {
    hide();
    vaccine_login = new Vaccine_Login(this);
    vaccine_login->show();
-
 }
 
