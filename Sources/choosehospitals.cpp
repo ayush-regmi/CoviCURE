@@ -7,12 +7,12 @@ ChooseHospitals::ChooseHospitals(QWidget *parent) :
     ui(new Ui::ChooseHospitals)
 {
     ui->setupUi(this);
-    QPixmap pixSafe("C:/Users/Hp/Documents/PROJECTS/CoviCURE/img/safe.png");
+    QPixmap pixSafe(":/resources/img/safe.png");
     int wSafe = ui->label_safe->width();
     int hSafe = ui->label_safe->height();
     ui -> label_safe -> setPixmap(pixSafe.scaled(wSafe, hSafe, Qt::KeepAspectRatio));
 
-    QPixmap pixDoctor("C:/Users/Hp/Documents/PROJECTS/CoviCURE/img/doctor.png");
+    QPixmap pixDoctor(":/resources/img/doctor.png");
     int wDoctor = ui->label_doctor->width();
     int hDoctor = ui->label_doctor->height();
     ui -> label_doctor -> setPixmap(pixDoctor.scaled(wDoctor, hDoctor, Qt::KeepAspectRatio));
