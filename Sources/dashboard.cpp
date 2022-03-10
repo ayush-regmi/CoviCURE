@@ -24,7 +24,7 @@ Dashboard::~Dashboard()
 void Dashboard::on_pushButton_Hospital_clicked()
 {
     hide();
-    choosehospitals = new ChooseHospitals();
+    choosehospitals = new ChooseHospitals(this);
     choosehospitals->show();
 }
 
