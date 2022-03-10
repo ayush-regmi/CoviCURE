@@ -8,10 +8,10 @@ Dashboard::Dashboard(QWidget *parent)
     , ui(new Ui::Dashboard)
 {
     ui->setupUi(this);
-   QPixmap pix(":/resources/img/dashboard.png");
+   QPixmap pix(":/resources/img/CoviCURE.png");
   // int w = ui->label_dashboard->width();
   // int h = ui->label_dashboard->height();
-   ui -> label_dashboard -> setPixmap(pix.scaled(1100, 400, Qt::KeepAspectRatio));
+   ui -> label_dashboard -> setPixmap(pix.scaled(1120, 368, Qt::KeepAspectRatio));
 }
 
 Dashboard::~Dashboard()
