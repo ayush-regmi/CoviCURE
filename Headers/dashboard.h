@@ -2,8 +2,10 @@
 #define DASHBOARD_H
 
 #include <QMainWindow>
-#include "choosehospitals.h"
+#include "Headers/choosehospitals.h"
 #include "Headers/vaccine_login.h"
+#include "Headers/rapidcovid.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dashboard; }
@@ -22,10 +24,13 @@ private slots:
 
     void on_pushButton_vaccine_clicked();
 
+    void on_pushButton_Rapidcovid_clicked();
+
 private:
     Ui::Dashboard *ui;
     ChooseHospitals *choosehospitals;
     Vaccine_Login *vaccine_login;
+    Rapidcovid *rapidcovid;
 
 };
 #endif // DASHBOARD_H
