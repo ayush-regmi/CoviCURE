@@ -25,14 +25,20 @@ ChooseHospitals::~ChooseHospitals()
 
 void ChooseHospitals::on_pushButton_ok_clicked()
 {
-    //hide();
-    //availablehospitals = new AvailableHospitals();
-   // availablehospitals->show();
+    hide();
+    hospitals = new Hospitals();
+    hospitals->show();
 }
 
 
 void ChooseHospitals::on_pushButton_cancel_clicked()
 {
-    close();
+    // Hide the HelpWindow itself
+    // or this->close()
+    this->hide();
+
+    // Show the MainWindow (i.e. the parent window)
+    QWidget *parent = this->parentWidget();
+    parent->show();
 }
 
