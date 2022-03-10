@@ -17,6 +17,7 @@ SOURCES += \
     Sources\choosehospitals.cpp \
     Sources\vaccine_login.cpp \
     Sources\loginview.cpp \
+    Sources/signupvaccine.cpp \
 
 HEADERS += \
     Headers\login.h \
@@ -26,6 +27,7 @@ HEADERS += \
     Headers\choosehospitals.h \
     Headers\vaccine_login.h \
     Headers\loginview.h \
+    Headers\signupvaccine.h \
 
 FORMS += \
     Forms\login.ui \
@@ -35,6 +37,7 @@ FORMS += \
     Forms\choosehospitals.ui \
     Forms\vaccine_login.ui \
     Forms\loginview.ui \
+    Forms\signupvaccine.ui \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
