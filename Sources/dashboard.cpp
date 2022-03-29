@@ -7,6 +7,9 @@ Dashboard::Dashboard(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Dashboard)
 {
+
+    this->setWindowState(Qt::WindowMaximized);
+    this-> show();
     ui->setupUi(this);
    QPixmap pix(":/resources/img/CoviCURE.png");
   // int w = ui->label_dashboard->width();

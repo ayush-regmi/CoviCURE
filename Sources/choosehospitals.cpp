@@ -23,8 +23,11 @@ ChooseHospitals::~ChooseHospitals()
     delete ui;
 }
 
+bool connectDB();
+
 void ChooseHospitals::on_pushButton_ok_clicked()
 {
+    connectDB();
     hide();
     hospitals = new Hospitals();
     hospitals->show();
