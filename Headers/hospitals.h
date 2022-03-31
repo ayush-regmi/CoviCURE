@@ -21,7 +21,7 @@ public:
     ~Hospitals();
 
 private slots:
-    void on_hos1_clicked();
+
 
 private:
     Ui::Hospitals *ui;

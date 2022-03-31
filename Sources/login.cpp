@@ -31,7 +31,7 @@ void Login::on_pushButton_login_clicked()
     QString email=ui->lineEdit_email->text();
     QString password=ui->lineEdit_password->text();
 
-<<<<<<< HEAD
+
     //Initial dummy code for login
 //    if(email=="ayush@gmail.com" && password=="ayush")
 //    {
@@ -41,7 +41,7 @@ void Login::on_pushButton_login_clicked()
 //    else{
 //         QMessageBox::warning(this,"Login", "Username or password is not correct");
 //    }
-=======
+
     if(email=="ayush@gmail.com" && password=="ayush")
     {
         dashboard = new Dashboard(this);
@@ -50,13 +50,6 @@ void Login::on_pushButton_login_clicked()
     else{
          QMessageBox::warning(this,"Login", "Username or password is not correct");
     }
-}
->>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
-
-
-
-    //////////////////////////
-    ///
     QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL", "MyConnect");
         db.setHostName("127.0.0.1");      // Connect to the database host name , Here we need to pay attention to （ If it is ”127.0.0.1“, Unable to connect , Is changed to localhost)
         db.setPort(3306);                 // Connection database port number , Consistent with settings

@@ -49,17 +49,17 @@ void Signup::on_pushButton_signup_clicked()
               return ;
           }
 
-          QSqlQuery qry;
-
-          qry.prepare("INSERT INTO users_registration_table (First_name, Last_name, Email, Phone_number, Password)"
-                      "VALUES (:First_name, :Last_name, :Email, :Phone_number, :Password)");
-
+          QSqlQuery qry(db);
+         db.open();
+          qry.prepare("INSERT INTO users_registration_table (User_id, First_name, Last_name, Email, Phone_number, Password)"
+                      "VALUES (:User_id, :First_name, :Last_name, :Email, :Phone_number, :Password)");
+          qry.bindValue(":User_id",12);
           qry.bindValue(":First_name", firstname);
           qry.bindValue(":Last_name", lastname);
           qry.bindValue(":Email", email);
           qry.bindValue(":Phone_number", phonenumber);
           qry.bindValue(":Password", password);
-
+          qry.exec();
           if(qry.exec()){
                QMessageBox:: information(this, "Registered", "You have been registered as a user");
           }
