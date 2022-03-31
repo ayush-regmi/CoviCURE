@@ -20,7 +20,7 @@ SOURCES += \
     Sources\signupvaccine.cpp \
     Sources\hospitals.cpp \
     Sources\database.cpp \
-    Sources\database.cpp \
+
 
 HEADERS += \
     Headers\login.h \
@@ -33,7 +33,7 @@ HEADERS += \
     Headers\signupvaccine.h \
     Headers\hospitals.h \
     Headers\database.h \
-    Headers\database.h \
+
 
 FORMS += \
     Forms\login.ui \

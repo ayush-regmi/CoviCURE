@@ -34,7 +34,7 @@ void Login::on_pushButton_login_clicked()
     if(email=="ayush@gmail.com" && password=="ayush")
     {
         dashboard = new Dashboard(this);
-        dashboard -> show();
+        dashboard -> showMaximized();
     }
     else{
          QMessageBox::warning(this,"Login", "Username or password is not correct");

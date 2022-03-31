@@ -15,7 +15,7 @@ class Database
 private:
     QSqlDatabase db;
 public:
-    bool connectDB();
+    bool connectDB(QString);
     QSqlDatabase getDB();
 
 };
