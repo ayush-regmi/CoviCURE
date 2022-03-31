@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1262</width>
-    <height>755</height>
+    <width>1400</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -20,11 +20,11 @@
    <string>Dashboard</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>../../../Downloads/mask.png</normaloff>../../../Downloads/mask.png</iconset>
+   <iconset resource="../resource.qrc">
+    <normaloff>:/resources/img/mask.png</normaloff>:/resources/img/mask.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.0113636 rgba(255, 25, 207, 255), stop:1 rgba(53, 120, 255, 255));</string>
+   <string notr="true">background-color: rgb(125, 125, 186);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -53,8 +53,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1240</width>
-         <height>694</height>
+         <width>1378</width>
+         <height>739</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
@@ -94,6 +94,9 @@
           <property name="enabled">
            <bool>true</bool>
           </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 20px;</string>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -110,6 +113,7 @@
           <property name="rightMargin">
            <number>60</number>
           </property>
+<<<<<<< HEAD
           <item row="2" column="2">
            <widget class="QPushButton" name="pushButton_Rapidcovid">
             <property name="sizePolicy">
@@ -145,6 +149,8 @@ background-color:#50C878;
             </property>
            </widget>
           </item>
+=======
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
           <item row="2" column="0">
            <widget class="QPushButton" name="pushButton_Live">
             <property name="sizePolicy">
@@ -170,6 +176,7 @@ background-color:#50C878;
 font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
+<<<<<<< HEAD
 border-radius: 6px;
 
 border-radius: 5px;
@@ -177,12 +184,18 @@ border-radius: 5px;
 #pushButton_Live:hover{
 background-color:#50C878;
 }</string>
+=======
+border-radius: 10px;
+background0color::hover: 
+background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.0113636 rgba(255, 25, 92, 255), stop:1 rgba(0, 85, 255, 255));</string>
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
             </property>
             <property name="text">
              <string>Live Covid Status</string>
             </property>
            </widget>
           </item>
+<<<<<<< HEAD
           <item row="4" column="0">
            <widget class="QPushButton" name="pushButton_Users">
             <property name="sizePolicy">
@@ -218,6 +231,8 @@ background-color:#50C878;
             </property>
            </widget>
           </item>
+=======
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
           <item row="1" column="1">
            <spacer name="verticalSpacer">
             <property name="orientation">
@@ -256,6 +271,7 @@ background-color:#50C878;
 font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
+<<<<<<< HEAD
 border-radius: 6px;
 
 border-radius: 5px;
@@ -263,6 +279,9 @@ border-radius: 5px;
 #pushButton_vaccine:hover{
 background-color:#50C878;
 }</string>
+=======
+border-radius: 10px;</string>
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
             </property>
             <property name="text">
              <string>Vaccination</string>
@@ -291,6 +310,7 @@ background-color:#50C878;
 font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
+<<<<<<< HEAD
 border-radius: 6px;
 
 border-radius: 5px;
@@ -298,6 +318,11 @@ border-radius: 5px;
 #pushButton_Hospital:hover{
 background-color:#50C878;
 }</string>
+=======
+border-radius: 10px;
+background0color::hover: 
+background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.0113636 rgba(255, 25, 92, 255), stop:1 rgba(0, 85, 255, 255));</string>
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
             </property>
             <property name="text">
              <string>Hospitals</string>
@@ -311,6 +336,7 @@ background-color:#50C878;
             </property>
            </widget>
           </item>
+<<<<<<< HEAD
           <item row="4" column="2">
            <widget class="QPushButton" name="pushButton_New">
             <property name="sizePolicy">
@@ -346,6 +372,8 @@ background-color:#50C878;
             </property>
            </widget>
           </item>
+=======
+>>>>>>> 7d4709be1292b014e4b76e762f7ab2fa6186e980
           <item row="0" column="1">
            <spacer name="horizontalSpacer">
             <property name="orientation">
@@ -378,6 +406,34 @@ background-color:#50C878;
             </property>
            </spacer>
           </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButton_Rapidcovid">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>20</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>true</bool>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
+border-radius: 10px;</string>
+            </property>
+            <property name="text">
+             <string>Rapid Covid Test</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
        </layout>
@@ -391,7 +447,7 @@ background-color:#50C878;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1262</width>
+     <width>1400</width>
      <height>17</height>
     </rect>
    </property>
@@ -416,6 +472,8 @@ background-color:#50C878;
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

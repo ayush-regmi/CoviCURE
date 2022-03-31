@@ -1,5 +1,4 @@
-QT       += core gui
-QT       += sql
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,9 +17,11 @@ SOURCES += \
     Sources\choosehospitals.cpp \
     Sources\vaccine_login.cpp \
     Sources\loginview.cpp \
-    Sources/signupvaccine.cpp \
+    Sources\signupvaccine.cpp \
     Sources\rapidcovid.cpp \
     Sources\hospitals.cpp \
+    Sources\database.cpp \
+
 
 
 HEADERS += \
@@ -32,8 +33,10 @@ HEADERS += \
     Headers\vaccine_login.h \
     Headers\loginview.h \
     Headers\signupvaccine.h \
+    Headers\hospitals.h \
+    Headers\database.h \
     Headers\rapidcovid.h \
-    headers\hospitals.h \
+
 
 
 FORMS += \

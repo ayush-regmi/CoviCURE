@@ -2,6 +2,11 @@
 #define HOSPITALS_H
 
 #include <QMainWindow>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QMessageBox>
+#include <QString>
+#include "Headers/database.h"
 
 namespace Ui {
 class Hospitals;
@@ -14,6 +19,9 @@ class Hospitals : public QMainWindow
 public:
     explicit Hospitals(QWidget *parent = nullptr);
     ~Hospitals();
+
+private slots:
+    void on_hos1_clicked();
 
 private:
     Ui::Hospitals *ui;

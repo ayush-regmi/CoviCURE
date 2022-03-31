@@ -3,22 +3,37 @@
 #include <QPixmap>
 //#include<Headers/vaccine_login.h>
 
+QString css="QPushButton {"
+                "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
+                "color: rgb(255, 255, 255);"
+                "border-radius: 10px;"
+                "font: 26pt;"
+                "font-style: \"Cooper Black\";"
+             "}"
+                "QPushButton:hover {"
+                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+             "}";
+
 Dashboard::Dashboard(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Dashboard)
 {
+
+    this->setWindowState(Qt::WindowMaximized);
+    this-> showMaximized();
     ui->setupUi(this);
    QPixmap pix(":/resources/img/CoviCURE.png");
-  // int w = ui->label_dashboard->width();
-  // int h = ui->label_dashboard->height();
    ui -> label_dashboard -> setPixmap(pix.scaled(1120, 368, Qt::KeepAspectRatio));
+   ui->pushButton_Hospital->setStyleSheet(css);
+   ui->pushButton_Live->setStyleSheet(css);
+   ui->pushButton_Rapidcovid->setStyleSheet(css);
+   ui->pushButton_vaccine->setStyleSheet(css);
 }
 
 Dashboard::~Dashboard()
 {
     delete ui;
 }
-
 
 
 void Dashboard::on_pushButton_Hospital_clicked()
