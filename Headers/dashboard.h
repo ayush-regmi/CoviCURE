@@ -2,6 +2,9 @@
 #define DASHBOARD_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QLinearGradient>
+#include <QFont>
 #include "Headers/choosehospitals.h"
 #include "Headers/vaccine_login.h"
 #include "Headers/rapidcovid.h"
