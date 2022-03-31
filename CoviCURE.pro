@@ -17,12 +17,8 @@ SOURCES += \
     Sources\choosehospitals.cpp \
     Sources\vaccine_login.cpp \
     Sources\loginview.cpp \
-<<<<<<< HEAD
     Sources\signupvaccine.cpp \
-=======
-    Sources/signupvaccine.cpp \
     Sources\rapidcovid.cpp \
->>>>>>> e0d8e09298873d07f2d2ddbcd82daa43ac1e19fb
     Sources\hospitals.cpp \
     Sources\database.cpp \
 
@@ -37,14 +33,10 @@ HEADERS += \
     Headers\vaccine_login.h \
     Headers\loginview.h \
     Headers\signupvaccine.h \
-<<<<<<< HEAD
     Headers\hospitals.h \
     Headers\database.h \
-
-=======
     Headers\rapidcovid.h \
-    headers\hospitals.h \
->>>>>>> e0d8e09298873d07f2d2ddbcd82daa43ac1e19fb
+
 
 
 FORMS += \
