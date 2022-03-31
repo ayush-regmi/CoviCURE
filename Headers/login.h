@@ -2,6 +2,10 @@
 #define LOGIN_H
 
 #include <QDialog>
+#include <QSqlDatabase>
+#include <QtSql>
+#include <QString>
+#include <QMessageBox>
 #include "Headers\dashboard.h"
 
 namespace Ui {
