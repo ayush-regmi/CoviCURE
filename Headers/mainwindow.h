@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QLinearGradient>
+#include <QFont>
 #include"Headers\login.h"
 #include"Headers\signup.h"
 
@@ -18,11 +21,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_Login_3_clicked();
+    void on_pushButton_Login_clicked();
 
-    void on_pushButton_Exit_3_clicked();
+    void on_pushButton_Exit_clicked();
 
-    void on_pushButton_Signup_3_clicked();
+    void on_pushButton_Signup_clicked();
 
 private:
     Ui::MainWindow *ui;
