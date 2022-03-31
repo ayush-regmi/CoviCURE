@@ -128,10 +128,17 @@
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_Rapidcovid{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_Rapidcovid:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>Rapid Covid Test</string>
@@ -159,10 +166,17 @@ border-radius: 6px;</string>
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_Live{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_Live:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>Live Covid Status</string>
@@ -187,10 +201,17 @@ border-radius: 6px;</string>
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_Users{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_Users:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>Users</string>
@@ -231,10 +252,17 @@ border-radius: 6px;</string>
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_vaccine{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_vaccine:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>Vaccination</string>
@@ -259,10 +287,17 @@ border-radius: 6px;</string>
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_Hospital{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_Hospital:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>Hospitals</string>
@@ -294,10 +329,17 @@ border-radius: 6px;</string>
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">font: 26pt &quot;Cooper Black&quot;;
+             <string notr="true">#pushButton_New{
+font: 26pt &quot;Cooper Black&quot;;
 color: rgb(255, 255, 255);
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));
-border-radius: 6px;</string>
+border-radius: 6px;
+
+border-radius: 5px;
+}
+#pushButton_New:hover{
+background-color:#50C878;
+}</string>
             </property>
             <property name="text">
              <string>place holder</string>
