@@ -37,3 +37,18 @@ void Dashboard::on_pushButton_vaccine_clicked()
    vaccine_login->show();
 }
 
+//void Dashboard::on_pushButton_Rapidcovid_clicked()
+//{
+//    hide();
+  //  rapidcovid = new Rapidcovid();
+ //   rapidcovid->show();
+//}
+
+
+void Dashboard::on_pushButton_Rapidcovid_clicked()
+{
+    hide();
+    rapidcovid = new Rapidcovid();
+    rapidcovid->show();
+}
+
