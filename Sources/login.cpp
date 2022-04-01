@@ -4,10 +4,23 @@
 #include <QPixmap>
 #include <QSqlQuery>
 
+QString csslog="QPushButton {"
+                "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
+                "color: rgb(255, 255, 255);"
+                "border-radius: 10px;"
+                "font: 17pt;"
+                "width: 100px;"
+                "font-style: \"Cooper Black\";"
+             "}"
+                "QPushButton:hover {"
+                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+             "}";
+
 Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
     ui->setupUi(this);
     QPixmap pix(":/resources/img/doctor.png");
-    ui->picture->setPixmap(pix.scaled(150,150,Qt::KeepAspectRatio));
+    ui->Picture->setPixmap(pix.scaled(150,150,Qt::KeepAspectRatio));
+    ui->pushButton_login->setStyleSheet(csslog);
 }
 
 Login::~Login()
@@ -42,6 +55,7 @@ void Login::on_pushButton_login_clicked() {
                     qDebug()<<"Login Successful !!!";
                     dashboard = new Dashboard(this);
                     dashboard -> show();
+                    this->hide();
                 }
                 else {
                      QMessageBox::warning(this,"Login", "Username or password is not correct");

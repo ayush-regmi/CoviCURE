@@ -206,7 +206,7 @@ border-radius: 6px;</string>
     </layout>
    </item>
    <item row="0" column="1">
-    <widget class="QLabel" name="picture">
+    <widget class="QLabel" name="Picture">
      <property name="text">
       <string/>
      </property>

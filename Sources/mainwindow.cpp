@@ -16,9 +16,9 @@ QString cssmain = "QPushButton {"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    ui->pushButton_Exit->setStyleSheet(cssmain);
-    ui->pushButton_Login->setStyleSheet(cssmain);
-    ui->pushButton_Signup->setStyleSheet(cssmain);
+    ui->pushButton_Exit_3->setStyleSheet(cssmain);
+    ui->pushButton_Login_3->setStyleSheet(cssmain);
+    ui->pushButton_Signup_3->setStyleSheet(cssmain);
     QPixmap pix(":/resources/img/mask.png");
     ui->label_pic->setPixmap(pix.scaled(250,250,Qt::KeepAspectRatio));
 }
@@ -28,19 +28,19 @@ MainWindow::~MainWindow() {
 }
 
 
-void MainWindow::on_pushButton_Login_clicked() {
+void MainWindow::on_pushButton_Login_3_clicked() {
     hide();
     login = new Login(this);
     login->show();
 }
 
 
-void MainWindow::on_pushButton_Exit_clicked() {
-    hide();
+void MainWindow::on_pushButton_Exit_3_clicked() {
+    close();
 }
 
 
-void MainWindow::on_pushButton_Signup_clicked() {
+void MainWindow::on_pushButton_Signup_3_clicked() {
     hide();
     signup = new Signup(this);
     signup->show();
