@@ -2,6 +2,8 @@
 #define RAPIDCOVID_H
 
 #include <QMainWindow>
+#include "Headers/quepage1.h"
+//#include "Headers\dashboard.h"
 
 namespace Ui {
 class Rapidcovid;
@@ -18,8 +20,17 @@ public:
 //private slots:
     //void on_pushButton_Rapidcovid_clicked();
 
+private slots:
+    void on_pushButton_rct_clicked();
+
+//    void on_pushButton_dashboard_clicked();
+
+    void on_pushButton_dashboard_clicked();
+
 private:
     Ui::Rapidcovid *ui;
+    Quepage1 *quepage1;
+//    Dashboard *dashboard;
 };
 
 #endif // RAPIDCOVID_H
