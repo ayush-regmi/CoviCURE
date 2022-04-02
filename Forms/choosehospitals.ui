@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>664</width>
-    <height>393</height>
+    <height>557</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -75,20 +75,6 @@ font: 25pt &quot;Arial Rounded MT Bold&quot;;
      </property>
     </widget>
    </item>
-   <item row="3" column="0" rowspan="4">
-    <widget class="QLabel" name="label_doctor">
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1" rowspan="3">
-    <widget class="QLabel" name="label_safe">
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
    <item row="2" column="0" colspan="2">
     <widget class="QLabel" name="label_sub">
      <property name="styleSheet">
@@ -101,6 +87,20 @@ font: 25pt &quot;Arial Rounded MT Bold&quot;;
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" rowspan="4">
+    <widget class="QLabel" name="label_doctor">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" rowspan="3">
+    <widget class="QLabel" name="label_safe">
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </item>

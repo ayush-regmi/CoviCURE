@@ -82,6 +82,9 @@ border-radius: 6px;</string>
         <string notr="true">background-color: #fff;
 border-radius: 6px;</string>
        </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
        <property name="placeholderText">
         <string>Password</string>
        </property>

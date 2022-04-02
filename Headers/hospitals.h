@@ -6,6 +6,7 @@
 #include <QSqlDatabase>
 #include <QMessageBox>
 #include <QString>
+#include <QDebug>
 #include "Headers/database.h"
 
 namespace Ui {
@@ -20,13 +21,11 @@ public:
     explicit Hospitals(QWidget *parent = nullptr);
     ~Hospitals();
 
-private slots:
-    void on_hos1_clicked();
+//private slots:
+    //void on_hos1_clicked();
 
 private:
     Ui::Hospitals *ui;
-
-
 };
 
 #endif // HOSPITALS_H

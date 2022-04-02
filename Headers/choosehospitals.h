@@ -2,7 +2,8 @@
 #define CHOOSEHOSPITALS_H
 
 #include <QDialog>
-#include "Headers/hospitals.h"
+#include "Headers/hosdash.h"
+
 //   #include "Headers/dashboard.h"
 
 namespace Ui {
@@ -24,7 +25,7 @@ private slots:
 
 private:
     Ui::ChooseHospitals *ui;
-    Hospitals *hospitals;
+    Hosdash *hosdash;
 };
 
 #endif // CHOOSEHOSPITALS_H

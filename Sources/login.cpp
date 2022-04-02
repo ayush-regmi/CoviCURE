@@ -23,11 +23,6 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
     ui->pushButton_login->setStyleSheet(csslog);
 }
 
-Login::~Login()
-{
-    delete ui;
-}
-
 void connectDB(QString);
 bool connectionDB();
 Database connectUser;
@@ -67,4 +62,10 @@ void Login::on_pushButton_login_clicked() {
      else {
         qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
      }
+}
+
+Login::~Login()
+{
+    delete ui;
+    //connectUser.getDB().close();
 }

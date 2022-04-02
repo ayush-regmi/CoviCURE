@@ -23,23 +23,17 @@ ChooseHospitals::~ChooseHospitals()
     delete ui;
 }
 
-bool connectDB();
-
 void ChooseHospitals::on_pushButton_ok_clicked()
 {
-    //connectDB();
     hide();
-    hospitals = new Hospitals();
-    hospitals->show();
+    hosdash = new Hosdash();
+    hosdash -> show();
+   // hospitals = new Hospitals();
+   // hospitals->show();
 }
 
-
-void ChooseHospitals::on_pushButton_cancel_clicked()
-{
-    // Hide the HelpWindow itself
-    // or this->close()
+void ChooseHospitals::on_pushButton_cancel_clicked() {
     this->hide();
-
     // Show the MainWindow (i.e. the parent window)
     QWidget *parent = this->parentWidget();
     parent->show();

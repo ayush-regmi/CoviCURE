@@ -21,6 +21,7 @@ SOURCES += \
     Sources\rapidcovid.cpp \
     Sources\hospitals.cpp \
     Sources\database.cpp \
+    Sources/hosdash.cpp
 
 
 
@@ -36,6 +37,7 @@ HEADERS += \
     Headers\hospitals.h \
     Headers\database.h \
     Headers\rapidcovid.h \
+    Headers/hosdash.h
 
 
 
@@ -50,6 +52,7 @@ FORMS += \
     Forms\signupvaccine.ui \
     Forms\rapidcovid.ui \
     Forms\hospitals.ui \
+    Forms/hosdash.ui
 
 
 # Default rules for deployment.

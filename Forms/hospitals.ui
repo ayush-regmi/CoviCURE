@@ -54,7 +54,7 @@ font: 900 24pt &quot;Segoe UI Black&quot;;</string>
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Norvic Hospital</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -67,7 +67,7 @@ font: 900 24pt &quot;Segoe UI Black&quot;;</string>
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Bir Hospital</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -93,7 +93,7 @@ font: 900 24pt &quot;Segoe UI Black&quot;;</string>
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Grande Hospital</string>
+        <string/>
        </property>
       </widget>
      </item>
