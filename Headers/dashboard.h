@@ -10,6 +10,7 @@
 #include "Headers/rapidcovid.h"
 
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dashboard; }
 QT_END_NAMESPACE
@@ -34,6 +35,7 @@ private:
     ChooseHospitals *choosehospitals;
     Vaccine_Login *vaccine_login;
     Rapidcovid *rapidcovid;
+
 
 };
 #endif // DASHBOARD_H

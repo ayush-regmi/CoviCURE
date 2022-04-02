@@ -21,7 +21,10 @@ SOURCES += \
     Sources\rapidcovid.cpp \
     Sources\hospitals.cpp \
     Sources\database.cpp \
-    Sources/hosdash.cpp
+    Sources/hosdash.cpp \
+    Sources\quepage1.cpp \
+    Sources\quepage2.cpp \
+    Sources\quepage3.cpp \
 
 
 
@@ -37,7 +40,10 @@ HEADERS += \
     Headers\hospitals.h \
     Headers\database.h \
     Headers\rapidcovid.h \
-    Headers/hosdash.h
+    Headers/hosdash.h \
+    Headers\quepage1.h \
+    Headers\quepage2.h \
+    Headers\quepage3.h \
 
 
 
@@ -52,8 +58,10 @@ FORMS += \
     Forms\signupvaccine.ui \
     Forms\rapidcovid.ui \
     Forms\hospitals.ui \
-    Forms/hosdash.ui
-
+    Forms/hosdash.ui \
+    Forms\quepage1.ui \
+    Forms\quepage2.ui \
+    Forms\quepage3.ui \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

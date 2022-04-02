@@ -65,7 +65,7 @@
    <item>
     <layout class="QGridLayout" name="gridLayout" columnstretch="3,5,1,2">
      <item row="0" column="0">
-      <widget class="QLabel" name="label_11">
+      <widget class="QLabel" name="Fname">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -82,7 +82,7 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="label_14">
+      <widget class="QLabel" name="Password">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -99,7 +99,7 @@
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="label_13">
+      <widget class="QLabel" name="Email">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -139,7 +139,7 @@ border-radius:5px;</string>
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QLabel" name="label_16">
+      <widget class="QLabel" name="RePassword">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -182,7 +182,7 @@ border-radius:5px;</string>
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="label_15">
+      <widget class="QLabel" name="Phone">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -199,7 +199,7 @@ border-radius:5px;</string>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_12">
+      <widget class="QLabel" name="Sname">
        <property name="font">
         <font>
          <pointsize>14</pointsize>
@@ -279,6 +279,9 @@ border-radius:5px;</string>
         <string notr="true">background-color: #fff;
 border-radius:5px;</string>
        </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
        <property name="placeholderText">
         <string>new password</string>
        </property>
@@ -301,6 +304,9 @@ border-radius:5px;</string>
        <property name="styleSheet">
         <string notr="true">background-color: #fff;
 border-radius:5px;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
        </property>
        <property name="placeholderText">
         <string>confirm password</string>
