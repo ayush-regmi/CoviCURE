@@ -1,67 +1,47 @@
 #include "Headers\mainwindow.h"
 #include "ui_mainwindow.h"
 #include<QPixmap>
-//#include"Headers\login.h"
-//#include"Headers\signup.h"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+QString cssmain = "QPushButton {"
+                  "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
+                  "color: rgb(255, 255, 255);"
+                  "border-radius: 10px;"
+                  "width: 100px;"
+                  "font: 17pt;"
+                  "font-style: \"Cooper Black\";"
+                "}"
+                  "QPushButton:hover {"
+                  "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+                "}";
+
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
-
-    //https://stackoverflow.com/questions/38968743/qt-changing-the-background-color-of-qwidget-using-palette-doesnt-work
- //   QPixmap bkgnd("F:/2nd semester/COMP/Project/Green-Corporation-Template - Copy.jpg");
- //       bkgnd = bkgnd.scaled(this->size(), Qt::KeepAspectRatio);
- //       QPalette palette;
- //       palette.setBrush(QPalette::Window, bkgnd);
- //       this->setPalette(palette);
-
-    //https://www.youtube.com/watch?v=SyzxerD2Yps&list=PLS1QulWo1RIZiBcTr5urECberTITj7gjA&index=12
-        //Adding photo in a label
-//    QPixmap pic("F:/2nd semester/COMP/Project/Mylogo.jpg");
-//    int w=ui->label_pic->width();
-//    int h=ui->label_pic->height();
-//    ui->label_pic->setPixmap(pic.scaled(w,h,Qt::KeepAspectRatio));
-
-        QPixmap pix(":/resources/img/mask.png");
-//            int w = ui->label_pic->width();
-//         int h = ui->label_pic->height();
-            ui->label_pic->setPixmap(pix.scaled(250,250,Qt::KeepAspectRatio));
+    ui->pushButton_Exit_3->setStyleSheet(cssmain);
+    ui->pushButton_Login_3->setStyleSheet(cssmain);
+    ui->pushButton_Signup_3->setStyleSheet(cssmain);
+    QPixmap pix(":/resources/img/mask.png");
+    ui->label_pic->setPixmap(pix.scaled(250,250,Qt::KeepAspectRatio));
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
-
-
-
 }
 
 
-void MainWindow::on_pushButton_Login_3_clicked()
-{
+void MainWindow::on_pushButton_Login_3_clicked() {
     hide();
-//    Login LoginBox;
-//    LoginBox.setModal(true);
-//    LoginBox.exec();
     login = new Login(this);
     login->show();
 }
 
 
-void MainWindow::on_pushButton_Exit_3_clicked()
-{
-    hide();
+void MainWindow::on_pushButton_Exit_3_clicked() {
+    close();
 }
 
 
-void MainWindow::on_pushButton_Signup_3_clicked()
-{
+void MainWindow::on_pushButton_Signup_3_clicked() {
     hide();
-//    Signup signup;
-//    signup.setModal(true);
-//    signup.exec();
     signup = new Signup(this);
     signup->show();
 }

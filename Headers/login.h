@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "Headers\dashboard.h"
+#include "Headers\database.h"
 
 namespace Ui {
 class Login;

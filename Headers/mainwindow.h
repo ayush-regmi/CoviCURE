@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QLinearGradient>
+#include <QFont>
 #include"Headers\login.h"
 #include"Headers\signup.h"
 

@@ -10,14 +10,16 @@
 #include <QMessageBox>
 #include <QString>
 
+
 class Database
 {
 private:
     QSqlDatabase db;
 public:
-    bool connectDB(QString);
+    void connectDB(QString);
     QSqlDatabase getDB();
-
+    bool connectionDB();
+    bool connectionLogin();
 };
 
 #endif // DATABASE_H
