@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChooseHospitals</class>
+ <widget class="QDialog" name="ChooseHospitals">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Infected from COVID ?</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/resources/img/doctor.png);</string>
+  </property>
+  <widget class="QLabel" name="label_main">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>26</y>
+     <width>1131</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(151, 64, 255, 255), stop:0.892045 rgba(69, 131, 255, 255));
+font: 35pt &quot;Segoe UI Variable Text&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Are You Infected from COVID ?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_sub">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>126</y>
+     <width>1131</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0852273 rgba(69, 131, 255, 255), stop:0.880682 rgba(151, 64, 255, 255));
+font: 28pt &quot;Segoe UI Variable Text&quot;;
+border-radius: 10px;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;! Choose on Your Need !&lt;/p&gt;&lt;p&gt;Hospital   --   Real Doctor   --   Virtual Doctor&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>874</x>
+     <y>602</y>
+     <width>261</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_cancel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));
+
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_ok">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.629213 rgba(84, 154, 232, 255));
+
+border-radius: 7px;</string>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ChooseHospitals</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>841</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>867</x>
+     <y>602</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

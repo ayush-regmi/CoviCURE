@@ -9,59 +9,62 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Sources\login.cpp \
-    Sources\main.cpp \
-    Sources\mainwindow.cpp \
-    Sources\signup.cpp \
-    Sources\dashboard.cpp \
-    Sources\choosehospitals.cpp \
-    Sources\vaccine_login.cpp \
-    Sources\loginview.cpp \
-    Sources\signupvaccine.cpp \
-    Sources\rapidcovid.cpp \
-    Sources\hospitals.cpp \
+    Sources\Main\login.cpp \
+    Sources\Main\main.cpp \
+    Sources\Main\mainwindow.cpp \
+    Sources\Main\signup.cpp \
+    Sources\Main\dashboard.cpp \
+    Sources\Hospital\choosehospitals.cpp \
+    Sources\Vaccine\vaccine_login.cpp \
+    Sources\Vaccine\loginview.cpp \
+    Sources\Vaccine\signupvaccine.cpp \
+    Sources\Rapidcovid\rapidcovid.cpp \
+    Sources\Hospital\hospitals.cpp \
     Sources\database.cpp \
-    Sources/hosdash.cpp \
-    Sources\quepage1.cpp \
-    Sources\quepage2.cpp \
-    Sources\quepage3.cpp \
+    Sources\Rapidcovid\quepage1.cpp \
+    Sources\Rapidcovid\quepage2.cpp \
+    Sources\Rapidcovid\quepage3.cpp \
+    Sources\Hospital\hospdash.cpp \
+    Sources/Hospital/appointment.cpp
 
 
 
 HEADERS += \
-    Headers\login.h \
-    Headers\mainwindow.h \
-    Headers\signup.h \
-    Headers\dashboard.h \
-    Headers\choosehospitals.h \
-    Headers\vaccine_login.h \
-    Headers\loginview.h \
-    Headers\signupvaccine.h \
-    Headers\hospitals.h \
+    Headers\Main\login.h \
+    Headers\Main\mainwindow.h \
+    Headers\Main\signup.h \
+    Headers\Main\dashboard.h \
+    Headers\Hospital\choosehospitals.h \
+    Headers\Vaccine\vaccine_login.h \
+    Headers\Vaccine\loginview.h \
+    Headers\Vaccine\signupvaccine.h \
+    Headers\Hospital\hospitals.h \
     Headers\database.h \
-    Headers\rapidcovid.h \
-    Headers/hosdash.h \
-    Headers\quepage1.h \
-    Headers\quepage2.h \
-    Headers\quepage3.h \
+    Headers\Rapidcovid\rapidcovid.h \
+    Headers\Rapidcovid\quepage1.h \
+    Headers\Rapidcovid\quepage2.h \
+    Headers\Rapidcovid\quepage3.h \
+    Headers\Hospital\hospdash.h \
+    Headers\Hospital\appointment.h
 
 
 
 FORMS += \
-    Forms\login.ui \
-    Forms\mainwindow.ui \
-    Forms\signup.ui \
-    Forms\dashboard.ui \
-    Forms\choosehospitals.ui \
-    Forms\vaccine_login.ui \
-    Forms\loginview.ui \
-    Forms\signupvaccine.ui \
-    Forms\rapidcovid.ui \
-    Forms\hospitals.ui \
-    Forms/hosdash.ui \
-    Forms\quepage1.ui \
-    Forms\quepage2.ui \
-    Forms\quepage3.ui \
+    Forms\Main\login.ui \
+    Forms\Main\mainwindow.ui \
+    Forms\Main\signup.ui \
+    Forms\Main\dashboard.ui \
+    Forms\Hospital\choosehospitals.ui \
+    Forms\Vaccine\vaccine_login.ui \
+    Forms\Vaccine\loginview.ui \
+    Forms\Vaccine\signupvaccine.ui \
+    Forms\Rapidcovid\rapidcovid.ui \
+    Forms\Hospital\hospitals.ui \
+    Forms\Rapidcovid\quepage1.ui \
+    Forms\Rapidcovid\quepage2.ui \
+    Forms\Rapidcovid\quepage3.ui \
+    Forms\Hospital\hospdash.ui \
+    Forms\Hospital\appointment.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
