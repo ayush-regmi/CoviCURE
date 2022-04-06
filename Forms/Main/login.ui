@@ -20,14 +20,14 @@
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>80</y>
+     <y>60</y>
      <width>691</width>
      <height>561</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 244, 255), stop:1 rgba(255, 0, 106, 255));
-border-radius: 10px;</string>
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+border-radius: 20px;</string>
    </property>
    <property name="title">
     <string/>
@@ -97,10 +97,10 @@ color: rgb(255, 255, 255);
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
 
-border-radius: 6px;</string>
+border-radius: 10px;</string>
     </property>
     <property name="placeholderText">
-     <string>Your Email</string>
+     <string>  Email</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
@@ -162,13 +162,13 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
 
-border-radius: 6px;</string>
+border-radius: 10px;</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>
     </property>
     <property name="placeholderText">
-     <string>Password</string>
+     <string>  Password</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">

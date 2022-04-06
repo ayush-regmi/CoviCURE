@@ -14,371 +14,32 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/resources/img/doctor.png);</string>
+   <string notr="true">background-color: rgb(173, 181, 189);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>431</width>
-      <height>371</height>
+      <x>20</x>
+      <y>30</y>
+      <width>611</width>
+      <height>611</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(151, 64, 255, 255), stop:0.892045 rgba(69, 131, 255, 255));
-border-radius: 10px;</string>
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+border-radius: 15px;</string>
     </property>
     <property name="title">
      <string>GroupBox</string>
     </property>
-    <widget class="QWidget" name="gridLayoutWidget_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>80</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelGurdian">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Gurdian Name</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditGurdian">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>29</x>
-       <y>160</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_6">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelMobile">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Mobile No    </string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditMobile">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget_5">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>200</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_7">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelPhone">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Phone No    </string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditPhone">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget_6">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>240</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_8">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelAddress">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Address      </string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditAddress">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget_7">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>280</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_9">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelState">
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>State           </string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditState">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget_8">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>320</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_10">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelNation">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Nation        </string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="wordWrap">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditNation">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 8px;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>120</y>
-       <width>371</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <layout class="QGridLayout" name="gridLayout_5">
-      <item row="0" column="0">
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QLabel" name="labelSex">
-          <property name="layoutDirection">
-           <enum>Qt::LeftToRight</enum>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
-          </property>
-          <property name="text">
-           <string>Sex</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="wordWrap">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QFontComboBox" name="comboSex">
-          <property name="styleSheet">
-           <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);
-border-radius: 6px;</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item row="0" column="1">
-       <layout class="QGridLayout" name="gridLayout_4">
-        <item row="0" column="0">
-         <widget class="QLabel" name="labelDob">
-          <property name="styleSheet">
-           <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-          </property>
-          <property name="text">
-           <string>DOB</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QDateEdit" name="dateEditDob">
-          <property name="styleSheet">
-           <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);
-</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
     <widget class="QFontComboBox" name="Mr_Mrs">
      <property name="geometry">
       <rect>
-       <x>68</x>
-       <y>41</y>
-       <width>41</width>
-       <height>21</height>
+       <x>110</x>
+       <y>40</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -388,9 +49,8 @@ color: rgb(255, 255, 255);
       </sizepolicy>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);
-border-radius: 7px;</string>
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="currentText">
       <string>Mr</string>
@@ -399,10 +59,10 @@ border-radius: 7px;</string>
     <widget class="QLineEdit" name="lineEditName">
      <property name="geometry">
       <rect>
-       <x>116</x>
-       <y>41</y>
-       <width>281</width>
-       <height>20</height>
+       <x>186</x>
+       <y>40</y>
+       <width>401</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -420,9 +80,9 @@ border-radius: 8px;</string>
      <property name="geometry">
       <rect>
        <x>31</x>
-       <y>41</y>
-       <width>33</width>
-       <height>21</height>
+       <y>40</y>
+       <width>71</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -435,8 +95,8 @@ border-radius: 8px;</string>
       <enum>Qt::LeftToRight</enum>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Calibri&quot;;</string>
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Name </string>
@@ -451,177 +111,678 @@ font: 700 12pt &quot;Calibri&quot;;</string>
       <cstring>lineEditName</cstring>
      </property>
     </widget>
+    <widget class="QLineEdit" name="lineEditGurdian">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>110</y>
+       <width>411</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelGurdian">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>111</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Gurdian Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSex">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Sex</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QFontComboBox" name="comboSex">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>181</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMobile">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Mobile No    </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditMobile">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>250</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPhone">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>321</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPhone">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>320</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Phone No    </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditAddress">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>390</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAddress">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>390</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Address      </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelState">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>461</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>State           </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditState">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>460</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelNation">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>531</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Nation        </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditNation">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>530</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEditDob">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>180</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelDob">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>182</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DOB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>40</y>
-      <width>381</width>
-      <height>301</height>
+      <x>680</x>
+      <y>30</y>
+      <width>581</width>
+      <height>611</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0852273 rgba(69, 131, 255, 255), stop:0.880682 rgba(151, 64, 255, 255));
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
 border-radius: 10px;</string>
     </property>
     <property name="title">
      <string>GroupBox</string>
     </property>
-    <widget class="QWidget" name="gridLayoutWidget_9">
+    <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>10</x>
+       <y>390</y>
+       <width>561</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+border-radius: 10px;
+font: 13pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Terms &amp;amp; Conditions&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Please arrive 15 miutes before the appointment time to complete biling and other formalities.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Waitlisted appointements are subject to cancellations of booked appointments.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>540</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>I Accept</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonBook">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>530</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Book</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonBack">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>530</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAppointDate">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>250</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 400 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Appointment Date</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>250</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelHospital">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
        <y>40</y>
-       <width>321</width>
-       <height>29</height>
+       <width>271</width>
+       <height>41</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_11">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelHospital">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Select Hospital</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QFontComboBox" name="fontComboBox_2">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 400 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Select Hospital</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="QWidget" name="gridLayoutWidget_10">
+    <widget class="QFontComboBox" name="fontComboBox_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>90</y>
-       <width>321</width>
-       <height>29</height>
+       <x>340</x>
+       <y>41</y>
+       <width>211</width>
+       <height>41</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_12">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelSpeciality">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Speciality</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QFontComboBox" name="fontComboBox_3">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </property>
     </widget>
-    <widget class="QWidget" name="gridLayoutWidget_15">
+    <widget class="QLabel" name="labelDoctor">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>190</y>
-       <width>321</width>
-       <height>29</height>
+       <x>31</x>
+       <y>180</y>
+       <width>271</width>
+       <height>41</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_17">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelAppointDate">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Appointment Date</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QDateEdit" name="dateEdit_2">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 400 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Doctor</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
-    <widget class="QWidget" name="gridLayoutWidget_16">
+    <widget class="QFontComboBox" name="fontComboBox_4">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>140</y>
-       <width>321</width>
-       <height>29</height>
+       <x>340</x>
+       <y>180</y>
+       <width>211</width>
+       <height>41</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_18">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelDoctor">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Doctor</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QFontComboBox" name="fontComboBox_4">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </property>
     </widget>
-    <widget class="QWidget" name="gridLayoutWidget_17">
+    <widget class="QFontComboBox" name="fontComboBox_3">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>240</y>
-       <width>321</width>
-       <height>29</height>
+       <x>340</x>
+       <y>110</y>
+       <width>211</width>
+       <height>41</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout_19">
-      <item row="0" column="0">
-       <widget class="QLabel" name="labelAppointTime">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Appointment Time</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QTimeEdit" name="timeEdit">
-        <property name="styleSheet">
-         <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelSpeciality">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>110</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 400 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Speciality</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelAppointTime">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>320</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 400 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Appointment Time</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="timeEdit">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>320</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     </property>
     </widget>
    </widget>
   </widget>

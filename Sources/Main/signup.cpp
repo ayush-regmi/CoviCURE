@@ -4,7 +4,7 @@
 QString csssign="QPushButton {"
                 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
                 "color: rgb(255, 255, 255);"
-                "border-radius: 10px;"
+                "border-radius: 20px;"
                 "font: 22pt;"
                 "width: 100px;"
                 "font-style: \"Cooper Black\";"
@@ -40,12 +40,12 @@ void Signup::on_pushButton_signup_clicked() {
      }
      else {
           qDebug()<<" Successful connection."<<"Connected to mysql.";
-          QString firstname= ui->Fname->text();
-          QString lastname= ui->Sname->text();
-          QString email= ui->Email->text();
-          QString phonenumber= ui->Phone->text();
-          QString password= ui->Password->text();
-          QString repassword= ui->RePassword->text();
+          QString firstname= ui->Fname_2->text();
+          QString lastname= ui->Sname_2->text();
+          QString email= ui->Email_2->text();
+          QString phonenumber= ui->Phone_2->text();
+          QString password= ui->Password_2->text();
+          QString repassword= ui->RePassword_2->text();
           if(password != repassword){
               QMessageBox:: information(this, "Not matched", "Password doesn't match");
               return ;

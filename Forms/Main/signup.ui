@@ -20,24 +20,24 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>90</y>
+     <y>20</y>
      <width>841</width>
-     <height>541</height>
+     <height>631</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
-border-radius: 10px;</string>
+border-radius: 20px;</string>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="Signup_2">
     <property name="geometry">
      <rect>
       <x>50</x>
       <y>20</y>
-      <width>671</width>
+      <width>751</width>
       <height>71</height>
      </rect>
     </property>
@@ -71,8 +71,8 @@ color: rgb(255, 255, 255);
    <widget class="QPushButton" name="pushButton_signup">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>460</y>
+      <x>570</x>
+      <y>560</y>
       <width>241</width>
       <height>51</height>
      </rect>
@@ -102,9 +102,9 @@ font: 14pt &quot;Arial Rounded MT Bold&quot;;</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>250</y>
+      <y>280</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -129,9 +129,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>150</y>
+      <y>140</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -152,13 +152,13 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_password_4">
+   <widget class="QLineEdit" name="Phone_2">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>300</y>
-      <width>511</width>
-      <height>31</height>
+      <y>350</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -177,19 +177,19 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="placeholderText">
-     <string>Your Phone number</string>
+     <string>  Phone number</string>
     </property>
    </widget>
    <widget class="QLabel" name="Password">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>350</y>
+      <y>420</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -214,9 +214,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>400</y>
+      <y>490</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -241,9 +241,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>300</y>
+      <y>350</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -264,16 +264,16 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_email">
+   <widget class="QLineEdit" name="Fname_2">
     <property name="enabled">
      <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>150</y>
-      <width>511</width>
-      <height>31</height>
+      <y>140</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -292,19 +292,19 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="placeholderText">
-     <string>Your Name</string>
+     <string>  Name</string>
     </property>
    </widget>
    <widget class="QLabel" name="Sname">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>200</y>
+      <y>210</y>
       <width>171</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -325,13 +325,13 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_password">
+   <widget class="QLineEdit" name="Sname_2">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>200</y>
-      <width>511</width>
-      <height>31</height>
+      <y>210</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -350,19 +350,19 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="placeholderText">
-     <string>Your Surname</string>
+     <string>  Surname</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_password_2">
+   <widget class="QLineEdit" name="Email_2">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>250</y>
-      <width>511</width>
-      <height>31</height>
+      <y>280</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -381,19 +381,19 @@ border-radius:5px;</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="placeholderText">
-     <string>Your Email</string>
+     <string>  Email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_password_5">
+   <widget class="QLineEdit" name="RePassword_2">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>400</y>
-      <width>511</width>
-      <height>31</height>
+      <y>490</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -412,22 +412,22 @@ border-radius:5px;</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>
     </property>
     <property name="placeholderText">
-     <string>confirm password</string>
+     <string>  Confirm Password</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_password_3">
+   <widget class="QLineEdit" name="Password_2">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>350</y>
-      <width>511</width>
-      <height>31</height>
+      <y>420</y>
+      <width>531</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -446,13 +446,13 @@ border-radius:5px;</string>
     <property name="styleSheet">
      <string notr="true">background-color: #fff;
 font: 16pt &quot;Segoe UI&quot;;
-border-radius:5px;</string>
+border-radius:10px;</string>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>
     </property>
     <property name="placeholderText">
-     <string>new password</string>
+     <string>  New Password</string>
     </property>
    </widget>
   </widget>
