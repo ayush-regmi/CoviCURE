@@ -8,6 +8,7 @@
 #include "Headers/Hospital/choosehospitals.h"
 #include "Headers/Vaccine/vaccine_login.h"
 #include "Headers/Rapidcovid/rapidcovid.h"
+#include "Headers/Live/livedash.h"
 
 
 
@@ -30,12 +31,14 @@ private slots:
 
     void on_pushButton_Rapidcovid_clicked();
 
+    void on_pushButton_Livestatus_clicked();
+
 protected:
     Ui::Dashboard *ui;
     ChooseHospitals *choosehospitals;
     Vaccine_Login *vaccine_login;
     Rapidcovid *rapidcovid;
-
+    Livedash *livedash;
 
 };
 #endif // DASHBOARD_H

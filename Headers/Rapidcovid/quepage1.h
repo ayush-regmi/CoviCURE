@@ -18,6 +18,7 @@ public:
 private slots:
     void on_next_quepage1_clicked();
 
+
 private:
     Ui::Quepage1 *ui;
     Quepage2 *quepage2;

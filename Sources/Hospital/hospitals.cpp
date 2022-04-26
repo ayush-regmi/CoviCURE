@@ -3,19 +3,33 @@
 
 #include "ui_hospitals.h"
 
-//void connectDB(QString);
-//Database connectHospital;
+void connectDB(QString);
+Database connectHospital;
 
 QString csshospitals="QPushButton {"
-                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0909091 rgba(0, 202, 255, 255), stop:0.863636 rgba(255, 0, 85, 255));"
-                "color: rgb(255, 255, 255);"
-                "border-radius: 20px;"
-                "font: 18pt;"
-                "font-style: \"Cooper Black\";"
-             "}"
-                "QPushButton:hover {"
-                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
-             "}";
+                     "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
+                     "color: rgb(255, 255, 255);"
+                     "border-radius: 20px;"
+                     "font: 17pt;"
+                     "width: 100px;"
+                     "font-style: \"Cooper Black\";"
+                  "}"
+                     "QPushButton:hover {"
+                     "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+                  "}";
+
+QString hospback ="QPushButton {"
+                    "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+
+                    "color: rgb(255, 255, 255);"
+                    "border-radius: 20px;"
+                    "font: 25pt;"
+                    "width: 100px;"
+                    "font-style: \"Cooper Black\";"
+                 "}"
+                    "QPushButton:hover {"
+                      "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));"
+                 "}";
 
 Hospitals::Hospitals(QWidget *parent) : QMainWindow(parent),ui(new Ui::Hospitals) {
     ui->setupUi(this);
@@ -30,50 +44,48 @@ Hospitals::Hospitals(QWidget *parent) : QMainWindow(parent),ui(new Ui::Hospitals
     ui->hos7->setStyleSheet(csshospitals);
     ui->hos8->setStyleSheet(csshospitals);
     ui->hos9->setStyleSheet(csshospitals);
-//    connectHospital.connectDB("hospital");
-//    if(connectHospital.connectionDB()){
-//       QSqlQuery query("SELECT address FROM hospitals");
-//             while (query.first()) {
-//                 QString name = query.value(0).toString();
-//                 ui->hos1->setText(name);
-//             }
-//    }
-//   else {
-//        qDebug()<<" Can't connect "<<"connect to mysql error"<<connectHospital.getDB().lastError().text();
-//    }
+
+    connectHospital.connectDB("hospital");
+    if(connectHospital.connectionDB()) {
+        qDebug()<<" yessss";
+    }
+    else {
+        qDebug()<<" Cannot!!!!!!!";
+    }
+    QString name[9];
+    QSqlQuery run;
+    if(run.exec("SELECT name FROM hospitals")) {
+            for(int i = 0; i < 8; i++) {
+                run.next();
+                name[i] = run.value(0).toString();
+            }
+            ui->hos1->setText((name[0]));
+            ui->hos2->setText((name[1]));
+            ui->hos3->setText((name[3]));
+            ui->hos4->setText((name[4]));
+            ui->hos5->setText((name[5]));
+            ui->hos7->setText((name[6]));
+            ui->hos8->setText((name[7]));
+            ui->hos9->setText((name[8]));
+     }
+
+    else {
+        qDebug()<<"Cannot ####";
+    }
 }
 
-Hospitals::~Hospitals()
-{
+Hospitals::~Hospitals() {
     delete ui;
-   // connectHospital.getDB().close();
+    connectHospital.getDB().close();
 }
 
+void Hospitals::on_back_clicked() {
+    this->close();
+}
 
-//void Hospitals::on_hos1_clicked()
-//{
-//    connectHospital.connectDB("hospital");
-//    QString name;
-//        QSqlQuery run;
-//        //run.prepare("SELECT * FROM hospitals WHERE name='"+name+"'");
-//        if(run.exec("SELECT * FROM hospitals WHERE name='"+name+"'"))
-//        {
-//            int count=0;
-//            while(run.next())
-//            {
-//                name=run.value(1).toString();
-
-//                ui->hos1->setText(name);
-//               // ui->hos1->setPlaceholderText(name);
-//               // ui->lineEdit_Client_ID->setPlaceholderText(client_ID);
-//               // ui->lineEdit_Client_Email->setPlaceholderText(email);
-//               // ui->lineEdit_Client_PhoneNo->setPlaceholderText(phone);
-//                count++;
-//            }
-//            if(count==1)
-//            {
-//                connectHospital.getDB().close();
-//            }
-//    }
-//}
+void Hospitals::on_hos1_clicked() {
+    myhospital = new Myhospital();
+    myhospital -> show();
+    this->close();
+}
 

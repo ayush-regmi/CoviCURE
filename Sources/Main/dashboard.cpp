@@ -39,7 +39,6 @@ void Dashboard::on_pushButton_Hospital_clicked()
 {
     choosehospitals = new ChooseHospitals();
     choosehospitals->show();
-    this->hide();
 }
 
 
@@ -47,13 +46,17 @@ void Dashboard::on_pushButton_vaccine_clicked()
 {
    vaccine_login = new Vaccine_Login(this);
    vaccine_login->show();
-   this->hide();
 }
 
 void Dashboard::on_pushButton_Rapidcovid_clicked()
 {
     rapidcovid = new Rapidcovid();
     rapidcovid->show();
-    this->hide();
+}
+
+void Dashboard::on_pushButton_Livestatus_clicked()
+{
+    livedash = new Livedash();
+    livedash->show();
 }
 
