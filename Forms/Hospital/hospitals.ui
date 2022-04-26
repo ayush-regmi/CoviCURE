@@ -17,10 +17,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>40</y>
-      <width>1101</width>
-      <height>611</height>
+      <x>20</x>
+      <y>10</y>
+      <width>1151</width>
+      <height>641</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -31,9 +31,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>160</y>
+       <y>150</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -50,9 +50,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>160</y>
+       <y>150</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -69,9 +69,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>750</x>
-       <y>160</y>
+       <y>150</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -88,9 +88,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>760</x>
-       <y>460</y>
+       <y>430</y>
        <width>311</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -107,9 +107,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>310</y>
+       <y>290</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -126,9 +126,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>750</x>
-       <y>310</y>
+       <y>290</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -145,9 +145,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>310</y>
+       <y>290</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -164,9 +164,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>460</y>
+       <y>430</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -183,9 +183,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>390</x>
-       <y>460</y>
+       <y>430</y>
        <width>321</width>
-       <height>121</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -204,7 +204,7 @@ border-radius: 20px;</string>
        <x>30</x>
        <y>30</y>
        <width>1041</width>
-       <height>101</height>
+       <height>91</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -216,6 +216,19 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>570</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
      </property>
     </widget>
    </widget>

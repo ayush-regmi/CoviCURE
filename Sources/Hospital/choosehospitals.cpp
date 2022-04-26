@@ -39,15 +39,6 @@ ChooseHospitals::ChooseHospitals(QWidget *parent) :
 
     ui->pushButton_ok->setStyleSheet(csschoose);
     ui->pushButton_cancel->setStyleSheet(chooseexit);
-   // QPixmap pixSafe(":/resources/img/safe.png");
-   // int wSafe = ui->label_safe->width();
-   // int hSafe = ui->label_safe->height();
-    //ui -> label_safe -> setPixmap(pixSafe.scaled(300, 200, Qt::KeepAspectRatio));
-
-   // QPixmap pixDoctor(":/resources/img/doctor.png");
-   // int wDoctor = ui->label_doctor->width();
-   // int hDoctor = ui->label_doctor->height();
-   // ui -> label_doctor -> setPixmap(pixDoctor.scaled(300, 350, Qt::KeepAspectRatio));
 }
 
 ChooseHospitals::~ChooseHospitals()

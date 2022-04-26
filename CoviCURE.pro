@@ -25,7 +25,9 @@ SOURCES += \
     Sources\Rapidcovid\quepage2.cpp \
     Sources\Rapidcovid\quepage3.cpp \
     Sources\Hospital\hospdash.cpp \
-    Sources/Hospital/appointment.cpp
+    Sources/Hospital/appointment.cpp \
+    Sources/Live/livedash.cpp \
+    Sources/Hospital/myhospital.cpp
 
 
 
@@ -45,7 +47,9 @@ HEADERS += \
     Headers\Rapidcovid\quepage2.h \
     Headers\Rapidcovid\quepage3.h \
     Headers\Hospital\hospdash.h \
-    Headers\Hospital\appointment.h
+    Headers\Hospital\appointment.h \
+    Headers\Live\livedash.h \
+    Headers/Hospital/myhospital.h
 
 
 
@@ -64,7 +68,9 @@ FORMS += \
     Forms\Rapidcovid\quepage2.ui \
     Forms\Rapidcovid\quepage3.ui \
     Forms\Hospital\hospdash.ui \
-    Forms\Hospital\appointment.ui
+    Forms\Hospital\appointment.ui \
+    Forms\Live\livedash.ui \
+    Forms/Hospital/myhospital.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -8,6 +8,7 @@
 #include <QString>
 #include <QDebug>
 #include "Headers/database.h"
+#include "Headers/Hospital/myhospital.h"
 
 namespace Ui {
 class Hospitals;
@@ -24,8 +25,14 @@ public:
 //private slots:
     //void on_hos1_clicked();
 
+private slots:
+    void on_back_clicked();
+
+    void on_hos1_clicked();
+
 private:
     Ui::Hospitals *ui;
+    Myhospital *myhospital;
 };
 
 #endif // HOSPITALS_H
