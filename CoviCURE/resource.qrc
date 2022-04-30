@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/dashboard.png</file>
+        <file>img/mask.png</file>
+        <file>img/CoviCUREpng.png</file>
+        <file>img/Untitled drawing.png</file>
+        <file>img/CoviCURE.png</file>
+        <file>img/final.png</file>
+        <file>img/email.png</file>
+        <file>img/web.png</file>
+        <file>img/facebook.png</file>
+        <file>img/instagram.png</file>
+        <file>img/vaccine.png</file>
+        <file>img/telephone-call.png</file>
+        <file>img/ambulance.png</file>
+        <file>img/cardiology.png</file>
+        <file>img/noAmbulance.png</file>
+        <file>img/noMri.png</file>
+        <file>img/noVaccine.png</file>
+        <file>img/print.png</file>
+        <file>img/address.png</file>
+    </qresource>
+</RCC>
