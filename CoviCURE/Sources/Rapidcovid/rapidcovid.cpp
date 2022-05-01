@@ -54,10 +54,6 @@ void Rapidcovid::on_pushButton_rct_clicked()
 void Rapidcovid::on_pushButton_dashboard_clicked()
 {
     hide();
-    this->hide();
-    // Show the MainWindow (i.e. the parent window)
-    QWidget *parent = this->parentWidget();
-    parent->show();
 }
 
 //void on_pushButton_loginQuit_clicked() {

@@ -38,7 +38,7 @@ Dashboard::~Dashboard()
 void Dashboard::on_pushButton_Hospital_clicked()
 {
     choosehospitals = new ChooseHospitals();
-    choosehospitals->show();
+    choosehospitals->open();
 }
 
 
