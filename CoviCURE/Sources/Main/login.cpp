@@ -49,7 +49,7 @@ void Login::on_pushButton_login_clicked() {
                     qDebug()<<"Login Successful !!!";
                     this->hide();
                     dashboard = new Dashboard(this);
-                    dashboard -> show();
+                    dashboard->showMaximized();
                 }
                 else {
                      QMessageBox::warning(this,"Login", "Username or password is not correct");

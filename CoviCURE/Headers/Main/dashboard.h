@@ -39,6 +39,5 @@ protected:
     Vaccine_Login *vaccine_login;
     Rapidcovid *rapidcovid;
     Livedash *livedash;
-
 };
 #endif // DASHBOARD_H

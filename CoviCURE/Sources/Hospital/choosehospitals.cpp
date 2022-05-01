@@ -50,16 +50,12 @@ void ChooseHospitals::on_pushButton_ok_clicked()
 {
     hospdash = new HospDash();
     hospdash -> show();
-    this->hide();
+    hide();
 }
 
 void ChooseHospitals::on_pushButton_cancel_clicked() {
     // Hide the HelpWindow itself
         // or this->close()
-        this->hide();
-
-        // Show the MainWindow (i.e. the parent window)
-        QWidget *parent = this->parentWidget();
-        parent->show();
+        hide();
 }
 

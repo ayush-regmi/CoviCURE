@@ -129,7 +129,7 @@ void Appointment::on_pushButton_Book_clicked()
         else {
             qDebug()<< "Successful connection." << "connected to mysql.";
             QString name = ui -> lineEditName -> text();
-            QString gurdian = ui -> lineEditGurdian -> text();
+            QString guardian = ui -> lineEditGurdian -> text();
             QString mobile = ui -> lineEditMobile -> text();
             QString phone = ui -> lineEditPhone -> text();
             QString address = ui -> lineEditAddress -> text();
@@ -140,14 +140,14 @@ void Appointment::on_pushButton_Book_clicked()
             QString sex = ui -> combo_Sex->currentText();
             QString doctor = ui->combo_Doctor->currentText();
             QString hospital = ui->combo_Hospital->currentText();
-            QString date = ui->dateEdit_Appointment->text();
-            QString time = ui->timeEdit_Appointment->text();
+            QString date = ui->dateEdit_2->text();
+            QString time = ui->timeEdit->text();
 
             QSqlQuery qry;
-            qry.prepare("INSERT INTO appointments(name, gurdian, mobile, phone, adderss, state, nation, dob, gender, sex, doctor, hospital, date, time)"
-                        "VALUES (:name, :gurdainName, :mobile, :phone, :adderss, :state, :nation, :dob, :gender, :sex, :doctor, :hospital, :date, :time");
+            qry.prepare("INSERT INTO appointments(name, guardian, mobile, phone, address, state, nation, dob, gender, sex, doctor, hospital, date, time)"
+                        "VALUES (:name, :guardian, :mobile, :phone, :address, :state, :nation, :dob, :gender, :sex, :doctor, :hospital, :date, :time)");
             qry.bindValue(":name", name);
-            qry.bindValue(":guardianName", gurdian);
+            qry.bindValue(":guardian", guardian);
             qry.bindValue(":mobile", mobile);
             qry.bindValue(":phone", phone);
             qry.bindValue(":address", address);
