@@ -7,6 +7,7 @@
 
 namespace Ui {
 class Rapidcovid;
+
 }
 
 class Rapidcovid : public QMainWindow
