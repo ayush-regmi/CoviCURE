@@ -1,6 +1,30 @@
 #include "admin.h"
 #include "ui_admin.h"
-#include<QMessageBox>
+
+
+QString greenAdmin="QPushButton {"
+                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 106, 255, 255), stop:1 rgba(0, 255, 138, 255));"
+                "color: rgb(255, 255, 255);"
+                "border-radius: 20px;"
+                "font: 16pt;"
+                "width: 100px;"
+                "font-style: \"Cooper Black\";"
+             "}"
+                "QPushButton:hover {"
+                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+             "}";
+
+QString redAdmin ="QPushButton {"
+                    "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+                    "color: rgb(255, 255, 255);"
+                    "border-radius: 20px;"
+                    "font: 16pt;"
+                    "width: 100px;"
+                    "font-style: \"Cooper Black\";"
+                 "}"
+                    "QPushButton:hover {"
+                      "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));"
+                 "}";
 
 Admin::Admin(QWidget *parent) :
     QMainWindow(parent),
@@ -9,6 +33,9 @@ Admin::Admin(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowState(Qt::WindowMaximized);
     this-> showMaximized();
+
+    ui->pushButton_add->setStyleSheet(greenAdmin);
+    ui->pushButton_back->setStyleSheet(redAdmin);
 }
 
 Admin::~Admin()
@@ -21,6 +48,9 @@ void Admin::on_pushButton_back_clicked()
     this->close();
 }
 
+quint32 v = QRandomGenerator::global()->bounded(999999);
+QString License = QString::number(v);
+
 Database addhos;
 void Admin::on_pushButton_add_clicked()
 {
@@ -32,7 +62,6 @@ void Admin::on_pushButton_add_clicked()
         }
         else {
              qDebug()<<" Successful connection."<<"Connected to mysql.";
-             QString Licence= ui->licence->text();
              QString name= ui->name->text();
              QString address= ui->address->text();
              QString email= ui->email->text();
@@ -54,8 +83,8 @@ void Admin::on_pushButton_add_clicked()
 
              QSqlQuery qry;
 
-                qry.prepare("INSERT INTO hospitals (name, address, email, mobile, phone, fax, registrationOpenTime, registrationClosetime, hospOpenTime, hospCloseTime, numOfBeds, numOfOxygenCylinders, numOfVentilater, numOfICU, ambulance, vaccination, MRI, website, licence)"
-                            "VALUES (:name, :address, :email, :mobile, :phone, :fax, :ROpen, :RClose, :HOpen, :HClose, :Beds, :Oxygen, :Ventilaters, :ICU, :Ambulance, :Vacc, :MRI, :website, :licence) ");
+                qry.prepare("INSERT INTO hospitals (name, address, email, mobile, phone, fax, registrationOpenTime, registrationClosetime, hospOpenTime, hospCloseTime, numOfBeds, numOfOxygenCylinders, numOfVentilater, numOfICU, ambulance, vaccination, MRI, website, license)"
+                            "VALUES (:name, :address, :email, :mobile, :phone, :fax, :ROpen, :RClose, :HOpen, :HClose, :Beds, :Oxygen, :Ventilaters, :ICU, :Ambulance, :Vacc, :MRI, :website, :license) ");
                 qry.bindValue(":name", name);
                 qry.bindValue(":address",address);
                 qry.bindValue(":email",email);
@@ -74,7 +103,7 @@ void Admin::on_pushButton_add_clicked()
                 qry.bindValue(":Vacc",vacc);
                 qry.bindValue(":MRI",mri);
                 qry.bindValue(":website",website);
-                qry.bindValue(":licence",Licence);
+                qry.bindValue(":license",License);
 
 
              if(qry.exec()){

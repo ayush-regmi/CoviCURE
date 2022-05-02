@@ -10,6 +10,7 @@
 #include <QObject>
 #include "patients.h"
 
+
 namespace Ui {
 class Hospital;
 }
