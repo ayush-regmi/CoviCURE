@@ -140,8 +140,8 @@ void Appointment::on_pushButton_Book_clicked()
             QString sex = ui -> combo_Sex->currentText();
             QString doctor = ui->combo_Doctor->currentText();
             QString hospital = ui->combo_Hospital->currentText();
-            QString date = ui->dateEdit_2->text();
-            QString time = ui->timeEdit->text();
+            QString date = ui->dateEdit_Appointment->text();
+            QString time = ui->timeEdit_Appointment->text();
 
             QSqlQuery qry;
             qry.prepare("INSERT INTO appointments(name, guardian, mobile, phone, address, state, nation, dob, gender, sex, doctor, hospital, date, time)"
