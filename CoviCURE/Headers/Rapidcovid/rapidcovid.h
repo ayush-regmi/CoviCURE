@@ -7,7 +7,6 @@
 
 namespace Ui {
 class Rapidcovid;
-
 }
 
 class Rapidcovid : public QMainWindow
@@ -17,6 +16,9 @@ class Rapidcovid : public QMainWindow
 public:
     explicit Rapidcovid(QWidget *parent = nullptr);
     ~Rapidcovid();
+
+//private slots:
+    //void on_pushButton_Rapidcovid_clicked();
 
 private slots:
     void on_pushButton_rct_clicked();
