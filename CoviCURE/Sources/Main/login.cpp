@@ -31,6 +31,7 @@ void Login::on_pushButton_login_clicked() {
     QString password=ui->lineEdit_password->text();
     connectUser.connectDB("user");
 
+
     if (connectUser.connectionDB()){
         qDebug()<<" sql connection successful ";
         QSqlQuery query(QSqlDatabase::database("user"));
@@ -49,47 +50,64 @@ void Login::on_pushButton_login_clicked() {
                     qDebug()<<"Login Successful !!!";
                     this->hide();
                     dashboard = new Dashboard(this);
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  dashboard -> show();
-//void Login::on_pushButton_login_clicked() {
-//    QString email=ui->lineEdit_email->text();
-//    QString password=ui->lineEdit_password->text();
-//    connectUser.connectDB("user");
 
-//    if (connectUser.connectionDB()){
-//        qDebug()<<" sql connection successful ";
-//        QSqlQuery query(QSqlDatabase::database("user"));
-//        query.prepare(QString("SELECT * FROM users_registration_table WHERE Email=:Email AND Password= :Password"));
-//        query.bindValue(":Email", email);
-//        query.bindValue(":Password", password);
-//        if(!query.exec()){
-//            qDebug()<<" Can't connect###"<<"connect to mysql error"<<connectUser.getDB().lastError().text();
-//        }
-//        else{
-//            qDebug()<<" Successful connection "<<"connect to mysql OK";
-//            while(query.next()){
-//                QString emaildb=query.value(3).toString();
-//                QString passworddb=query.value(5).toString();
-//                if(emaildb==email && passworddb==password){
-//                    qDebug()<<"Login Successful !!!";
-//                    this->hide();
-//                    dashboard = new Dashboard(this);
-//                    dashboard -> show();
-//                }
-//                else {
-//                     QMessageBox::warning(this,"Login", "Username or password is not correct");
-//                     qDebug()<<"User name or password is incorrect !!!";
-//                }
-//            }
-//        }
-//    }
-//     else {
-//        qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
-//     }
-=======
-=======
->>>>>>> 261ae7bc67ec3518aece23c3f7a9a663011109ce
+                  dashboard -> show();
+void Login::on_pushButton_login_clicked() {
+   QString email=ui->lineEdit_email->text();
+   QString password=ui->lineEdit_password->text();
+   connectUser.connectDB("user");
+
+   if (connectUser.connectionDB()){
+       qDebug()<<" sql connection successful ";
+       QSqlQuery query(QSqlDatabase::database("user"));
+       query.prepare(QString("SELECT * FROM users_registration_table WHERE Email=:Email AND Password= :Password"));
+       query.bindValue(":Email", email);
+       query.bindValue(":Password", password);
+       if(!query.exec()){
+           qDebug()<<" Can't connect###"<<"connect to mysql error"<<connectUser.getDB().lastError().text();
+       }
+       else{
+           qDebug()<<" Successful connection "<<"connect to mysql OK";
+           while(query.next()){
+               QString emaildb=query.value(3).toString();
+               QString passworddb=query.value(5).toString();
+               if(emaildb==email && passworddb==password){
+                   qDebug()<<"Login Successful !!!";
+                   this->hide();
+                   dashboard = new Dashboard(this);
+                   dashboard -> show();
+               }
+               else {
+                    QMessageBox::warning(this,"Login", "Username or password is not correct");
+                    qDebug()<<"User name or password is incorrect !!!";
+               }
+           }
+       }
+   }
+    else {
+       qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
+    }
+
+
+    if (connectUser.connectionDB()){
+        qDebug()<<" sql connection successful ";
+        QSqlQuery query(QSqlDatabase::database("user"));
+        query.prepare(QString("SELECT * FROM users_registration_table WHERE Email=:Email AND Password= :Password"));
+        query.bindValue(":Email", email);
+        query.bindValue(":Password", password);
+        if(!query.exec()){
+            qDebug()<<" Can't connect###"<<"connect to mysql error"<<connectUser.getDB().lastError().text();
+        }
+        else{
+            qDebug()<<" Successful connection "<<"connect to mysql OK";
+            while(query.next()){
+                QString emaildb=query.value(3).toString();
+                QString passworddb=query.value(5).toString();
+                if(emaildb==email && passworddb==password){
+                    qDebug()<<"Login Successful !!!";
+                    this->hide();
+                    dashboard = new Dashboard(this);
+
                     dashboard->showMaximized();
                 }
                 else {
@@ -102,10 +120,7 @@ void Login::on_pushButton_login_clicked() {
      else {
         qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
      }
-<<<<<<< HEAD
->>>>>>> 5f86903dfd0ddbf30cee88cd050af3fd331bae98
-=======
->>>>>>> 261ae7bc67ec3518aece23c3f7a9a663011109ce
+
 }
 
 Login::~Login()
