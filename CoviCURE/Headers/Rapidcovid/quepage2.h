@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "Headers/Rapidcovid/quepage3.h"
+
 namespace Ui {
 class Quepage2;
 }
@@ -14,9 +15,22 @@ class Quepage2 : public QDialog
 public:
     explicit Quepage2(QWidget *parent = nullptr);
     ~Quepage2();
+    //double count2;
 
 private slots:
-    void on_next_quepage2_clicked();
+   void on_next_quepage2_clicked();
+
+    void on_que4_opt1_clicked();
+
+    void on_que4_opt2_clicked();
+
+    void on_que5_opt1_clicked();
+
+    void on_que5_opt2_clicked();
+
+    void on_que6_opt1_clicked();
+
+    void on_que6_opt2_clicked();
 
 private:
     Ui::Quepage2 *ui;

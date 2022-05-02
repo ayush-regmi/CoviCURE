@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Quepage3</class>
- <widget class="QDialog" name="Quepage3">
+ <class>Quepage4</class>
+ <widget class="QDialog" name="Quepage4">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,13 +13,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
-  <widget class="QGroupBox" name="groupbox_quepage3">
+  <widget class="QGroupBox" name="groupbox_quepage4">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>50</x>
      <y>30</y>
      <width>1161</width>
      <height>661</height>
@@ -35,7 +32,7 @@ border-radius: 20px;</string>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
-   <widget class="QLabel" name="que7">
+   <widget class="QLabel" name="que8_continnue">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -66,13 +63,13 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Choose if you have the following underlying Health Conditions:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Continue.........&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt1">
+   <widget class="QPushButton" name="que8_opt9">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -94,10 +91,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Blood Pressure</string>
+     <string>Muscle Pain</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt2">
+   <widget class="QPushButton" name="que8_opt10">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -119,10 +116,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Diabetes</string>
+     <string>Diarrhea</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt3">
+   <widget class="QPushButton" name="que8_opt11">
     <property name="geometry">
      <rect>
       <x>580</x>
@@ -144,10 +141,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>HIV</string>
+     <string>Loss of Smell</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt4">
+   <widget class="QPushButton" name="que8_opt12">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -169,10 +166,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Tuberclosis</string>
+     <string>Loss of Taste</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt5">
+   <widget class="QPushButton" name="que8_opt13">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -194,10 +191,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Obesity</string>
+     <string>Red Eyes</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt6">
+   <widget class="QPushButton" name="que8_opt14">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -219,10 +216,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Cancer</string>
+     <string>Irritated Eyes</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt7">
+   <widget class="QPushButton" name="que8_opt15">
     <property name="geometry">
      <rect>
       <x>580</x>
@@ -244,10 +241,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Stroke</string>
+     <string>Rash on Skin</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que7_opt8">
+   <widget class="QPushButton" name="que8_opt16">
     <property name="geometry">
      <rect>
       <x>870</x>
@@ -269,51 +266,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Lungs infection</string>
+     <string>Irritating Lungs</string>
     </property>
    </widget>
-   <widget class="QLabel" name="que8">
+   <widget class="QPushButton" name="que8_opt17">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>340</y>
-      <width>1061</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI</family>
-      <pointsize>36</pointsize>
-      <italic>false</italic>
-      <bold>true</bold>
-      <strikeout>false</strikeout>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 600 36pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255);
-
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Choose if you have the following recent Symptoms:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="que8_opt1">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>440</y>
+      <x>20</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -331,14 +291,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Fever</string>
+     <string>Loss of Speech</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt4">
+   <widget class="QPushButton" name="que8_opt19">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>440</y>
+      <x>580</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -356,10 +316,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Headache</string>
+     <string>Chest Pain</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="back_quepage3">
+   <widget class="QPushButton" name="back_quepage4">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -392,7 +352,7 @@ color: rgb(255, 255, 255);</string>
      <string>Back</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="next_quepage3">
+   <widget class="QPushButton" name="submit_quepage4">
     <property name="geometry">
      <rect>
       <x>930</x>
@@ -422,14 +382,14 @@ border-radius: 5px;
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>Next</string>
+     <string>Submit</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt2">
+   <widget class="QPushButton" name="que8_opt18">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>440</y>
+      <x>310</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -447,14 +407,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Dry Cough</string>
+     <string>Shortness of Breathe</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt5">
+   <widget class="QPushButton" name="que8_opt20">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>520</y>
+      <x>870</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -472,14 +432,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Fatigue</string>
+     <string>Confusion</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt6">
+   <widget class="QPushButton" name="que9_opt1">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>520</y>
+      <x>20</x>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -497,14 +457,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Congestion</string>
+     <string>1-4</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt8">
+   <widget class="QPushButton" name="que9_opt2">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>520</y>
+      <x>310</x>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -522,14 +482,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Vomiting</string>
+     <string>1-8</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt3">
+   <widget class="QPushButton" name="que9_opt3">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>440</y>
+      <x>590</x>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -547,14 +507,14 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Sore Throat</string>
+     <string>1-14</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="que8_opt7">
+   <widget class="QPushButton" name="que9_opt4">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>520</y>
+      <x>890</x>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -572,7 +532,44 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Runny Nose</string>
+     <string>1-20</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="que9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>1111</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>36</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 36pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Longing Period of the above symptoms:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
