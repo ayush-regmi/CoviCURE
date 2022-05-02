@@ -6,6 +6,8 @@ Hospital::Hospital(QWidget *parent) :
     ui(new Ui::Hospital)
 {
     ui->setupUi(this);
+    this->setWindowState(Qt::WindowMaximized);
+    this-> showMaximized();
 }
 
 Hospital::~Hospital()
