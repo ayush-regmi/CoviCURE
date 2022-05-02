@@ -7,6 +7,8 @@ Patients::Patients(QWidget *parent) :
     ui(new Ui::Patients)
 {
     ui->setupUi(this);
+    this->setWindowState(Qt::WindowMaximized);
+    this-> showMaximized();
 }
 
 void Database::connectDB(QString XXX){
@@ -45,7 +47,6 @@ void Patients::on_pushButton_refresh_clicked()
          viewhospital.connectDB("hospital");
         QSqlQueryModel *model=new QSqlQueryModel();
         viewhospital.connectionDB();
-
 
         QSqlQuery *qry=new QSqlQuery(viewhospital.db);
         qry->prepare("select * from appointments");

@@ -7,6 +7,8 @@ Admin::Admin(QWidget *parent) :
     ui(new Ui::Admin)
 {
     ui->setupUi(this);
+    this->setWindowState(Qt::WindowMaximized);
+    this-> showMaximized();
 }
 
 Admin::~Admin()

@@ -14,243 +14,597 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>491</width>
-      <height>391</height>
+      <x>30</x>
+      <y>70</y>
+      <width>531</width>
+      <height>641</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 170, 186, 255), stop:1 rgba(0, 151, 13, 255));
+border-radius: 20px;</string>
     </property>
     <property name="title">
-     <string>Update</string>
+     <string/>
     </property>
-    <layout class="QGridLayout" name="gridLayout" columnstretch="1,3,1,1,3">
-     <item row="6" column="2">
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Address:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="4">
-      <widget class="QLineEdit" name="ventilator"/>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLineEdit" name="fax"/>
-     </item>
-     <item row="6" column="3">
-      <widget class="QLabel" name="label_20">
-       <property name="text">
-        <string>MRI:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="QLabel" name="label_15">
-       <property name="text">
-        <string>Ambulance:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_22">
-       <property name="text">
-        <string>Hospitla close:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Licence no:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="QLineEdit" name="vaccination"/>
-     </item>
-     <item row="9" column="0">
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>Hospital open:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="4">
-      <widget class="QPushButton" name="pushButton_add">
-       <property name="text">
-        <string>Add</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QLabel" name="label_18">
-       <property name="text">
-        <string>ICU:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="3">
-      <widget class="QLabel" name="label_19">
-       <property name="text">
-        <string>Vaccination</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="4">
-      <widget class="QLineEdit" name="beds"/>
-     </item>
-     <item row="8" column="3">
-      <widget class="QLabel" name="label_21">
-       <property name="text">
-        <string>No of beds</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="name"/>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_6">
-       <property name="text">
-        <string>Phone:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="4">
-      <widget class="QLineEdit" name="ambulance"/>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="licence"/>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="mobile"/>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLabel" name="label_14">
-       <property name="text">
-        <string>Ventilators:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4">
-      <widget class="QLineEdit" name="ICU"/>
-     </item>
-     <item row="9" column="1">
-      <widget class="QLineEdit" name="hopen"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Name:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="phone"/>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Email:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="text">
-        <string>Mobile:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QLineEdit" name="hclose"/>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLabel" name="label_13">
-       <property name="text">
-        <string>Oxygen Cylinders:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>Fax:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="email"/>
-     </item>
-     <item row="7" column="3">
-      <widget class="QLabel" name="label_16">
-       <property name="text">
-        <string>Website</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0">
-      <widget class="QLabel" name="label_9">
-       <property name="text">
-        <string>Registration close:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLineEdit" name="rclose"/>
-     </item>
-     <item row="6" column="4">
-      <widget class="QLineEdit" name="MRI"/>
-     </item>
-     <item row="1" column="4">
-      <widget class="QLineEdit" name="oxygen"/>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>Registration open:</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QLineEdit" name="ropen"/>
-     </item>
-     <item row="7" column="4">
-      <widget class="QLineEdit" name="website"/>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="address"/>
-     </item>
-    </layout>
+    <widget class="QLineEdit" name="phone">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>350</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>170</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Address:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ropen">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>470</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Email:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Phone:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>110</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mobile">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>290</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Licence no:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mobile:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="address">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>170</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>470</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Registration open:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="licence">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>50</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>31</x>
+       <y>530</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Registration close:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="email">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>230</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>410</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fax:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="rclose">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>530</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>590</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hospital open:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="hopen">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>590</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="fax">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>410</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_back">
+   <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>500</x>
-      <y>370</y>
-      <width>80</width>
-      <height>18</height>
+      <x>600</x>
+      <y>50</y>
+      <width>581</width>
+      <height>641</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Back</string>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 170, 186, 255), stop:1 rgba(0, 151, 13, 255));
+border-radius: 20px;</string>
     </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ventilators:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_back">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>570</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Back</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ambulance">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>270</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_add">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>570</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="hclose">
+     <property name="geometry">
+      <rect>
+       <x>267</x>
+       <y>30</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Oxygen Cylinders:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>210</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ICU:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ambulance:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="oxygen">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>90</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>450</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Website</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>330</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vaccination</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="vaccination">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>330</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="website">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>450</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ventilator">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>150</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ICU">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>210</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="beds">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>510</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MRI:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>510</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>No of beds</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>30</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hospitla close:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MRI">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>390</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
