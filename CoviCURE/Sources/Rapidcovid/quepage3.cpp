@@ -3,7 +3,7 @@
 #include <QDebug>
 
 //extern int count;
-
+double count3;
 QString cssquepage3=
         "QPushButton {"
                           "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
@@ -41,9 +41,10 @@ Quepage3::Quepage3(QWidget *parent) :
     ui->que8_opt6->setStyleSheet(cssquepage3);
     ui->next_quepage3->setStyleSheet(cssquepage3);
     ui->back_quepage3->setStyleSheet(cssquepage3);
+
 }
 
-double Quepage3::count3=0;
+//double Quepage3::count3=0;
 
 Quepage3::~Quepage3()
 {
@@ -54,6 +55,7 @@ void Quepage3::on_que7_opt1_clicked()
 {
     count3+=0.75;
     qDebug() << "count3" << count3;
+
 }
 
 

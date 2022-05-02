@@ -69,7 +69,8 @@ SOURCES       = ..\CoviCURE\Sources\Main\login.cpp \
 		..\CoviCURE\Sources\Hospital\appointment.cpp \
 		..\CoviCURE\Sources\Live\livedash.cpp \
 		..\CoviCURE\Sources\Hospital\myhospital.cpp \
-		Sources/Rapidcovid/quepage4.cpp/ release\qrc_resource.cpp \
+		..\CoviCURE\Sources\Rapidcovid\quepage4.cpp \
+		..\CoviCURE\Sources\Rapidcovid\messagepage.cpp release\qrc_resource.cpp \
 		release\moc_login.cpp \
 		release\moc_mainwindow.cpp \
 		release\moc_signup.cpp \
@@ -86,7 +87,9 @@ SOURCES       = ..\CoviCURE\Sources\Main\login.cpp \
 		release\moc_hospdash.cpp \
 		release\moc_appointment.cpp \
 		release\moc_livedash.cpp \
-		release\moc_myhospital.cpp
+		release\moc_myhospital.cpp \
+		release\moc_quepage4.cpp \
+		release\moc_messagepage.cpp
 OBJECTS       = release/login.o \
 		release/main.o \
 		release/mainwindow.o \
@@ -107,6 +110,7 @@ OBJECTS       = release/login.o \
 		release/livedash.o \
 		release/myhospital.o \
 		release/quepage4.o \
+		release/messagepage.o \
 		release/qrc_resource.o \
 		release/moc_login.o \
 		release/moc_mainwindow.o \
@@ -124,7 +128,9 @@ OBJECTS       = release/login.o \
 		release/moc_hospdash.o \
 		release/moc_appointment.o \
 		release/moc_livedash.o \
-		release/moc_myhospital.o
+		release/moc_myhospital.o \
+		release/moc_quepage4.o \
+		release/moc_messagepage.o
 
 DIST          = img/login.jpg ..\CoviCURE\Headers\Main\login.h \
 		..\CoviCURE\Headers\Main\mainwindow.h \
@@ -144,7 +150,8 @@ DIST          = img/login.jpg ..\CoviCURE\Headers\Main\login.h \
 		..\CoviCURE\Headers\Hospital\appointment.h \
 		..\CoviCURE\Headers\Live\livedash.h \
 		..\CoviCURE\Headers\Hospital\myhospital.h \
-		Headers/Rapidcovid/quepage4.h/ ..\CoviCURE\Sources\Main\login.cpp \
+		..\CoviCURE\Headers\Rapidcovid\quepage4.h \
+		..\CoviCURE\Headers\Rapidcovid\messagepage.h ..\CoviCURE\Sources\Main\login.cpp \
 		..\CoviCURE\Sources\Main\main.cpp \
 		..\CoviCURE\Sources\Main\mainwindow.cpp \
 		..\CoviCURE\Sources\Main\signup.cpp \
@@ -163,7 +170,8 @@ DIST          = img/login.jpg ..\CoviCURE\Headers\Main\login.h \
 		..\CoviCURE\Sources\Hospital\appointment.cpp \
 		..\CoviCURE\Sources\Live\livedash.cpp \
 		..\CoviCURE\Sources\Hospital\myhospital.cpp \
-		Sources/Rapidcovid/quepage4.cpp/
+		..\CoviCURE\Sources\Rapidcovid\quepage4.cpp \
+		..\CoviCURE\Sources\Rapidcovid\messagepage.cpp
 QMAKE_TARGET  = CoviCURE
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = CoviCURE.exe
@@ -174,7 +182,7 @@ DESTDIR_TARGET = release\CoviCURE.exe
 first: all
 all: Makefile.Release  release/CoviCURE.exe
 
-release/CoviCURE.exe: C:/Qt/6.2.4/mingw_64/lib/libQt6Widgets.a C:/Qt/6.2.4/mingw_64/lib/libQt6Gui.a C:/Qt/6.2.4/mingw_64/lib/libQt6Sql.a C:/Qt/6.2.4/mingw_64/lib/libQt6Core.a C:/Qt/6.2.4/mingw_64/lib/libQt6EntryPoint.a ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_.h $(OBJECTS) 
+release/CoviCURE.exe: C:/Qt/6.2.4/mingw_64/lib/libQt6Widgets.a C:/Qt/6.2.4/mingw_64/lib/libQt6Gui.a C:/Qt/6.2.4/mingw_64/lib/libQt6Sql.a C:/Qt/6.2.4/mingw_64/lib/libQt6Core.a C:/Qt/6.2.4/mingw_64/lib/libQt6EntryPoint.a ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_messagepage.h $(OBJECTS) 
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) @object_script.CoviCURE.Release  $(LIBS)
 
 qmake: FORCE
@@ -183,10 +191,10 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) CoviCURE.zip $(SOURCES) $(DIST) ..\CoviCURE\CoviCURE.pro C:\Qt\6.2.4\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.2.4\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.2.4\mingw_64\mkspecs\qconfig.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_shadertools.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.2.4\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.2.4\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\entrypoint.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qt.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resources.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\moc.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\uic.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\lex.prf ..\CoviCURE\CoviCURE.pro ..\CoviCURE\resource.qrc C:\Qt\6.2.4\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Gui.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Sql.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Core.prl C:\Qt\6.2.4\mingw_64\lib\Qt6EntryPoint.prl   ..\CoviCURE\resource.qrc C:\Qt\6.2.4\mingw_64\mkspecs\features\data\dummy.cpp ..\CoviCURE\Headers\Main\login.h ..\CoviCURE\Headers\Main\mainwindow.h ..\CoviCURE\Headers\Main\signup.h ..\CoviCURE\Headers\Main\dashboard.h ..\CoviCURE\Headers\Hospital\choosehospitals.h ..\CoviCURE\Headers\Vaccine\vaccine_login.h ..\CoviCURE\Headers\Vaccine\loginview.h ..\CoviCURE\Headers\Vaccine\signupvaccine.h ..\CoviCURE\Headers\Hospital\hospitals.h ..\CoviCURE\Headers\database.h ..\CoviCURE\Headers\Rapidcovid\rapidcovid.h ..\CoviCURE\Headers\Rapidcovid\quepage1.h ..\CoviCURE\Headers\Rapidcovid\quepage2.h ..\CoviCURE\Headers\Rapidcovid\quepage3.h ..\CoviCURE\Headers\Hospital\hospdash.h ..\CoviCURE\Headers\Hospital\appointment.h ..\CoviCURE\Headers\Live\livedash.h ..\CoviCURE\Headers\Hospital\myhospital.h Headers/Rapidcovid/quepage4.h/  ..\CoviCURE\Sources\Main\login.cpp ..\CoviCURE\Sources\Main\main.cpp ..\CoviCURE\Sources\Main\mainwindow.cpp ..\CoviCURE\Sources\Main\signup.cpp ..\CoviCURE\Sources\Main\dashboard.cpp ..\CoviCURE\Sources\Hospital\choosehospitals.cpp ..\CoviCURE\Sources\Vaccine\vaccine_login.cpp ..\CoviCURE\Sources\Vaccine\loginview.cpp ..\CoviCURE\Sources\Vaccine\signupvaccine.cpp ..\CoviCURE\Sources\Rapidcovid\rapidcovid.cpp ..\CoviCURE\Sources\Hospital\hospitals.cpp ..\CoviCURE\Sources\database.cpp ..\CoviCURE\Sources\Rapidcovid\quepage1.cpp ..\CoviCURE\Sources\Rapidcovid\quepage2.cpp ..\CoviCURE\Sources\Rapidcovid\quepage3.cpp ..\CoviCURE\Sources\Hospital\hospdash.cpp ..\CoviCURE\Sources\Hospital\appointment.cpp ..\CoviCURE\Sources\Live\livedash.cpp ..\CoviCURE\Sources\Hospital\myhospital.cpp Sources/Rapidcovid/quepage4.cpp/ ..\CoviCURE\Forms\Main\login.ui ..\CoviCURE\Forms\Main\mainwindow.ui ..\CoviCURE\Forms\Main\signup.ui ..\CoviCURE\Forms\Main\dashboard.ui ..\CoviCURE\Forms\Hospital\choosehospitals.ui ..\CoviCURE\Forms\Vaccine\vaccine_login.ui ..\CoviCURE\Forms\Vaccine\loginview.ui ..\CoviCURE\Forms\Vaccine\signupvaccine.ui ..\CoviCURE\Forms\Rapidcovid\rapidcovid.ui ..\CoviCURE\Forms\Hospital\hospitals.ui ..\CoviCURE\Forms\Rapidcovid\quepage1.ui ..\CoviCURE\Forms\Rapidcovid\quepage2.ui ..\CoviCURE\Forms\Rapidcovid\quepage3.ui ..\CoviCURE\Forms\Hospital\hospdash.ui ..\CoviCURE\Forms\Hospital\appointment.ui ..\CoviCURE\Forms\Live\livedash.ui ..\CoviCURE\Forms\Hospital\myhospital.ui ..\CoviCURE\Forms\Rapidcovid\quepage4.ui \    
+	$(ZIP) CoviCURE.zip $(SOURCES) $(DIST) ..\CoviCURE\CoviCURE.pro C:\Qt\6.2.4\mingw_64\mkspecs\features\spec_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\device_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\common\sanitize.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\gcc-base.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\g++-base.conf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\windows_vulkan_sdk.prf C:\Qt\6.2.4\mingw_64\mkspecs\common\windows-vulkan.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\g++-win32.conf C:\Qt\6.2.4\mingw_64\mkspecs\common\windows-desktop.conf C:\Qt\6.2.4\mingw_64\mkspecs\qconfig.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_ext_freetype.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_ext_libpng.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_concurrent_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core5compat_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_core_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_dbus_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designer_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_designercomponents_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_devicediscovery_support_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_entrypoint_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_fb_support_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_gui_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_help.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_help_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsanimation_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsfolderlistmodel_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labsqmlmodels_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssettings_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labssharedimage_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_labswavefrontmesh_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_linguist_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_network.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_network_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_opengl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_openglwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_packetprotocol_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_printsupport_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qml_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcompiler_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlcore_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldebug_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldevtools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmldom_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmllocalstorage_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlmodels_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmltest_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlworkerscript_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_qmlxmllistmodel_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quick_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrols2impl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickcontrolstestutilsprivate_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2quickimpl_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickdialogs2utils_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicklayouts_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickparticles_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickshapes_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktemplates2_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktestutilsprivate_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktimeline.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quicktimeline_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_quickwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_shadertools.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_shadertools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_sql_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svg_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_svgwidgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_testlib_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_tools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uiplugin.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_uitools_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_widgets_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_xml_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\modules\qt_lib_zlib_private.pri C:\Qt\6.2.4\mingw_64\mkspecs\features\qt_functions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qt_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\win32-g++\qmake.conf C:\Qt\6.2.4\mingw_64\mkspecs\features\spec_post.prf .qmake.stash C:\Qt\6.2.4\mingw_64\mkspecs\features\exclusive_builds.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\toolchain.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\default_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\default_pre.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resolve_config.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\exclusive_builds_post.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\default_post.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\build_pass.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qml_debug.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\entrypoint.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\precompile_header.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\warn_on.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qt.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resources_functions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\resources.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\moc.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\opengl.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\uic.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\qmake_use.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\file_copies.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\win32\windows.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\testcase_targets.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\exceptions.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\yacc.prf C:\Qt\6.2.4\mingw_64\mkspecs\features\lex.prf ..\CoviCURE\CoviCURE.pro ..\CoviCURE\resource.qrc C:\Qt\6.2.4\mingw_64\lib\Qt6Widgets.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Gui.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Sql.prl C:\Qt\6.2.4\mingw_64\lib\Qt6Core.prl C:\Qt\6.2.4\mingw_64\lib\Qt6EntryPoint.prl   ..\CoviCURE\resource.qrc C:\Qt\6.2.4\mingw_64\mkspecs\features\data\dummy.cpp ..\CoviCURE\Headers\Main\login.h ..\CoviCURE\Headers\Main\mainwindow.h ..\CoviCURE\Headers\Main\signup.h ..\CoviCURE\Headers\Main\dashboard.h ..\CoviCURE\Headers\Hospital\choosehospitals.h ..\CoviCURE\Headers\Vaccine\vaccine_login.h ..\CoviCURE\Headers\Vaccine\loginview.h ..\CoviCURE\Headers\Vaccine\signupvaccine.h ..\CoviCURE\Headers\Hospital\hospitals.h ..\CoviCURE\Headers\database.h ..\CoviCURE\Headers\Rapidcovid\rapidcovid.h ..\CoviCURE\Headers\Rapidcovid\quepage1.h ..\CoviCURE\Headers\Rapidcovid\quepage2.h ..\CoviCURE\Headers\Rapidcovid\quepage3.h ..\CoviCURE\Headers\Hospital\hospdash.h ..\CoviCURE\Headers\Hospital\appointment.h ..\CoviCURE\Headers\Live\livedash.h ..\CoviCURE\Headers\Hospital\myhospital.h ..\CoviCURE\Headers\Rapidcovid\quepage4.h ..\CoviCURE\Headers\Rapidcovid\messagepage.h  ..\CoviCURE\Sources\Main\login.cpp ..\CoviCURE\Sources\Main\main.cpp ..\CoviCURE\Sources\Main\mainwindow.cpp ..\CoviCURE\Sources\Main\signup.cpp ..\CoviCURE\Sources\Main\dashboard.cpp ..\CoviCURE\Sources\Hospital\choosehospitals.cpp ..\CoviCURE\Sources\Vaccine\vaccine_login.cpp ..\CoviCURE\Sources\Vaccine\loginview.cpp ..\CoviCURE\Sources\Vaccine\signupvaccine.cpp ..\CoviCURE\Sources\Rapidcovid\rapidcovid.cpp ..\CoviCURE\Sources\Hospital\hospitals.cpp ..\CoviCURE\Sources\database.cpp ..\CoviCURE\Sources\Rapidcovid\quepage1.cpp ..\CoviCURE\Sources\Rapidcovid\quepage2.cpp ..\CoviCURE\Sources\Rapidcovid\quepage3.cpp ..\CoviCURE\Sources\Hospital\hospdash.cpp ..\CoviCURE\Sources\Hospital\appointment.cpp ..\CoviCURE\Sources\Live\livedash.cpp ..\CoviCURE\Sources\Hospital\myhospital.cpp ..\CoviCURE\Sources\Rapidcovid\quepage4.cpp ..\CoviCURE\Sources\Rapidcovid\messagepage.cpp ..\CoviCURE\Forms\Main\login.ui ..\CoviCURE\Forms\Main\mainwindow.ui ..\CoviCURE\Forms\Main\signup.ui ..\CoviCURE\Forms\Main\dashboard.ui ..\CoviCURE\Forms\Hospital\choosehospitals.ui ..\CoviCURE\Forms\Vaccine\vaccine_login.ui ..\CoviCURE\Forms\Vaccine\loginview.ui ..\CoviCURE\Forms\Vaccine\signupvaccine.ui ..\CoviCURE\Forms\Rapidcovid\rapidcovid.ui ..\CoviCURE\Forms\Hospital\hospitals.ui ..\CoviCURE\Forms\Rapidcovid\quepage1.ui ..\CoviCURE\Forms\Rapidcovid\quepage2.ui ..\CoviCURE\Forms\Rapidcovid\quepage3.ui ..\CoviCURE\Forms\Hospital\hospdash.ui ..\CoviCURE\Forms\Hospital\appointment.ui ..\CoviCURE\Forms\Live\livedash.ui ..\CoviCURE\Forms\Hospital\myhospital.ui ..\CoviCURE\Forms\Rapidcovid\quepage4.ui ..\CoviCURE\Forms\Rapidcovid\messagepage.ui    
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\login.o release\main.o release\mainwindow.o release\signup.o release\dashboard.o release\choosehospitals.o release\vaccine_login.o release\loginview.o release\signupvaccine.o release\rapidcovid.o release\hospitals.o release\database.o release\quepage1.o release\quepage2.o release\quepage3.o release\hospdash.o release\appointment.o release\livedash.o release\myhospital.o release\quepage4.o release\qrc_resource.o release\moc_login.o release\moc_mainwindow.o release\moc_signup.o release\moc_dashboard.o release\moc_choosehospitals.o release\moc_vaccine_login.o release\moc_loginview.o release\moc_signupvaccine.o release\moc_hospitals.o release\moc_rapidcovid.o release\moc_quepage1.o release\moc_quepage2.o release\moc_quepage3.o release\moc_hospdash.o release\moc_appointment.o release\moc_livedash.o release\moc_myhospital.o
+	-$(DEL_FILE) release\login.o release\main.o release\mainwindow.o release\signup.o release\dashboard.o release\choosehospitals.o release\vaccine_login.o release\loginview.o release\signupvaccine.o release\rapidcovid.o release\hospitals.o release\database.o release\quepage1.o release\quepage2.o release\quepage3.o release\hospdash.o release\appointment.o release\livedash.o release\myhospital.o release\quepage4.o release\messagepage.o release\qrc_resource.o release\moc_login.o release\moc_mainwindow.o release\moc_signup.o release\moc_dashboard.o release\moc_choosehospitals.o release\moc_vaccine_login.o release\moc_loginview.o release\moc_signupvaccine.o release\moc_hospitals.o release\moc_rapidcovid.o release\moc_quepage1.o release\moc_quepage2.o release\moc_quepage3.o release\moc_hospdash.o release\moc_appointment.o release\moc_livedash.o release\moc_myhospital.o release\moc_quepage4.o release\moc_messagepage.o
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash
@@ -235,9 +243,9 @@ compiler_moc_predefs_clean:
 release/moc_predefs.h: C:/Qt/6.2.4/mingw_64/mkspecs/features/data/dummy.cpp
 	g++ -fno-keep-inline-dllexport -O2 -Wall -Wextra -Wextra -dM -E -o release\moc_predefs.h C:\Qt\6.2.4\mingw_64\mkspecs\features\data\dummy.cpp
 
-compiler_moc_header_make_all: release/moc_login.cpp release/moc_mainwindow.cpp release/moc_signup.cpp release/moc_dashboard.cpp release/moc_choosehospitals.cpp release/moc_vaccine_login.cpp release/moc_loginview.cpp release/moc_signupvaccine.cpp release/moc_hospitals.cpp release/moc_rapidcovid.cpp release/moc_quepage1.cpp release/moc_quepage2.cpp release/moc_quepage3.cpp release/moc_hospdash.cpp release/moc_appointment.cpp release/moc_livedash.cpp release/moc_myhospital.cpp
+compiler_moc_header_make_all: release/moc_login.cpp release/moc_mainwindow.cpp release/moc_signup.cpp release/moc_dashboard.cpp release/moc_choosehospitals.cpp release/moc_vaccine_login.cpp release/moc_loginview.cpp release/moc_signupvaccine.cpp release/moc_hospitals.cpp release/moc_rapidcovid.cpp release/moc_quepage1.cpp release/moc_quepage2.cpp release/moc_quepage3.cpp release/moc_hospdash.cpp release/moc_appointment.cpp release/moc_livedash.cpp release/moc_myhospital.cpp release/moc_quepage4.cpp release/moc_messagepage.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) release\moc_login.cpp release\moc_mainwindow.cpp release\moc_signup.cpp release\moc_dashboard.cpp release\moc_choosehospitals.cpp release\moc_vaccine_login.cpp release\moc_loginview.cpp release\moc_signupvaccine.cpp release\moc_hospitals.cpp release\moc_rapidcovid.cpp release\moc_quepage1.cpp release\moc_quepage2.cpp release\moc_quepage3.cpp release\moc_hospdash.cpp release\moc_appointment.cpp release\moc_livedash.cpp release\moc_myhospital.cpp
+	-$(DEL_FILE) release\moc_login.cpp release\moc_mainwindow.cpp release\moc_signup.cpp release\moc_dashboard.cpp release\moc_choosehospitals.cpp release\moc_vaccine_login.cpp release\moc_loginview.cpp release\moc_signupvaccine.cpp release\moc_hospitals.cpp release\moc_rapidcovid.cpp release\moc_quepage1.cpp release\moc_quepage2.cpp release\moc_quepage3.cpp release\moc_hospdash.cpp release\moc_appointment.cpp release\moc_livedash.cpp release\moc_myhospital.cpp release\moc_quepage4.cpp release\moc_messagepage.cpp
 release/moc_login.cpp: ../CoviCURE/Headers/Main/login.h \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
@@ -4141,13 +4149,277 @@ release/moc_myhospital.cpp: ../CoviCURE/Headers/Hospital/myhospital.h \
 		C:/Qt/6.2.4/mingw_64/bin/moc.exe
 	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include D:/PROJECT/CoviCURE/build-CoviCURE-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -ID:/PROJECT/CoviCURE/CoviCURE -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtSql -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\CoviCURE\Headers\Hospital\myhospital.h -o release\moc_myhospital.cpp
 
+release/moc_quepage4.cpp: ../CoviCURE/Headers/Rapidcovid/quepage4.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtguiglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtcore-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsystemdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qprocessordetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtypeinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsysinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlogging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qflags.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasicatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qgenericatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobalstatic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnumeric.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qversiontagging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtgui-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtmetamacros.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpair.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydatapointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydataops.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompare.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qimage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtransform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpolygon.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qregion.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qline.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringconverter.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QList \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
+		release/moc_predefs.h \
+		C:/Qt/6.2.4/mingw_64/bin/moc.exe
+	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include D:/PROJECT/CoviCURE/build-CoviCURE-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -ID:/PROJECT/CoviCURE/CoviCURE -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtSql -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\CoviCURE\Headers\Rapidcovid\quepage4.h -o release\moc_quepage4.cpp
+
+release/moc_messagepage.cpp: ../CoviCURE/Headers/Rapidcovid/messagepage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtguiglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtcore-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsystemdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qprocessordetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtypeinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsysinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlogging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qflags.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasicatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qgenericatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobalstatic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnumeric.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qversiontagging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtgui-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtmetamacros.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpair.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydatapointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydataops.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompare.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qimage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtransform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpolygon.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qregion.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qline.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringconverter.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QList \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
+		release/moc_predefs.h \
+		C:/Qt/6.2.4/mingw_64/bin/moc.exe
+	C:\Qt\6.2.4\mingw_64\bin\moc.exe $(DEFINES) --include D:/PROJECT/CoviCURE/build-CoviCURE-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.2.4/mingw_64/mkspecs/win32-g++ -ID:/PROJECT/CoviCURE/CoviCURE -IC:/Qt/6.2.4/mingw_64/include -IC:/Qt/6.2.4/mingw_64/include/QtWidgets -IC:/Qt/6.2.4/mingw_64/include/QtGui -IC:/Qt/6.2.4/mingw_64/include/QtSql -IC:/Qt/6.2.4/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\CoviCURE\Headers\Rapidcovid\messagepage.h -o release\moc_messagepage.cpp
+
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_.h
+compiler_uic_make_all: ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_messagepage.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_.h
+	-$(DEL_FILE) ui_login.h ui_mainwindow.h ui_signup.h ui_dashboard.h ui_choosehospitals.h ui_vaccine_login.h ui_loginview.h ui_signupvaccine.h ui_rapidcovid.h ui_hospitals.h ui_quepage1.h ui_quepage2.h ui_quepage3.h ui_hospdash.h ui_appointment.h ui_livedash.h ui_myhospital.h ui_quepage4.h ui_messagepage.h
 ui_login.h: ../CoviCURE/Forms/Main/login.ui \
 		C:/Qt/6.2.4/mingw_64/bin/uic.exe
 	C:\Qt\6.2.4\mingw_64\bin\uic.exe ..\CoviCURE\Forms\Main\login.ui -o ui_login.h
@@ -4220,9 +4492,9 @@ ui_quepage4.h: ../CoviCURE/Forms/Rapidcovid/quepage4.ui \
 		C:/Qt/6.2.4/mingw_64/bin/uic.exe
 	C:\Qt\6.2.4\mingw_64\bin\uic.exe ..\CoviCURE\Forms\Rapidcovid\quepage4.ui -o ui_quepage4.h
 
-ui_.h: / \
+ui_messagepage.h: ../CoviCURE/Forms/Rapidcovid/messagepage.ui \
 		C:/Qt/6.2.4/mingw_64/bin/uic.exe
-	C:\Qt\6.2.4\mingw_64\bin\uic.exe \ -o ui_.h
+	C:\Qt\6.2.4\mingw_64\bin\uic.exe ..\CoviCURE\Forms\Rapidcovid\messagepage.ui -o ui_messagepage.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -4558,6 +4830,21 @@ release/login.o: ../CoviCURE/Sources/Main/login.cpp ../CoviCURE/Headers/Main/log
 		../CoviCURE/Headers/Vaccine/signupvaccine.h \
 		../CoviCURE/Headers/Live/livedash.h \
 		ui_login.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.2.4/mingw_64/include/QtSql/QSqlQuery
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\login.o ..\CoviCURE\Sources\Main\login.cpp
 
@@ -5218,7 +5505,28 @@ release/mainwindow.o: ../CoviCURE/Sources/Main/mainwindow.cpp ../CoviCURE/Header
 		../CoviCURE/Headers/Vaccine/signupvaccine.h \
 		../CoviCURE/Headers/Live/livedash.h \
 		../CoviCURE/Headers/Main/signup.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\CoviCURE\Sources\Main\mainwindow.cpp
 
 release/signup.o: ../CoviCURE/Sources/Main/signup.cpp ../CoviCURE/Headers/Main/signup.h \
@@ -5543,7 +5851,22 @@ release/signup.o: ../CoviCURE/Sources/Main/signup.cpp ../CoviCURE/Headers/Main/s
 		../CoviCURE/Headers/Vaccine/loginview.h \
 		../CoviCURE/Headers/Vaccine/signupvaccine.h \
 		../CoviCURE/Headers/Live/livedash.h \
-		ui_signup.h
+		ui_signup.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\signup.o ..\CoviCURE\Sources\Main\signup.cpp
 
 release/dashboard.o: ../CoviCURE/Sources/Main/dashboard.cpp ../CoviCURE/Headers/Main/dashboard.h \
@@ -5867,6 +6190,30 @@ release/dashboard.o: ../CoviCURE/Sources/Main/dashboard.cpp ../CoviCURE/Headers/
 		../CoviCURE/Headers/Vaccine/signupvaccine.h \
 		../CoviCURE/Headers/Live/livedash.h \
 		ui_dashboard.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QAction \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QIcon \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenu \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\dashboard.o ..\CoviCURE\Sources\Main\dashboard.cpp
 
@@ -6178,6 +6525,21 @@ release/choosehospitals.o: ../CoviCURE/Sources/Hospital/choosehospitals.cpp ../C
 		../CoviCURE/Headers/Hospital/myhospital.h \
 		../CoviCURE/Headers/Hospital/appointment.h \
 		ui_choosehospitals.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\choosehospitals.o ..\CoviCURE\Sources\Hospital\choosehospitals.cpp
 
@@ -6311,7 +6673,40 @@ release/vaccine_login.o: ../CoviCURE/Sources/Vaccine/vaccine_login.cpp ../CoviCU
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
 		../CoviCURE/Headers/Vaccine/loginview.h \
 		../CoviCURE/Headers/Vaccine/signupvaccine.h \
-		ui_vaccine_login.h
+		ui_vaccine_login.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\vaccine_login.o ..\CoviCURE\Sources\Vaccine\vaccine_login.cpp
 
 release/loginview.o: ../CoviCURE/Sources/Vaccine/loginview.cpp ../CoviCURE/Headers/Vaccine/loginview.h \
@@ -6442,7 +6837,46 @@ release/loginview.o: ../CoviCURE/Sources/Vaccine/loginview.cpp ../CoviCURE/Heade
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_loginview.h
+		ui_loginview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\loginview.o ..\CoviCURE\Sources\Vaccine\loginview.cpp
 
 release/signupvaccine.o: ../CoviCURE/Sources/Vaccine/signupvaccine.cpp ../CoviCURE/Headers/Vaccine/signupvaccine.h \
@@ -6574,6 +7008,45 @@ release/signupvaccine.o: ../CoviCURE/Sources/Vaccine/signupvaccine.cpp ../CoviCU
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
 		ui_signupvaccine.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		../CoviCURE/Headers/Vaccine/vaccine_login.h \
 		../CoviCURE/Headers/Vaccine/loginview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\signupvaccine.o ..\CoviCURE\Sources\Vaccine\signupvaccine.cpp
@@ -6715,6 +7188,45 @@ release/rapidcovid.o: ../CoviCURE/Sources/Rapidcovid/rapidcovid.cpp ../CoviCURE/
 		../CoviCURE/Headers/Rapidcovid/quepage3.h \
 		../CoviCURE/Headers/Rapidcovid/quepage4.h \
 		ui_rapidcovid.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\rapidcovid.o ..\CoviCURE\Sources\Rapidcovid\rapidcovid.cpp
 
@@ -7017,7 +7529,28 @@ release/hospitals.o: ../CoviCURE/Sources/Hospital/hospitals.cpp ../CoviCURE/Head
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		../CoviCURE/Headers/Hospital/myhospital.h \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
-		ui_hospitals.h
+		ui_hospitals.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\hospitals.o ..\CoviCURE\Sources\Hospital\hospitals.cpp
 
 release/database.o: ../CoviCURE/Sources/database.cpp ../CoviCURE/Headers/database.h \
@@ -7450,6 +7983,39 @@ release/quepage1.o: ../CoviCURE/Sources/Rapidcovid/quepage1.cpp ../CoviCURE/Head
 		../CoviCURE/Headers/Rapidcovid/quepage3.h \
 		../CoviCURE/Headers/Rapidcovid/quepage4.h \
 		ui_quepage1.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quepage1.o ..\CoviCURE\Sources\Rapidcovid\quepage1.cpp
 
@@ -7584,6 +8150,39 @@ release/quepage2.o: ../CoviCURE/Sources/Rapidcovid/quepage2.cpp ../CoviCURE/Head
 		../CoviCURE/Headers/Rapidcovid/quepage3.h \
 		../CoviCURE/Headers/Rapidcovid/quepage4.h \
 		ui_quepage2.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quepage2.o ..\CoviCURE\Sources\Rapidcovid\quepage2.cpp
 
@@ -7717,6 +8316,39 @@ release/quepage3.o: ../CoviCURE/Sources/Rapidcovid/quepage3.cpp ../CoviCURE/Head
 		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
 		../CoviCURE/Headers/Rapidcovid/quepage4.h \
 		ui_quepage3.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quepage3.o ..\CoviCURE\Sources\Rapidcovid\quepage3.cpp
 
@@ -8026,7 +8658,24 @@ release/hospdash.o: ../CoviCURE/Sources/Hospital/hospdash.cpp ../CoviCURE/Header
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		../CoviCURE/Headers/Hospital/myhospital.h \
 		../CoviCURE/Headers/Hospital/appointment.h \
-		ui_hospdash.h
+		ui_hospdash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\hospdash.o ..\CoviCURE\Sources\Hospital\hospdash.cpp
 
 release/appointment.o: ../CoviCURE/Sources/Hospital/appointment.cpp ../CoviCURE/Headers/Hospital/appointment.h \
@@ -8327,7 +8976,39 @@ release/appointment.o: ../CoviCURE/Sources/Hospital/appointment.cpp ../CoviCURE/
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QString \
 		ui_appointment.h \
-		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QComboBox
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QCheckBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qcheckbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDateEdit \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdatetimeedit.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QTimeEdit
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\appointment.o ..\CoviCURE\Sources\Hospital\appointment.cpp
 
 release/livedash.o: ../CoviCURE/Sources/Live/livedash.cpp ../CoviCURE/Headers/Live/livedash.h \
@@ -8461,6 +9142,41 @@ release/livedash.o: ../CoviCURE/Sources/Live/livedash.cpp ../CoviCURE/Headers/Li
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
 		ui_livedash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QDesktopServices \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/qdesktopservices.h \
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QUrl \
@@ -8766,11 +9482,343 @@ release/myhospital.o: ../CoviCURE/Sources/Hospital/myhospital.cpp ../CoviCURE/He
 		C:/Qt/6.2.4/mingw_64/include/QtCore/QString \
 		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
 		ui_myhospital.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qaction.h \
 		C:/Qt/6.2.4/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\myhospital.o ..\CoviCURE\Sources\Hospital\myhospital.cpp
 
-release/quepage4.o: Sources/Rapidcovid/quepage4.cpp/ 
-	$(CC) -c $(CFLAGS) $(INCPATH) -o release\quepage4.o Sources/Rapidcovid/quepage4.cpp/
+release/quepage4.o: ../CoviCURE/Sources/Rapidcovid/quepage4.cpp ../CoviCURE/Headers/Rapidcovid/quepage4.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtguiglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtcore-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsystemdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qprocessordetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtypeinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsysinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlogging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qflags.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasicatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qgenericatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobalstatic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnumeric.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qversiontagging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtgui-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtmetamacros.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpair.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydatapointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydataops.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompare.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qimage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtransform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpolygon.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qregion.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qline.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringconverter.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QList \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
+		ui_quepage4.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qgroupbox.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qicon.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QDebug
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quepage4.o ..\CoviCURE\Sources\Rapidcovid\quepage4.cpp
+
+release/messagepage.o: ../CoviCURE/Sources/Rapidcovid/messagepage.cpp ../CoviCURE/Headers/Rapidcovid/messagepage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QDialog \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtguiglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobal.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig-bootstrapped.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qconfig.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtcore-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsystemdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qprocessordetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompilerdetection.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtypeinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerfwd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsysinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlogging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qflags.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbasicatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_bootstrap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qgenericatomic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qatomic_cxx11.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qglobalstatic.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnumeric.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qversiontagging.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtgui-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qwidget.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnamespace.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtmetamacros.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobjectdefs_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qwindowdefs_win.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstring.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qchar.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrefcount.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpair.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydatapointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qarraydataops.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainertools_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearrayview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringliteral.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qanystringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qutf8stringview.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringtokenizer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringbuilder.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhashfunctions.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterator.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbytearraylist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringlist.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qalgorithms.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringmatcher.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetatype.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcompare.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvarlengtharray.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qscopeguard.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdatastream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevicebase.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiterable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmetacontainer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontainerinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtaggedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmath.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qobject_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qbindingstorage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmargins.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpaintdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrect.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsize.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpalette.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcolor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgb.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qrgba64.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbrush.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qimage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixelformat.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qtransform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpolygon.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qregion.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qline.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpixmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qsharedpointer_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfont.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qfontinfo.h \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qsizepolicy.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qcursor.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qbitmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qkeysequence.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qevent.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qiodevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpointer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qurl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qvariant.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmap.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qshareddata_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qhash.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdebug.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qtextstream.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qstringconverter.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qset.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcontiguouscache.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qeventpoint.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvector2d.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qvectornd.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qpointingdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputdevice.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qscreen.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QList \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QObject \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QRect \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSize \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QSizeF \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/QTransform \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qnativeinterface.h \
+		ui_messagepage.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.2.4/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.2.4/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.2.4/mingw_64/include/QtGui/qguiapplication_platform.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\messagepage.o ..\CoviCURE\Sources\Rapidcovid\messagepage.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\qrc_resource.o release\qrc_resource.cpp
@@ -8825,6 +9873,12 @@ release/moc_livedash.o: release/moc_livedash.cpp
 
 release/moc_myhospital.o: release/moc_myhospital.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_myhospital.o release\moc_myhospital.cpp
+
+release/moc_quepage4.o: release/moc_quepage4.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_quepage4.o release\moc_quepage4.cpp
+
+release/moc_messagepage.o: release/moc_messagepage.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_messagepage.o release\moc_messagepage.cpp
 
 ####### Install
 

@@ -2,6 +2,8 @@
 #include "ui_quepage1.h"
 #include <QDebug>
 
+double count;
+
 QString cssquepage1=
         "QPushButton {"
                           "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
@@ -39,8 +41,6 @@ Quepage1::Quepage1(QWidget *parent):
     ui->back_quepage1->setStyleSheet(cssquepage1);
 }
 
-double Quepage1::count = 0;
-
 Quepage1::~Quepage1()
 {
     delete ui;
@@ -49,7 +49,7 @@ Quepage1::~Quepage1()
 void Quepage1::on_next_quepage1_clicked()
 {
     hide();
-    quepage2 = new Quepage2(this);
+    quepage2 = new Quepage2();
     quepage2->show();
 }
 

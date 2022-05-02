@@ -2,6 +2,7 @@
 #define QUEPAGE4_H
 
 #include <QDialog>
+#include "Headers/Rapidcovid/messagepage.h"
 
 namespace Ui {
 class Quepage4;
@@ -14,7 +15,7 @@ class Quepage4 : public QDialog
 public:
     explicit Quepage4(QWidget *parent = nullptr);
     ~Quepage4();
-    static double count4;
+    //double count4;
 
 private slots:
     void on_que8_opt9_clicked();
@@ -49,8 +50,11 @@ private slots:
 
     void on_que9_opt4_clicked();
 
+    void on_submit_quepage4_clicked();
+
 private:
     Ui::Quepage4 *ui;
+    Messagepage *messagepage;
 };
 
 #endif // QUEPAGE4_H

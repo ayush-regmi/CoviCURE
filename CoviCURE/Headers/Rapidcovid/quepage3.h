@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "Headers/Rapidcovid/quepage4.h"
+//extern int x;
 
 namespace Ui {
 class Quepage3;
@@ -15,7 +16,7 @@ class Quepage3 : public QDialog
 public:
     explicit Quepage3(QWidget *parent = nullptr);
     ~Quepage3();
-    static double count3;
+    //double count3;
 
 private slots:
     void on_que7_opt1_clicked();

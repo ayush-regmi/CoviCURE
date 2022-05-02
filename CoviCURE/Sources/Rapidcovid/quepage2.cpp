@@ -1,8 +1,10 @@
 #include "Headers/Rapidcovid/quepage2.h"
 #include "ui_quepage2.h"
 #include <QDebug>
+#include <QtGlobal>
 //int count2;
-
+double count2;
+//extern double count;
 QString cssquepage2=
         "QPushButton {"
                           "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
@@ -36,7 +38,8 @@ Quepage2::Quepage2(QWidget *parent) :
     ui->back_quepage2->setStyleSheet(cssquepage2);
 }
 
-double Quepage2::count2 = 0;
+//double Quepage2::count2 = 0;
+
 
 Quepage2::~Quepage2()
 {
@@ -55,7 +58,6 @@ void Quepage2::on_next_quepage2_clicked()
 //    quepage3 = new Quepage3(this);
 //    quepage3->show();
 //}
-
 
 void Quepage2::on_que4_opt1_clicked()
 {

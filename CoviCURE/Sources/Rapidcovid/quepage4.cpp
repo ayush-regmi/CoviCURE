@@ -3,6 +3,7 @@
 #include <QDebug>
 
 //extern int count;
+double count4;
 
 QString cssquepage4=
         "QPushButton {"
@@ -45,7 +46,11 @@ Quepage4::Quepage4(QWidget *parent) :
     ui->submit_quepage4->setStyleSheet(cssquepage4);
 }
 
-double Quepage4::count4 = 0;
+//double Quepage4::count4 = 0;
+
+//extern double count;
+//extern double count2;
+//extern double count3;
 
 Quepage4::~Quepage4()
 {
@@ -161,5 +166,13 @@ void Quepage4::on_que9_opt4_clicked()
 {
     count4+=1;
     qDebug() << "count4" << count4;
+}
+
+
+void Quepage4::on_submit_quepage4_clicked()
+{
+    hide();
+    messagepage = new Messagepage();
+    messagepage->show();
 }
 

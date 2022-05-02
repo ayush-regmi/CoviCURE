@@ -18,6 +18,7 @@ release/appointment.o
 release/livedash.o
 release/myhospital.o
 release/quepage4.o
+release/messagepage.o
 release/qrc_resource.o
 release/moc_login.o
 release/moc_mainwindow.o
@@ -36,3 +37,5 @@ release/moc_hospdash.o
 release/moc_appointment.o
 release/moc_livedash.o
 release/moc_myhospital.o
+release/moc_quepage4.o
+release/moc_messagepage.o

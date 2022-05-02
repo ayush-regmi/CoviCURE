@@ -15,7 +15,7 @@ class Quepage2 : public QDialog
 public:
     explicit Quepage2(QWidget *parent = nullptr);
     ~Quepage2();
-    static double count2;
+    //double count2;
 
 private slots:
    void on_next_quepage2_clicked();

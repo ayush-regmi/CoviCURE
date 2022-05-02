@@ -18,6 +18,7 @@ debug/appointment.o
 debug/livedash.o
 debug/myhospital.o
 debug/quepage4.o
+debug/messagepage.o
 debug/qrc_resource.o
 debug/moc_login.o
 debug/moc_mainwindow.o
@@ -36,3 +37,5 @@ debug/moc_hospdash.o
 debug/moc_appointment.o
 debug/moc_livedash.o
 debug/moc_myhospital.o
+debug/moc_quepage4.o
+debug/moc_messagepage.o

@@ -18,9 +18,6 @@ public:
     explicit Rapidcovid(QWidget *parent = nullptr);
     ~Rapidcovid();
 
-//private slots:
-    //void on_pushButton_Rapidcovid_clicked();
-
 private slots:
     void on_pushButton_rct_clicked();
 
