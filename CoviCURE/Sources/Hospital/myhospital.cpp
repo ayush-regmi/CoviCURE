@@ -82,10 +82,10 @@ Myhospital::Myhospital(int hospID, QWidget *parent) :
                 vaccine = run.value(16).toString();
             }
             ui->name->setText((name));
-            ui->name_2->setText((name));
+            ui->name_next->setText((name));
             ui->address->setText((address));
             ui->email->setText((email));
-            ui->email_2->setText((email));
+            ui->email_next->setText((email));
             ui->phone->setText((phone));
             ui->mobile_2->setText((phone));
             ui->mobile->setText((mobile));
