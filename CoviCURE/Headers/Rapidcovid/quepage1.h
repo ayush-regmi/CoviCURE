@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include "Headers/Rapidcovid/quepage2.h"
-
 namespace Ui {
 class Quepage1;
 }
@@ -19,25 +18,6 @@ public:
 private slots:
     void on_next_quepage1_clicked();
 
-    void on_que1_opt1_clicked();
-
-    void on_que1_opt2_clicked();
-
-    void on_que1_opt3_clicked();
-
-    void on_que1_opt4_clicked();
-
-    void on_que2_opt1_clicked();
-
-    void on_que2_opt2_clicked();
-
-    void on_que2_opt3_clicked();
-
-    void on_que2_opt4_clicked();
-
-    void on_que3_opt1_clicked();
-
-    void on_que3_opt2_clicked();
 
 private:
     Ui::Quepage1 *ui;

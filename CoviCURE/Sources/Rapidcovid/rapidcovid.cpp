@@ -47,7 +47,6 @@ Rapidcovid::~Rapidcovid()
 void Rapidcovid::on_pushButton_rct_clicked()
 {
     hide();
-    this->hide();
     quepage1 = new Quepage1(this);
     quepage1->show();
 }
