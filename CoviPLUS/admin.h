@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include "patients.h"
+#include <QString>
+#include<QMessageBox>
+#include<QRandomGenerator>
+
 
 namespace Ui {
 class Admin;

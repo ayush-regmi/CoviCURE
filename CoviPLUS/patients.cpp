@@ -2,6 +2,33 @@
 #include "ui_patients.h"
 
 
+
+QString redPatient ="QPushButton {"
+                    "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+                    "color: rgb(255, 255, 255);"
+                    "border-radius: 20px;"
+                    "font: 26pt;"
+                    "width: 100px;"
+                    "font-style: \"Cooper Black\";"
+                 "}"
+                    "QPushButton:hover {"
+                      "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));"
+                 "}";
+
+QString darkPatient ="QPushButton {"
+                    "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));"
+                    "color: rgb(255, 255, 255);"
+                    "border-radius: 20px;"
+                    "font: 26pt;"
+                    "width: 100px;"
+                    "font-style: \"Cooper Black\";"
+                 "}"
+                    "QPushButton:hover {"
+                      "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));"
+                 "}";
+
+
+
 Patients::Patients(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Patients)
@@ -9,6 +36,9 @@ Patients::Patients(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowState(Qt::WindowMaximized);
     this-> showMaximized();
+
+    ui->pushButton_refresh->setStyleSheet(darkPatient);
+    ui->pushButton_back->setStyleSheet(redPatient);
 }
 
 void Database::connectDB(QString XXX){

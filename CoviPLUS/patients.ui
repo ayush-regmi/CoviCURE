@@ -13,24 +13,42 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(182, 213, 255, 255), stop:1 rgba(106, 255, 187, 255));</string>
+  </property>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>46</y>
-     <width>704</width>
-     <height>354</height>
+     <x>40</x>
+     <y>86</y>
+     <width>1201</width>
+     <height>461</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(96, 162, 255, 255), stop:1 rgba(108, 255, 188, 255));
+font: 600 12pt &quot;Segoe UI&quot;;
+color: rgb(43, 43, 64);
+border-radius:10px;</string>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
   </widget>
   <widget class="QPushButton" name="pushButton_back">
    <property name="geometry">
     <rect>
-     <x>502</x>
-     <y>404</y>
-     <width>232</width>
-     <height>18</height>
+     <x>660</x>
+     <y>570</y>
+     <width>261</width>
+     <height>81</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 20pt &quot;Segoe UI&quot;;
+border-radius: 15px;</string>
    </property>
    <property name="text">
     <string>Back</string>
@@ -39,24 +57,39 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>232</width>
-     <height>12</height>
+     <x>430</x>
+     <y>20</y>
+     <width>431</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 26pt &quot;Segoe UI&quot;;
+border-radius:15px;</string>
    </property>
    <property name="text">
     <string>Patient's Data</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_refresh">
    <property name="geometry">
     <rect>
-     <x>266</x>
-     <y>404</y>
-     <width>232</width>
-     <height>18</height>
+     <x>350</x>
+     <y>570</y>
+     <width>261</width>
+     <height>81</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 20pt &quot;Segoe UI&quot;;
+border-radius: 15px;</string>
    </property>
    <property name="text">
     <string>Refresh</string>

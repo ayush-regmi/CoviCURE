@@ -14,31 +14,18 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>420</y>
-      <width>451</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Note: Please enter your original licence number, It cannot be changed.</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
+      <x>80</x>
+      <y>20</y>
       <width>531</width>
-      <height>661</height>
+      <height>641</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
-border-radius: 15px;</string>
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 170, 186, 255), stop:1 rgba(0, 151, 13, 255));
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string/>
@@ -47,245 +34,375 @@ border-radius: 15px;</string>
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>350</y>
+       <y>270</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>170</y>
+       <y>90</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Address:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="ropen">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>470</y>
+       <y>390</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>230</y>
+       <y>150</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Email:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>350</y>
+       <y>270</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Phone:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="name">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>110</y>
+       <y>30</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="mobile">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>290</y>
+       <y>210</y>
        <width>261</width>
        <height>41</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>50</y>
-       <width>171</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Licence no:</string>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>290</y>
+       <y>210</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Mobile:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="address">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>170</y>
+       <y>90</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>470</y>
+       <y>390</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Registration open:</string>
      </property>
-    </widget>
-    <widget class="QLineEdit" name="licence">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>50</y>
-       <width>261</width>
-       <height>41</height>
-      </rect>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>110</y>
+       <y>30</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Name:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
        <x>31</x>
-       <y>530</y>
+       <y>450</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Registration close:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="email">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>230</y>
+       <y>150</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>410</y>
+       <y>330</y>
        <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Fax:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="rclose">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>530</y>
+       <y>450</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>590</y>
+       <y>510</y>
        <width>181</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Hospital open:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="hopen">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>590</y>
+       <y>510</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="fax">
      <property name="geometry">
       <rect>
        <x>240</x>
-       <y>410</y>
+       <y>330</y>
        <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="hclose">
+     <property name="geometry">
+      <rect>
+       <x>243</x>
+       <y>570</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>570</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Hospitla close:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>-10</y>
-      <width>581</width>
+      <x>670</x>
+      <y>20</y>
+      <width>531</width>
       <height>641</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
-border-radius: 10px;</string>
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 170, 186, 255), stop:1 rgba(0, 151, 13, 255));
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string/>
@@ -294,23 +411,36 @@ border-radius: 10px;</string>
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>150</y>
-       <width>201</width>
+       <y>90</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Ventilators:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_back">
      <property name="geometry">
       <rect>
-       <x>270</x>
-       <y>570</y>
-       <width>131</width>
-       <height>41</height>
+       <x>210</x>
+       <y>540</y>
+       <width>141</width>
+       <height>61</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 106, 255, 255), stop:1 rgba(0, 255, 138, 255));
+color: rgb(255, 255, 255);
+font: 600 16pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Back</string>
@@ -319,218 +449,301 @@ border-radius: 10px;</string>
     <widget class="QLineEdit" name="ambulance">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>270</y>
-       <width>301</width>
+       <x>240</x>
+       <y>210</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_add">
      <property name="geometry">
       <rect>
-       <x>420</x>
-       <y>570</y>
-       <width>131</width>
-       <height>41</height>
+       <x>380</x>
+       <y>540</y>
+       <width>141</width>
+       <height>61</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 106, 255, 255), stop:1 rgba(0, 255, 138, 255));
+color: rgb(255, 255, 255);
+font: 600 16pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Add</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="hclose">
-     <property name="geometry">
-      <rect>
-       <x>267</x>
-       <y>30</y>
-       <width>291</width>
-       <height>41</height>
-      </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_28">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>90</y>
-       <width>201</width>
+       <y>30</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Oxygen Cylinders:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_23">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>210</y>
-       <width>201</width>
+       <y>150</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>ICU:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>270</y>
-       <width>201</width>
+       <y>210</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Ambulance:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="oxygen">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>90</y>
-       <width>291</width>
+       <x>240</x>
+       <y>30</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_25">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>450</y>
-       <width>201</width>
+       <y>390</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Website</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_26">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>330</y>
-       <width>201</width>
+       <y>270</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>Vaccination</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="vaccination">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>330</y>
-       <width>301</width>
+       <x>240</x>
+       <y>270</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="website">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>450</y>
-       <width>301</width>
+       <x>240</x>
+       <y>390</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="ventilator">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>150</y>
-       <width>301</width>
+       <x>240</x>
+       <y>90</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="ICU">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>210</y>
-       <width>301</width>
+       <x>240</x>
+       <y>150</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="beds">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>510</y>
-       <width>301</width>
+       <x>240</x>
+       <y>450</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_24">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>390</y>
-       <width>201</width>
+       <y>330</y>
+       <width>171</width>
        <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
+     </property>
      <property name="text">
       <string>MRI:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_30">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>510</y>
-       <width>201</width>
+       <y>450</y>
+       <width>171</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 142, 71, 255), stop:1 rgba(0, 78, 104, 255));
+color: rgb(255, 255, 255);
+font: 600 14pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>No of beds</string>
      </property>
-    </widget>
-    <widget class="QLabel" name="label_29">
-     <property name="geometry">
-      <rect>
-       <x>27</x>
-       <y>30</y>
-       <width>201</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Hospitla close:</string>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
     <widget class="QLineEdit" name="MRI">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>390</y>
-       <width>301</width>
+       <x>240</x>
+       <y>330</y>
+       <width>261</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(64, 64, 95);
+font: 12pt &quot;Segoe UI&quot;;</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_patients">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>570</y>
-       <width>81</width>
-       <height>41</height>
+       <x>30</x>
+       <y>540</y>
+       <width>161</width>
+       <height>71</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(7, 0, 172, 255), stop:1 rgba(0, 174, 94, 255));
+color: rgb(255, 255, 255);
+font: 600 26pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>Patients</string>
