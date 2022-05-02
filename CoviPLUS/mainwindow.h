@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "admin.h"
+#include "hospital.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +17,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_login_clicked();
+
+    void on_pushButton_hos_clicked();
+
+    void on_pushButton_Close_clicked();
+
 private:
     Ui::MainWindow *ui;
+    Admin *admin;
+    Hospital *hospital;
 };
 #endif // MAINWINDOW_H

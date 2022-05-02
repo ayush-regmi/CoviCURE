@@ -29,6 +29,7 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
 void Login::on_pushButton_login_clicked() {
 this->hide();
                     dashboard = new Dashboard(this);
+<<<<<<< HEAD
                   dashboard -> show();
 //void Login::on_pushButton_login_clicked() {
 //    QString email=ui->lineEdit_email->text();
@@ -65,6 +66,20 @@ this->hide();
 //     else {
 //        qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
 //     }
+=======
+                    dashboard->showMaximized();
+                }
+                else {
+                     QMessageBox::warning(this,"Login", "Username or password is not correct");
+                     qDebug()<<"User name or password is incorrect !!!";
+                }
+            }
+        }
+    }
+     else {
+        qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
+     }
+>>>>>>> 5f86903dfd0ddbf30cee88cd050af3fd331bae98
 }
 
 Login::~Login()

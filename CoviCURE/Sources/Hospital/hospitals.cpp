@@ -58,9 +58,16 @@ Hospitals::Hospitals(QWidget *parent) : QMainWindow(parent),ui(new Ui::Hospitals
         qDebug()<<" Cannot!!!!!!!";
     }
     QString name[9];
+    int rowCount = 0;
     QSqlQuery run;
+
+    // Counting number of rows
+    run.exec("SELECT * FROM hospitals");
+    while(run.next())
+        rowCount++;
+
     if(run.exec("SELECT name FROM hospitals")) {
-            for(int i = 0; i < 8; i++) {
+            for(int i = 0; i < rowCount; i++) {
                 run.next();
                 name[i] = run.value(0).toString();
             }
@@ -69,11 +76,11 @@ Hospitals::Hospitals(QWidget *parent) : QMainWindow(parent),ui(new Ui::Hospitals
             ui->hos3->setText((name[2]));
             ui->hos4->setText((name[3]));
             ui->hos5->setText((name[4]));
-            ui->hos7->setText((name[5]));
-            ui->hos8->setText((name[6]));
-            ui->hos9->setText((name[7]));
+            ui->hos6->setText((name[5]));
+            ui->hos7->setText((name[6]));
+            ui->hos8->setText((name[7]));
+            ui->hos9->setText((name[8]));
      }
-
     else {
         qDebug()<<"Cannot ####";
     }
@@ -95,6 +102,7 @@ void Hospitals::on_hos1_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 
@@ -103,6 +111,7 @@ void Hospitals::on_hos2_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 
@@ -111,6 +120,7 @@ void Hospitals::on_hos3_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos4_clicked() {
@@ -118,6 +128,7 @@ void Hospitals::on_hos4_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos5_clicked() {
@@ -125,6 +136,7 @@ void Hospitals::on_hos5_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos6_clicked() {
@@ -132,6 +144,7 @@ void Hospitals::on_hos6_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos7_clicked() {
@@ -139,6 +152,7 @@ void Hospitals::on_hos7_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos8_clicked() {
@@ -146,6 +160,7 @@ void Hospitals::on_hos8_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
 
 void Hospitals::on_hos9_clicked() {
@@ -153,4 +168,5 @@ void Hospitals::on_hos9_clicked() {
     myhospital = new Myhospital(hospID);
     myhospital -> show();
     this->close();
+    hospID = 0;
 }
