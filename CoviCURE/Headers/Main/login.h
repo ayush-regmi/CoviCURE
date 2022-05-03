@@ -2,7 +2,7 @@
 #define LOGIN_H
 
 #include <QDialog>
-#include "Headers\Main\dashboard.h"
+#include "Headers\Main\home.h"
 #include "Headers\database.h"
 
 namespace Ui {
@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::Login *ui;
-    Dashboard *dashboard;
+    Home *home;
 };
 
 #endif // LOGIN_H

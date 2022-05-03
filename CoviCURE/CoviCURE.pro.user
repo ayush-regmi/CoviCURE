@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 6.0.2, 2022-05-03T00:42:25. -->
-=======
-
-<!-- Written by QtCreator 6.0.2, 2022-05-02T17:55:32. -->
-
-
-<!-- Written by QtCreator 6.0.2, 2022-05-02T17:36:02. -->
-
-<!-- Written by QtCreator 6.0.2, 2022-05-02T17:20:17. -->
-
-
->>>>>>> 2924bf2c90d8a36f6f7483fdbc01575dac63dbb6
+<!-- Written by QtCreator 6.0.2, 2022-05-03T14:31:04. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -252,13 +240,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Desktop/CoviCURE/CoviCURE/CoviCURE.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Desktop/CoviCURE/CoviCURE/CoviCURE.pro</value>
-
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Hp/Documents/Projects/CoviProject/CoviCURE/CoviCURE.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Hp/Documents/Projects/CoviProject/CoviCURE/CoviCURE.pro</value>
-
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>

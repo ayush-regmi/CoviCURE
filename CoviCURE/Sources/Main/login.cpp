@@ -48,8 +48,8 @@ void Login::on_pushButton_login_clicked() {
                 if(emaildb==email && passworddb==password){
                     qDebug()<<"Login Successful !!!";
                     this->hide();
-                    dashboard = new Dashboard(this);
-                    dashboard->showMaximized();
+                    home = new Home();
+                    home->showMaximized();
                 }
                 else {
                      QMessageBox::warning(this,"Login", "Username or password is not correct");

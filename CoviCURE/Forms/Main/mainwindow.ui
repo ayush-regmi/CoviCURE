@@ -33,7 +33,7 @@ border-radius: 20px;</string>
     <property name="title">
      <string/>
     </property>
-    <widget class="QPushButton" name="pushButton_Signup_3">
+    <widget class="QPushButton" name="pushButton_Signup">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -66,7 +66,7 @@ color: rgb(255, 255, 255);</string>
       <string>Signup</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_Login_3">
+    <widget class="QPushButton" name="pushButton_Login">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -99,7 +99,7 @@ color: rgb(255, 255, 255);</string>
       <string>Login</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_Exit_3">
+    <widget class="QPushButton" name="pushButton_Exit">
      <property name="geometry">
       <rect>
        <x>170</x>

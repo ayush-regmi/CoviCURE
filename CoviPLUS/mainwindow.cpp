@@ -70,7 +70,7 @@ void MainWindow::on_pushButton_hos_clicked()
     if (connectUser.connectionDB()){
         qDebug()<<" sql connection successful ";
         QSqlQuery query(QSqlDatabase::database("user"));
-        query.prepare(QString("SELECT * FROM hospitals WHERE License=:license"));
+        query.prepare(QString("SELECT * FROM hospitals WHERE license=:license"));
         query.bindValue(":license", License);
 
         if(!query.exec()){
@@ -79,7 +79,7 @@ void MainWindow::on_pushButton_hos_clicked()
         else{
             qDebug()<<" Successful connection "<<"connect to mysql OK";
             while(query.next()){
-                QString Licensedb=query.value(1).toString();
+                QString Licensedb=query.value(20).toString();
 
                 if(Licensedb == License){
                     qDebug()<<"Login Successful !!!";
@@ -88,8 +88,7 @@ void MainWindow::on_pushButton_hos_clicked()
                     hospital->showMaximized();
                 }
                 else {
-                     QMessageBox::warning(this,"Login", "License not Available");
-                     qDebug()<<"License not Available !!!";
+                     QMessageBox::warning(this, "login", "License not available");
                 }
             }
         }

@@ -3,6 +3,8 @@
 #include <string>
 #include <iostream>
 #include <QPixmap>
+#include <QDesktopServices>
+#include <QUrl>
 
 QString yesCss="QLabel {"
                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 174, 72, 255), stop:1 rgba(0, 216, 135, 255));"
@@ -57,8 +59,21 @@ Myhospital::Myhospital(int hospID, QWidget *parent) :
     QString name, address, email, mobile, phone, fax, website;
     QString beds, doctors, oxygen, ventilater, icu;
     QString hospOpen, hospClose, regOpen, regClose;
-    QString ambulance, mri, vaccine;
+    QString ambulance, mri, vaccine, doctorss[10];
     QSqlQuery run;
+
+    if(run.exec("SELECT * FROM doctors WHERE id='"+s+"'")) {
+        run.next();
+        for(int j = 0; j < 10; j++) {
+            doctorss[j] = run.value(j + 2).toString();
+            ui->comboBox->addItem(doctorss[j]);
+        }
+        qDebug() << "doctors are applieeddd";
+    }
+    else {
+        qDebug() << "Query didnt run";
+    }
+
     if(run.exec("SELECT * FROM hospitals WHERE id='"+s+"'")) {
                 run.next();
                 name = run.value(1).toString();
@@ -81,6 +96,7 @@ Myhospital::Myhospital(int hospID, QWidget *parent) :
                 ambulance = run.value(15).toString();
                 vaccine = run.value(16).toString();
             }
+
             ui->name->setText((name));
             ui->name_next->setText((name));
             ui->address->setText((address));
