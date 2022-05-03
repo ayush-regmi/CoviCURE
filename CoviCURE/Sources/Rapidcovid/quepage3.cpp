@@ -39,6 +39,8 @@ Quepage3::Quepage3(QWidget *parent) :
     ui->que8_opt4->setStyleSheet(cssquepage3);
     ui->que8_opt5->setStyleSheet(cssquepage3);
     ui->que8_opt6->setStyleSheet(cssquepage3);
+    ui->que8_opt7->setStyleSheet(cssquepage3);
+    ui->que8_opt8->setStyleSheet(cssquepage3);
     ui->next_quepage3->setStyleSheet(cssquepage3);
     ui->back_quepage3->setStyleSheet(cssquepage3);
 
