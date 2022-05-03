@@ -43,6 +43,7 @@ border-radius: 20px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>36</pointsize>
       <italic>false</italic>
       <bold>true</bold>
@@ -88,6 +89,7 @@ color: rgb(255, 255, 255);
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -120,6 +122,7 @@ border-radius: 10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>26</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -153,6 +156,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -188,6 +192,7 @@ border-radius: 10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>26</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -221,6 +226,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Arial Rounded MT Bold</family>
       <pointsize>14</pointsize>
       <italic>false</italic>
       <bold>false</bold>
