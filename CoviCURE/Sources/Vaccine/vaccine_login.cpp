@@ -45,7 +45,7 @@ Vaccine_Login::~Vaccine_Login()
     delete ui;
 }
 
-void Vaccine_Login::on_pushButton_clicked()
+void Vaccine_Login::on_pushButton_login_clicked()
 {
        hide();
        loginview = new Loginview;
@@ -55,7 +55,7 @@ void Vaccine_Login::on_pushButton_clicked()
 }
 
 
-void Vaccine_Login::on_pushButton_2_clicked()
+void Vaccine_Login::on_pushButton_register_clicked()
 {
     hide();
     signupvax=new Signupvaccine;
@@ -63,8 +63,8 @@ void Vaccine_Login::on_pushButton_2_clicked()
 }
 
 
-void Vaccine_Login::on_pushButton_3_clicked()
+void Vaccine_Login::on_pushButton_back_clicked()
 {
-
+    hide();
 }
 
