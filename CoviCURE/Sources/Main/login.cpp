@@ -52,8 +52,8 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
                 if(emaildb==email && passworddb==password){
                     qDebug()<<"Login Successful !!!";
                     this->hide();
-                    dashboard = new Dashboard(this);
-                    dashboard->showMaximized();
+                    home = new Home();
+                    home->showMaximized();
                 }
                 else {
                      QMessageBox::warning(this,"Login", "Username or password is not correct");

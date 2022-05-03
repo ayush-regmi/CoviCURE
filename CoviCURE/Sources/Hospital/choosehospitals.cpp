@@ -54,8 +54,6 @@ void ChooseHospitals::on_pushButton_ok_clicked()
 }
 
 void ChooseHospitals::on_pushButton_cancel_clicked() {
-    // Hide the HelpWindow itself
-        // or this->close()
-        hide();
+        this->close();
 }
 
