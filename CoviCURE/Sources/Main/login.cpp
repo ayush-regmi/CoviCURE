@@ -6,7 +6,7 @@
 QString csslog="QPushButton {"
                 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
                 "color: rgb(255, 255, 255);"
-                "border-radius: 20px;"
+                "border-radius: 50px;"
                 "font: 17pt;"
                 "width: 100px;"
                 "font-style: \"Cooper Black\";"
@@ -22,20 +22,16 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
     ui->pushButton_login->setStyleSheet(csslog);
 }
 
-//void connectDB(QString);
-//bool connectionDB();
-//Database connectUser;
+void connectDB(QString);
+bool connectionDB();
+Database connectUser;
 
-//void Login::on_pushButton_login_clicked() {
-//    QString email=ui->lineEdit_email->text();
-//    QString password=ui->lineEdit_password->text();
-    void Login::on_pushButton_login_clicked() {
-                this->hide();
-                    dashboard = new Dashboard(this);
-                  dashboard -> show();
-    //connectUser.connectDB("user");
+void Login::on_pushButton_login_clicked() {
+    QString email=ui->lineEdit_email->text();
+    QString password=ui->lineEdit_password->text();
+    connectUser.connectDB("user");
 
-    /*if (connectUser.connectionDB()){
+    if (connectUser.connectionDB()){
         qDebug()<<" sql connection successful ";
         QSqlQuery query(QSqlDatabase::database("user"));
         query.prepare(QString("SELECT * FROM users_registration_table WHERE Email=:Email AND Password= :Password"));
@@ -52,8 +48,8 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
                 if(emaildb==email && passworddb==password){
                     qDebug()<<"Login Successful !!!";
                     this->hide();
-                    dashboard = new Dashboard(this);
-                    dashboard->showMaximized();
+                    home = new Home();
+                    home->showMaximized();
                 }
                 else {
                      QMessageBox::warning(this,"Login", "Username or password is not correct");
@@ -64,7 +60,7 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
     }
      else {
         qDebug()<<" Can't connect "<<"connect to mysql error"<<connectUser.getDB().lastError().text();
-     }*/
+     }
 }
 
 Login::~Login()

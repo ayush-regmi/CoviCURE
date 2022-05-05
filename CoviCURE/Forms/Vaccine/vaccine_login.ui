@@ -87,7 +87,7 @@ color: rgb(255, 255, 255);
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>LOG IN</string>
+     <string>L O G   I N</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_register">
@@ -109,7 +109,7 @@ color: rgb(255, 255, 255);
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>REGISTER</string>
+     <string>R E G I S T E R</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_back">
@@ -148,7 +148,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FOR 1&lt;span style=&quot; vertical-align:super;&quot;&gt;st&lt;/span&gt; DOSE :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1&lt;span style=&quot; vertical-align:super;&quot;&gt;st&lt;/span&gt; DOSE &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -168,7 +168,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FOR 2&lt;span style=&quot; vertical-align:super;&quot;&gt;nd&lt;/span&gt; DOSE :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;2&lt;span style=&quot; vertical-align:super;&quot;&gt;nd&lt;/span&gt; DOSE &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

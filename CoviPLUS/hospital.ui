@@ -476,7 +476,7 @@ color: rgb(255, 255, 255);
 font: 600 16pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
-      <string>Add</string>
+      <string>Update</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_28">

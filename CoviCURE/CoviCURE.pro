@@ -13,7 +13,6 @@ SOURCES += \
     Sources\Main\main.cpp \
     Sources\Main\mainwindow.cpp \
     Sources\Main\signup.cpp \
-    Sources\Main\dashboard.cpp \
     Sources\Hospital\choosehospitals.cpp \
     Sources\Vaccine\vaccine_login.cpp \
     Sources\Vaccine\loginview.cpp \
@@ -29,14 +28,15 @@ SOURCES += \
     Sources/Live/livedash.cpp \
     Sources/Hospital/myhospital.cpp \
     Sources/Rapidcovid/quepage4.cpp \
-    Sources/Rapidcovid/messagepage.cpp
+    Sources/Rapidcovid/messagepage.cpp \
+    Sources/Main/home.cpp \
+    Sources/VAccine/card1.cpp
 
 
 HEADERS += \
     Headers\Main\login.h \
     Headers\Main\mainwindow.h \
     Headers\Main\signup.h \
-    Headers\Main\dashboard.h \
     Headers\Hospital\choosehospitals.h \
     Headers\Vaccine\vaccine_login.h \
     Headers\Vaccine\loginview.h \
@@ -52,14 +52,15 @@ HEADERS += \
     Headers\Live\livedash.h \
     Headers/Hospital/myhospital.h \
     Headers/Rapidcovid/quepage4.h \
-    Headers/Rapidcovid/messagepage.h
+    Headers/Rapidcovid/messagepage.h \
+    Headers/Main/home.h \
+    Headers/Vaccine/card1.h
 
 
 FORMS += \
     Forms\Main\login.ui \
     Forms\Main\mainwindow.ui \
     Forms\Main\signup.ui \
-    Forms\Main\dashboard.ui \
     Forms\Hospital\choosehospitals.ui \
     Forms\Vaccine\vaccine_login.ui \
     Forms\Vaccine\loginview.ui \
@@ -74,7 +75,9 @@ FORMS += \
     Forms\Live\livedash.ui \
     Forms/Hospital/myhospital.ui \
     Forms/Rapidcovid/quepage4.ui \
-    Forms/Rapidcovid/messagepage.ui
+    Forms/Rapidcovid/messagepage.ui \
+    Forms/Main/home.ui \
+    Forms/Vaccine/card1.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
