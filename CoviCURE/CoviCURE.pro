@@ -30,7 +30,7 @@ SOURCES += \
     Sources/Rapidcovid/quepage4.cpp \
     Sources/Rapidcovid/messagepage.cpp \
     Sources/Main/home.cpp \
-    Sources/VAccine/card1.cpp
+    Sources/Vaccine/card1.cpp
 
 
 HEADERS += \
