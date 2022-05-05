@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 145, 174, 255), stop:1 rgba(184, 50, 50, 255));
 border-radius: 20px;</string>
    </property>
    <property name="title">
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Continue.........&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Continue.........&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -323,9 +323,9 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>600</y>
+      <y>590</y>
       <width>191</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -356,9 +356,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>930</x>
-      <y>600</y>
+      <y>590</y>
       <width>191</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -566,7 +566,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Longing Period of the above symptoms:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Longing Period of the above symptoms:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

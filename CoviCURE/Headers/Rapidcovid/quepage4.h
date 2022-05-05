@@ -52,6 +52,8 @@ private slots:
 
     void on_submit_quepage4_clicked();
 
+    void on_back_quepage4_clicked();
+
 private:
     Ui::Quepage4 *ui;
     Messagepage *messagepage;

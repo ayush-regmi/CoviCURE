@@ -53,6 +53,8 @@ private slots:
 
     void on_next_quepage3_clicked();
 
+    void on_back_quepage3_clicked();
+
 private:
     Ui::Quepage3 *ui;
     Quepage4 *quepage4;
