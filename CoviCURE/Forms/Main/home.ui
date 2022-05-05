@@ -35,7 +35,7 @@ border-radius: 10px;</string>
       <rect>
        <x>30</x>
        <y>270</y>
-       <width>571</width>
+       <width>511</width>
        <height>161</height>
       </rect>
      </property>
@@ -72,9 +72,9 @@ background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx
     <widget class="QPushButton" name="pushButton_Rapidcovid">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>700</x>
        <y>460</y>
-       <width>571</width>
+       <width>511</width>
        <height>161</height>
       </rect>
      </property>
@@ -106,9 +106,9 @@ border-radius: 10px;</string>
     <widget class="QPushButton" name="pushButton_Hospital">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>700</x>
        <y>270</y>
-       <width>571</width>
+       <width>511</width>
        <height>161</height>
       </rect>
      </property>
@@ -151,7 +151,7 @@ background-color: qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx
       <rect>
        <x>30</x>
        <y>460</y>
-       <width>571</width>
+       <width>511</width>
        <height>161</height>
       </rect>
      </property>
@@ -195,6 +195,29 @@ image: url(:/resources/img/CoviCURE.png);</string>
      </property>
      <property name="text">
       <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Out">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>400</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/resources/img/power-button.png</normaloff>:/resources/img/power-button.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>85</width>
+       <height>85</height>
+      </size>
      </property>
     </widget>
    </widget>

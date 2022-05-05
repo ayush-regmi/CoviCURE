@@ -19,10 +19,10 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>40</y>
-     <width>611</width>
-     <height>621</height>
+     <x>250</x>
+     <y>10</y>
+     <width>871</width>
+     <height>651</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -35,10 +35,10 @@ border-radius: 15px;</string>
    <widget class="QLineEdit" name="lineEditName">
     <property name="geometry">
      <rect>
-      <x>186</x>
-      <y>130</y>
-      <width>401</width>
-      <height>31</height>
+      <x>290</x>
+      <y>100</y>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -56,10 +56,10 @@ font: 16pt &quot;Segoe UI&quot;;</string>
    <widget class="QLabel" name="labelName">
     <property name="geometry">
      <rect>
-      <x>31</x>
-      <y>130</y>
-      <width>71</width>
-      <height>31</height>
+      <x>30</x>
+      <y>100</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -93,9 +93,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>190</y>
-      <width>121</width>
-      <height>31</height>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -126,9 +126,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>250</y>
-      <width>181</width>
-      <height>31</height>
+      <y>240</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -152,10 +152,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="lineEditMobile">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>250</y>
-      <width>361</width>
-      <height>31</height>
+      <x>290</x>
+      <y>240</y>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -173,10 +173,10 @@ font: 16pt &quot;Segoe UI&quot;;</string>
    <widget class="QLineEdit" name="lineEditAddress">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>370</y>
-      <width>361</width>
-      <height>31</height>
+      <x>290</x>
+      <y>380</y>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -195,9 +195,9 @@ font: 16pt &quot;Segoe UI&quot;;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>370</y>
-      <width>181</width>
-      <height>31</height>
+      <y>380</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -222,9 +222,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>31</x>
-      <y>430</y>
-      <width>181</width>
-      <height>31</height>
+      <y>450</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -242,10 +242,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="lineEditState">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>430</y>
-      <width>361</width>
-      <height>31</height>
+      <x>290</x>
+      <y>450</y>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -264,9 +264,9 @@ font: 16pt &quot;Segoe UI&quot;;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>490</y>
-      <width>181</width>
-      <height>31</height>
+      <y>520</y>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -290,10 +290,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLineEdit" name="lineEditNation">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>490</y>
-      <width>361</width>
-      <height>31</height>
+      <x>290</x>
+      <y>520</y>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -311,10 +311,10 @@ font: 16pt &quot;Segoe UI&quot;;</string>
    <widget class="QDateEdit" name="dateEditDob">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>190</y>
-      <width>141</width>
-      <height>31</height>
+      <x>410</x>
+      <y>170</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -328,14 +328,17 @@ font: 16pt &quot;Segoe UI&quot;;</string>
 background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(54, 0, 129, 255), stop:1 rgba(0, 116, 147, 255));
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="labelDob">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>190</y>
+      <x>290</x>
+      <y>170</y>
       <width>111</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -356,28 +359,13 @@ color: rgb(255, 255, 255);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QComboBox" name="combo_Mr">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>130</y>
-      <width>71</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
-background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(54, 0, 129, 255), stop:1 rgba(0, 116, 147, 255));
-color: rgb(255, 255, 255);</string>
-    </property>
-   </widget>
    <widget class="QComboBox" name="combo_Sex">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>190</y>
-      <width>131</width>
-      <height>31</height>
+      <x>150</x>
+      <y>170</y>
+      <width>101</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -391,8 +379,8 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>30</x>
       <y>310</y>
-      <width>181</width>
-      <height>31</height>
+      <width>231</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -413,13 +401,13 @@ color: rgb(255, 255, 255);</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEditAddress_2">
+   <widget class="QLineEdit" name="lineEditAddressLicense">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>290</x>
       <y>310</y>
-      <width>361</width>
-      <height>31</height>
+      <width>551</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -440,10 +428,10 @@ font: 16pt &quot;Segoe UI&quot;;</string>
    <widget class="QDateEdit" name="dateEditDate">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>560</y>
-      <width>141</width>
-      <height>31</height>
+      <x>710</x>
+      <y>170</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -457,14 +445,17 @@ font: 16pt &quot;Segoe UI&quot;;</string>
 background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(54, 0, 129, 255), stop:1 rgba(0, 116, 147, 255));
 color: rgb(255, 255, 255);</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QLabel" name="labelDob_2">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>560</y>
+      <x>590</x>
+      <y>170</y>
       <width>111</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -488,9 +479,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="Signup_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>551</width>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
       <height>71</height>
      </rect>
     </property>
@@ -519,6 +510,32 @@ color: rgb(255, 255, 255);
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Back">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>580</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>B A C K</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Submit">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>580</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R E G I S T E R</string>
     </property>
    </widget>
   </widget>

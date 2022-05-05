@@ -38,7 +38,6 @@ MainWindow::~MainWindow() {
 
 
 void MainWindow::on_pushButton_Login_clicked() {
-    this->hide();
     login = new Login(this);
     login->show();
 }
@@ -54,4 +53,3 @@ void MainWindow::on_pushButton_Signup_clicked() {
     signup = new Signup(this);
     signup->show();
 }
-

@@ -29,7 +29,8 @@ SOURCES += \
     Sources/Hospital/myhospital.cpp \
     Sources/Rapidcovid/quepage4.cpp \
     Sources/Rapidcovid/messagepage.cpp \
-    Sources/Main/home.cpp
+    Sources/Main/home.cpp \
+    Sources/VAccine/card1.cpp
 
 
 HEADERS += \
@@ -52,7 +53,8 @@ HEADERS += \
     Headers/Hospital/myhospital.h \
     Headers/Rapidcovid/quepage4.h \
     Headers/Rapidcovid/messagepage.h \
-    Headers/Main/home.h
+    Headers/Main/home.h \
+    Headers/Vaccine/card1.h
 
 
 FORMS += \
@@ -74,7 +76,8 @@ FORMS += \
     Forms/Hospital/myhospital.ui \
     Forms/Rapidcovid/quepage4.ui \
     Forms/Rapidcovid/messagepage.ui \
-    Forms/Main/home.ui
+    Forms/Main/home.ui \
+    Forms/Vaccine/card1.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
