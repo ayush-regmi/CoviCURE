@@ -6,7 +6,7 @@ double count;
 
 QString cssquepage1=
         "QPushButton {"
-                          "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0.130682 rgba(0, 255, 96, 255), stop:0.909091 rgba(0, 225, 169, 255));"
+                          "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 181, 255, 255), stop:1 rgba(0, 117, 255, 255));"
 
                           "color: rgb(255, 255, 255);"
                           "border-radius: 15px;"

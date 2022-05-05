@@ -31,8 +31,8 @@ Login::Login(QWidget *parent) : QDialog(parent), ui(new Ui::Login) {
 //    QString password=ui->lineEdit_password->text();
     void Login::on_pushButton_login_clicked() {
                 this->hide();
-                    dashboard = new Dashboard(this);
-                  dashboard -> show();
+                    home = new Home(this);
+                  home -> show();
     //connectUser.connectDB("user");
 
     /*if (connectUser.connectionDB()){

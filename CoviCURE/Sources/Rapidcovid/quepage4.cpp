@@ -7,19 +7,19 @@ double count4;
 
 QString cssquepage4=
         "QPushButton {"
-                          "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+                          "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 181, 255, 255), stop:1 rgba(0, 117, 255, 255));"
 
                           "color: rgb(255, 255, 255);"
-                          "border-radius: 20px;"
+                          "border-radius: 15px;"
                           "font: 20pt;"
-                          "width: 90px;"
-                          "font-style: \"Cooper Black\";"
+                          "width: 80px;"
+
                        "}"
 
         "QPushButton:hover {"
                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
                             "}"
-        "QpushButton:presssed {"
+        "QpushButton:clicked {"
         "background-color: rgb(85, 170, 127);"
         "}";
 QString backsubmit=
