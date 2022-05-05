@@ -29,7 +29,11 @@ SOURCES += \
     Sources/Live/livedash.cpp \
     Sources/Hospital/myhospital.cpp \
     Sources/Rapidcovid/quepage4.cpp \
+    Sources/Rapidcovid/messagepage.cpp \
+    Sources/Main/home.cpp \
+    Sources/Vaccine/card1.cpp
     Sources/Rapidcovid/messagepage.cpp
+
 
 
 HEADERS += \
