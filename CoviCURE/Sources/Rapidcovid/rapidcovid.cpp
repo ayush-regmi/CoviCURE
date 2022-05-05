@@ -27,6 +27,7 @@ QString rctquit ="QPushButton {"
                     "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 255), stop:0.853933 rgba(188, 209, 232, 255));"
                "}";
 
+
 Rapidcovid::Rapidcovid(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Rapidcovid)
@@ -72,4 +73,10 @@ void Rapidcovid::on_pushButton_dashboard_clicked()
 //    dashboard = new Dashboard(this);
 //    dashboard->show();
 //}
+
+
+void Rapidcovid::on_pushButton_quit_clicked()
+{
+    hide();
+}
 

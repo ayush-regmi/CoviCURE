@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 145, 174, 255), stop:1 rgba(184, 50, 50, 255));
 border-radius: 20px;</string>
    </property>
    <property name="title">
@@ -43,6 +43,7 @@ border-radius: 20px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>36</pointsize>
       <italic>false</italic>
       <bold>true</bold>
@@ -85,6 +86,7 @@ color: rgb(255, 255, 255);
     </property>
     <property name="font">
      <font>
+      <family>Arial Rounded MT Bold</family>
       <pointsize>14</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -109,6 +111,7 @@ font: 14pt &quot;Arial Rounded MT Bold&quot;;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -136,6 +139,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -169,6 +173,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -194,6 +199,7 @@ border-radius:10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -221,6 +227,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -248,6 +255,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -284,6 +292,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -309,6 +318,7 @@ border-radius:10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>20</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -342,6 +352,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -373,6 +384,7 @@ border-radius:10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -404,6 +416,7 @@ border-radius:10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
@@ -438,6 +451,7 @@ border-radius:10px;</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>16</pointsize>
       <italic>false</italic>
       <bold>false</bold>
