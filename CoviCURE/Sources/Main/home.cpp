@@ -12,6 +12,17 @@ QString css="QPushButton {"
                  "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
              "}";
 
+QString cssOut="QPushButton {"
+                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 98, 197, 255), stop:0.857955 rgba(0, 207, 60, 255));"
+                "color: rgb(255, 255, 255);"
+                "border-radius: 50px;"
+                "font: 26pt;"
+                "font-style: \"Cooper Black\";"
+             "}"
+                "QPushButton:hover {"
+                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+             "}";
+
 
 Home::Home(QWidget *parent) :
     QMainWindow(parent),
@@ -27,23 +38,20 @@ Home::Home(QWidget *parent) :
         ui->pushButton_Live->setStyleSheet(css);
         ui->pushButton_Rapidcovid->setStyleSheet(css);
         ui->pushButton_vaccine->setStyleSheet(css);
+        ui->pushButton_Out->setStyleSheet(cssOut);
 }
+
 
 Home::~Home()
 {
     delete ui;
 }
 
-
 void Home::on_pushButton_Hospital_clicked()
 {
     choosehospitals = new ChooseHospitals(this);
     choosehospitals -> showMaximized();
 }
-
-
-
-
 
 void Home::on_pushButton_Live_clicked()
 {
@@ -65,3 +73,6 @@ void Home::on_pushButton_Rapidcovid_clicked()
     rapidcovid -> showMaximized();
 }
 
+void Home::on_pushButton_Out_clicked() {
+    this->hide();
+}

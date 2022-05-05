@@ -388,9 +388,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="que8_opt18">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>310</y>
-      <width>231</width>
+      <width>241</width>
       <height>51</height>
      </rect>
     </property>
@@ -407,7 +407,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210
 border-radius: 10px;</string>
     </property>
     <property name="text">
-     <string>Shortness of Breathe</string>
+     <string>Breathe Shortness</string>
     </property>
    </widget>
    <widget class="QPushButton" name="que8_opt20">

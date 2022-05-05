@@ -16,10 +16,10 @@
   <widget class="QGroupBox" name="groupbox_display">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>40</y>
-     <width>691</width>
-     <height>561</height>
+     <x>30</x>
+     <y>30</y>
+     <width>1150</width>
+     <height>650</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -32,6 +32,41 @@ border-radius: 20px;</string>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
+   <widget class="QLabel" name="label_message">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>80</y>
+      <width>900</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

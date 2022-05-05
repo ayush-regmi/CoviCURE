@@ -22,11 +22,14 @@
      <x>300</x>
      <y>60</y>
      <width>691</width>
-     <height>561</height>
+     <height>571</height>
     </rect>
    </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 145, 174, 255), stop:1 rgba(184, 50, 50, 255));
 border-radius: 20px;</string>
    </property>
    <property name="title">
@@ -207,10 +210,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton_login">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>450</y>
-      <width>181</width>
-      <height>61</height>
+      <x>540</x>
+      <y>430</y>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -229,14 +232,26 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.629213 rgba(84, 154, 232, 255));
 font: 14pt &quot;Arial Rounded MT Bold&quot;;
-border-radius: 6px;</string>
+border-radius: 50px;</string>
     </property>
     <property name="text">
-     <string>Login</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../../resource.qrc">
+      <normaloff>:/resources/img/user.png</normaloff>:/resources/img/user.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
     </property>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
