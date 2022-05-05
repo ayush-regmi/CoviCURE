@@ -38,7 +38,7 @@ MainWindow::~MainWindow() {
 
 
 void MainWindow::on_pushButton_Login_3_clicked() {
-    this->hide();
+    //this->hide();
     login = new Login(this);
     login->show();
 }

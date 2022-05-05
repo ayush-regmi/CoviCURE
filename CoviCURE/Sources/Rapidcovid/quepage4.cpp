@@ -15,6 +15,23 @@ QString cssquepage4=
                           "width: 90px;"
                           "font-style: \"Cooper Black\";"
                        "}"
+
+        "QPushButton:hover {"
+                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+                            "}"
+        "QpushButton:presssed {"
+        "background-color: rgb(85, 170, 127);"
+        "}";
+QString backsubmit=
+        "QPushButton {"
+                          "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+
+                          "color: rgb(255, 255, 255);"
+                          "border-radius: 20px;"
+                          "font: 20pt;"
+                          "width: 90px;"
+                          "font-style: \"Cooper Black\";"
+                       "}"
         "QPushButton:hover {"
                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
                             "}";
@@ -42,8 +59,8 @@ Quepage4::Quepage4(QWidget *parent) :
     ui->que9_opt2->setStyleSheet(cssquepage4);
     ui->que9_opt3->setStyleSheet(cssquepage4);
     ui->que9_opt4->setStyleSheet(cssquepage4);
-    ui->back_quepage4->setStyleSheet(cssquepage4);
-    ui->submit_quepage4->setStyleSheet(cssquepage4);
+    ui->back_quepage4->setStyleSheet(backsubmit);
+    ui->submit_quepage4->setStyleSheet(backsubmit);
 }
 
 //double Quepage4::count4 = 0;
@@ -174,5 +191,11 @@ void Quepage4::on_submit_quepage4_clicked()
     hide();
     messagepage = new Messagepage();
     messagepage->show();
+}
+
+
+void Quepage4::on_back_quepage4_clicked()
+{
+    hide();
 }
 

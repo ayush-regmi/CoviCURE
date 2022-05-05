@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pushButton_login_clicked();
 
+    void on_pushButton_back_clicked();
+
 private:
     Ui::Login *ui;
     Dashboard *dashboard;

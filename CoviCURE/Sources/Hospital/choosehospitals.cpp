@@ -28,7 +28,6 @@ QString chooseexit ="QPushButton {"
                  "}";
 
 
-
 ChooseHospitals::ChooseHospitals(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ChooseHospitals)

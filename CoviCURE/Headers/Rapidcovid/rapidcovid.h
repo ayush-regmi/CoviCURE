@@ -25,6 +25,8 @@ private slots:
 
   //  void on_pushButton_loginQuit_clicked();
 
+    void on_pushButton_quit_clicked();
+
 private:
     Ui::Rapidcovid *ui;
     Quepage1 *quepage1;

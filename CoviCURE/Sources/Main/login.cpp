@@ -72,3 +72,9 @@ Login::~Login()
     delete ui;
     //connectUser.getDB().close();
 }
+
+void Login::on_pushButton_back_clicked()
+{
+    hide();
+}
+
