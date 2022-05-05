@@ -6,6 +6,8 @@ Card1::Card1(QWidget *parent) :
     ui(new Ui::Card1)
 {
     ui->setupUi(this);
+    this->setWindowState(Qt::WindowMaximized);
+    this-> showMaximized();
 }
 
 Card1::~Card1()

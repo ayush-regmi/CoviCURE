@@ -31,7 +31,7 @@
 border-radius: 15px;</string>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string/>
     </property>
     <widget class="QLineEdit" name="lineEditName">
      <property name="geometry">
@@ -498,7 +498,7 @@ color: rgb(255, 255, 255);</string>
 border-radius: 10px;</string>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string/>
     </property>
     <widget class="QLabel" name="label">
      <property name="geometry">

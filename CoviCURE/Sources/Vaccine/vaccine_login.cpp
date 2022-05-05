@@ -2,6 +2,7 @@
 #include "ui_vaccine_login.h"
 #include "Headers/Vaccine/loginview.h"
 #include"Headers/Vaccine/signupvaccine.h"
+#include"Headers/Vaccine/card1.h"
 
 QString cssvacc="QPushButton {"
                 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
@@ -66,5 +67,12 @@ void Vaccine_Login::on_pushButton_2_clicked()
 void Vaccine_Login::on_pushButton_3_clicked()
 {
 
+}
+
+void Vaccine_Login::on_pushButton_register_clicked()
+{
+    hide();
+    card1 = new Card1();
+    card1->show();
 }
 
