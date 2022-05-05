@@ -2,7 +2,7 @@
 #include "ui_hospdash.h"
 
 QString cssHosDash="QPushButton {"
-                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 98, 197, 255), stop:0.857955 rgba(0, 207, 60, 255));"
+                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0909091 rgba(0, 202, 255, 255), stop:0.863636 rgba(255, 0, 85, 255));"
                 "color: rgb(255, 255, 255);"
                 "border-radius: 20px;"
                 "font: 26pt;"
