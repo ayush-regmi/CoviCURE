@@ -27,9 +27,9 @@ QString mainexit ="QPushButton {"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    ui->pushButton_Exit->setStyleSheet(mainexit);
-    ui->pushButton_Login->setStyleSheet(cssmain);
-    ui->pushButton_Signup->setStyleSheet(cssmain);
+    ui->pushButton_Exit_3->setStyleSheet(mainexit);
+    ui->pushButton_Login_3->setStyleSheet(cssmain);
+    ui->pushButton_Signup_3->setStyleSheet(cssmain);
 }
 
 MainWindow::~MainWindow() {
@@ -37,19 +37,21 @@ MainWindow::~MainWindow() {
 }
 
 
-void MainWindow::on_pushButton_Login_clicked() {
+void MainWindow::on_pushButton_Login_3_clicked() {
+    //this->hide();
     login = new Login(this);
     login->show();
 }
 
 
-void MainWindow::on_pushButton_Exit_clicked() {
+void MainWindow::on_pushButton_Exit_3_clicked() {
     this->close();
 }
 
 
-void MainWindow::on_pushButton_Signup_clicked() {
+void MainWindow::on_pushButton_Signup_3_clicked() {
     this->hide();
     signup = new Signup(this);
     signup->show();
 }
+

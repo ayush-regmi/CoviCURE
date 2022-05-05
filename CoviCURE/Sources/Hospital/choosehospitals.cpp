@@ -28,7 +28,6 @@ QString chooseexit ="QPushButton {"
                  "}";
 
 
-
 ChooseHospitals::ChooseHospitals(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ChooseHospitals)
@@ -54,6 +53,8 @@ void ChooseHospitals::on_pushButton_ok_clicked()
 }
 
 void ChooseHospitals::on_pushButton_cancel_clicked() {
-        this->close();
+    // Hide the HelpWindow itself
+        // or this->close()
+        hide();
 }
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1300</width>
+    <width>1200</width>
     <height>800</height>
    </rect>
   </property>
@@ -645,7 +645,7 @@ color: rgb(255, 255, 255);</string>
 color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(60, 179, 0, 255), stop:1 rgba(0, 41, 142, 255));</string>
     </property>
     <property name="text">
-     <string>O U R    S E R V I C E S</string>
+     <string>OUR SERVICES</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -909,27 +909,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="services_2">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>290</y>
-      <width>251</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 700 30pt &quot;Segoe UI&quot;;
-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(60, 179, 0, 255), stop:1 rgba(0, 41, 142, 255));</string>
-    </property>
-    <property name="text">
-     <string>D O C T O R S</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
+   <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -940,26 +920,9 @@ color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(60, 1
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 104, 43, 255), stop:1 rgba(0, 165, 103, 255));
-border-radius: 10px;</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QComboBox" name="comboBox">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>231</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 104, 43, 255), stop:1 rgba(0, 165, 103, 255));
 font: 600 14pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);</string>
-     </property>
-    </widget>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -967,7 +930,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1300</width>
+     <width>1200</width>
      <height>17</height>
     </rect>
    </property>

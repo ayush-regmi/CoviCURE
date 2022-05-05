@@ -10,7 +10,7 @@ int Hospitals::hospID = 0;
 
 
 QString csshospitals="QPushButton {"
-                     "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 98, 197, 255), stop:0.857955 rgba(0, 207, 60, 255));"
+                     "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
                      "color: rgb(255, 255, 255);"
                      "border-radius: 20px;"
                      "font: 17pt;"
@@ -49,7 +49,6 @@ Hospitals::Hospitals(QWidget *parent) : QMainWindow(parent),ui(new Ui::Hospitals
     ui->hos7->setStyleSheet(csshospitals);
     ui->hos8->setStyleSheet(csshospitals);
     ui->hos9->setStyleSheet(csshospitals);
-    ui->back->setStyleSheet(hospback);
 
     connectHospital.connectDB("hospital");
     if(connectHospital.connectionDB()) {

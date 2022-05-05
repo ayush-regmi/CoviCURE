@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
+    <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 145, 174, 255), stop:1 rgba(184, 50, 50, 255));
 border-radius: 20px;</string>
    </property>
    <property name="title">
@@ -66,7 +66,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you a have recent Travel:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;If you a have recent Travel:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -126,7 +126,7 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>220</y>
+      <y>210</y>
       <width>941</width>
       <height>61</height>
      </rect>
@@ -153,7 +153,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you have a recent Crowd participation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;If you have a recent Crowd participation:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -162,8 +162,8 @@ color: rgb(255, 255, 255);
    <widget class="QPushButton" name="que5_opt1">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>320</y>
+      <x>140</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -187,8 +187,8 @@ border-radius: 10px;</string>
    <widget class="QPushButton" name="que5_opt2">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>320</y>
+      <x>820</x>
+      <y>310</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -212,8 +212,8 @@ border-radius: 10px;</string>
    <widget class="QLabel" name="que6">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>410</y>
+      <x>140</x>
+      <y>400</y>
       <width>931</width>
       <height>61</height>
      </rect>
@@ -240,7 +240,7 @@ color: rgb(255, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you have Smoking or Drinking Habit:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;If you have Smoking or Drinking Habit:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -250,7 +250,7 @@ color: rgb(255, 255, 255);
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>510</y>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -274,8 +274,8 @@ border-radius: 10px;</string>
    <widget class="QPushButton" name="que6_opt2">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>510</y>
+      <x>780</x>
+      <y>500</y>
       <width>231</width>
       <height>51</height>
      </rect>
@@ -300,9 +300,9 @@ border-radius: 10px;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>600</y>
+      <y>590</y>
       <width>191</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -333,9 +333,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>930</x>
-      <y>600</y>
+      <y>590</y>
       <width>191</width>
-      <height>41</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">

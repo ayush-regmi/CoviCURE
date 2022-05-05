@@ -39,6 +39,8 @@ private slots:
 
     void on_que3_opt2_clicked();
 
+    void on_back_quepage1_clicked();
+
 private:
     Ui::Quepage1 *ui;
     Quepage2 *quepage2;

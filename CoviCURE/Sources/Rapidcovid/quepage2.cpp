@@ -15,6 +15,23 @@ QString cssquepage2=
                           "width: 90px;"
                           "font-style: \"Cooper Black\";"
                        "}"
+
+        "QPushButton:hover {"
+                "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
+                            "}"
+        "QpushButton:presssed {"
+        "background-color: rgb(85, 170, 127);"
+        "}";
+QString nextback2=
+        "QPushButton {"
+                          "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 229, 131, 255), stop:0.710227 rgba(255, 0, 0, 255));"
+
+                          "color: rgb(255, 255, 255);"
+                          "border-radius: 20px;"
+                          "font: 20pt;"
+                          "width: 90px;"
+                          "font-style: \"Cooper Black\";"
+                       "}"
         "QPushButton:hover {"
                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.0113636 rgba(255, 25, 159, 255), stop:0.892045 rgba(51, 119, 255, 255));"
                             "}";
@@ -34,8 +51,8 @@ Quepage2::Quepage2(QWidget *parent) :
     ui->que5_opt2->setStyleSheet(cssquepage2);
     ui->que6_opt1->setStyleSheet(cssquepage2);
     ui->que6_opt2->setStyleSheet(cssquepage2);
-    ui->next_quepage2->setStyleSheet(cssquepage2);
-    ui->back_quepage2->setStyleSheet(cssquepage2);
+    ui->next_quepage2->setStyleSheet(nextback2);
+    ui->back_quepage2->setStyleSheet(nextback2);
 }
 
 //double Quepage2::count2 = 0;
@@ -100,6 +117,8 @@ void Quepage2::on_que6_opt2_clicked()
     qDebug() << "count2" << count2;
 }
 
-
-
+void Quepage2::on_back_quepage2_clicked()
+{
+    hide();
+}
 

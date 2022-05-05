@@ -4,7 +4,7 @@
 QString cssloginvacc="QPushButton {"
                 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.210227 rgba(57, 230, 255, 255), stop:1 rgba(165, 0, 198, 255));"
                 "color: rgb(255, 255, 255);"
-                "border-radius: 50px;"
+                "border-radius: 20px;"
                 "font: 17pt;"
                 "width: 100px;"
                 "font-style: \"Cooper Black\";"
