@@ -15,6 +15,9 @@ public:
     explicit Messagepage(QWidget *parent = nullptr);
     ~Messagepage();
 
+private slots:
+    void on_pushButtonresult_clicked();
+
 private:
     Ui::Messagepage *ui;
     //Messagepage *messagepage;
