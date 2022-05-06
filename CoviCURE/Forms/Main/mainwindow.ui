@@ -23,7 +23,7 @@
       <x>280</x>
       <y>70</y>
       <width>731</width>
-      <height>561</height>
+      <height>581</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -37,9 +37,9 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>170</x>
-       <y>260</y>
+       <y>250</y>
        <width>381</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -50,7 +50,6 @@ border-radius: 20px;</string>
      </property>
      <property name="font">
       <font>
-       <family>Arial Rounded MT Bold</family>
        <pointsize>14</pointsize>
        <italic>false</italic>
        <bold>false</bold>
@@ -73,7 +72,7 @@ color: rgb(255, 255, 255);</string>
        <x>170</x>
        <y>360</y>
        <width>381</width>
-       <height>61</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -84,7 +83,6 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Arial Rounded MT Bold</family>
        <pointsize>14</pointsize>
        <italic>false</italic>
        <bold>false</bold>
@@ -105,9 +103,9 @@ color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>170</x>
-       <y>460</y>
+       <y>470</y>
        <width>381</width>
-       <height>59</height>
+       <height>71</height>
       </rect>
      </property>
      <property name="sizePolicy">
@@ -118,7 +116,6 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Arial Rounded MT Bold</family>
        <pointsize>14</pointsize>
        <italic>false</italic>
        <bold>false</bold>
@@ -145,7 +142,6 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
        <pointsize>30</pointsize>
        <italic>false</italic>
        <bold>true</bold>

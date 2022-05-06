@@ -1,6 +1,9 @@
 #include "admin.h"
 #include "ui_admin.h"
+#include <qglobal.h>
+#include <random>
 
+//#include <QRandomGenerator>
 
 QString greenAdmin="QPushButton {"
                 "background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 106, 255, 255), stop:1 rgba(0, 255, 138, 255));"
@@ -36,6 +39,8 @@ Admin::Admin(QWidget *parent) :
 
     ui->pushButton_add->setStyleSheet(greenAdmin);
     ui->pushButton_back->setStyleSheet(redAdmin);
+    High = 999999;
+    Low = 100000;
 }
 
 Admin::~Admin()
@@ -48,8 +53,11 @@ void Admin::on_pushButton_back_clicked()
     this->close();
 }
 
-quint32 v = QRandomGenerator::global()->bounded(999999);
-QString License = QString::number(v);
+//quint32 v = QRandomGenerator::global()->bounded(999999);
+//QString License = QString::number(v);
+
+qsrand(qrand());
+QString License = QString::number(qrand() % ((High + 1) - Low) + Low);
 
 Database addhos;
 void Admin::on_pushButton_add_clicked()

@@ -80,5 +80,10 @@ Messagepage::Messagepage(QWidget *parent):
 
 Messagepage::~Messagepage()
 {
+    count = 0;
+    count2 = 0;
+    count3 = 0;
+    count4 = 0;
+    sum = 0;
     delete ui;
 }

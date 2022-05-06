@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>40</y>
-      <width>691</width>
-      <height>561</height>
+      <y>50</y>
+      <width>1121</width>
+      <height>621</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(0, 145, 174, 255), stop:1 rgba(184, 50, 50, 255));
+     <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 213, 255, 255), stop:1 rgba(255, 0, 106, 255));
 border-radius: 20px;</string>
     </property>
     <property name="title">
@@ -33,10 +33,10 @@ border-radius: 20px;</string>
     <widget class="QPushButton" name="pushButtonNepal">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>120</y>
-       <width>171</width>
-       <height>51</height>
+       <x>70</x>
+       <y>270</y>
+       <width>441</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="text">
@@ -46,10 +46,10 @@ border-radius: 20px;</string>
     <widget class="QPushButton" name="pushButtonWHO">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>610</x>
        <y>40</y>
-       <width>111</width>
-       <height>41</height>
+       <width>441</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="text">
@@ -60,22 +60,31 @@ border-radius: 20px;</string>
      <property name="geometry">
       <rect>
        <x>70</x>
-       <y>90</y>
-       <width>121</width>
-       <height>51</height>
+       <y>40</y>
+       <width>441</width>
+       <height>191</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>MoHP</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>100</width>
+       <height>60</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonBack">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>40</y>
-       <width>101</width>
-       <height>41</height>
+       <x>80</x>
+       <y>510</y>
+       <width>231</width>
+       <height>71</height>
       </rect>
      </property>
      <property name="text">
@@ -85,10 +94,10 @@ border-radius: 20px;</string>
     <widget class="QPushButton" name="pushButtonWorld">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>160</y>
-       <width>211</width>
-       <height>81</height>
+       <x>610</x>
+       <y>270</y>
+       <width>441</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="text">

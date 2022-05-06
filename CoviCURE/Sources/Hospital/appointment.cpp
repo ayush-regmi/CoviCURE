@@ -162,6 +162,7 @@ void Appointment::on_pushButton_Book_clicked()
             qry.bindValue(":time", time);
             if(qry.exec()) {
                 QMessageBox:: information(this, "Appointed", "You have been appointed as a patient");
+                this->hide();
             }
             else{
                 qDebug() << "Error!!!!!!" << qry.lastError().text();
@@ -169,7 +170,7 @@ void Appointment::on_pushButton_Book_clicked()
             }
         }
     }
-}          
+}
 
 
 
@@ -211,5 +212,4 @@ void Appointment::on_combo_Hospital_currentTextChanged(const QString &arg1)
         }
     }
 }
-
 

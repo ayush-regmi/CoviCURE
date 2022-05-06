@@ -2,6 +2,7 @@
 #define CARD1_H
 
 #include <QDialog>
+#include "Headers/database.h"
 
 namespace Ui {
 class Card1;

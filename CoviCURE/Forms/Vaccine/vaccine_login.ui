@@ -19,8 +19,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>30</y>
+     <x>160</x>
+     <y>20</y>
      <width>891</width>
      <height>621</height>
     </rect>
@@ -72,9 +72,9 @@ color: rgb(255, 255, 255);
     <property name="geometry">
      <rect>
       <x>430</x>
-      <y>400</y>
-      <width>351</width>
-      <height>91</height>
+      <y>350</y>
+      <width>301</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="cursor">
@@ -87,16 +87,16 @@ color: rgb(255, 255, 255);
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>LOG IN</string>
+     <string>L O G   I N</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_register">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>270</y>
-      <width>351</width>
-      <height>91</height>
+      <x>420</x>
+      <y>260</y>
+      <width>311</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="cursor">
@@ -109,13 +109,13 @@ color: rgb(255, 255, 255);
      <string notr="true"/>
     </property>
     <property name="text">
-     <string>REGISTER</string>
+     <string>R E G I S T E R</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_back">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>620</x>
       <y>530</y>
       <width>231</width>
       <height>61</height>
@@ -138,9 +138,9 @@ color: rgb(255, 255, 255);
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>280</y>
+      <y>260</y>
       <width>231</width>
-      <height>71</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -148,7 +148,7 @@ color: rgb(255, 255, 255);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FOR 1&lt;span style=&quot; vertical-align:super;&quot;&gt;st&lt;/span&gt; DOSE :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1&lt;span style=&quot; vertical-align:super;&quot;&gt;st&lt;/span&gt; DOSE &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -158,9 +158,9 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>410</y>
+      <y>350</y>
       <width>231</width>
-      <height>71</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -168,7 +168,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FOR 2&lt;span style=&quot; vertical-align:super;&quot;&gt;nd&lt;/span&gt; DOSE :&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;2&lt;span style=&quot; vertical-align:super;&quot;&gt;nd&lt;/span&gt; DOSE &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

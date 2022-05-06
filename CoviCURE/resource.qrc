@@ -19,5 +19,7 @@
         <file>img/noVaccine.png</file>
         <file>img/print.png</file>
         <file>img/address.png</file>
+        <file>img/power-button.png</file>
+        <file>img/user.png</file>
     </qresource>
 </RCC>

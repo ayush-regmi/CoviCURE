@@ -5,7 +5,7 @@
 #include "patients.h"
 #include <QString>
 #include<QMessageBox>
-#include<QRandomGenerator>
+//#include <QRandomGenerator>
 
 
 namespace Ui {
@@ -27,6 +27,8 @@ private slots:
 
 private:
     Ui::Admin *ui;
+    int High;
+    int Low;
 };
 
 #endif // ADMIN_H
